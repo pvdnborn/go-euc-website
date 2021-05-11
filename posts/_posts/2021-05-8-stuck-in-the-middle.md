@@ -5,7 +5,7 @@ hidden: true
 authors: [eltjo]
 categories: [ 'Website' ]
 tags: [ 'data', 'analytics', 'statistics', 'performance']
-image: assets/images/posts/076-stuck-in-the-middle/076-stuck-in-the-middle-feature-image.png.png
+image: assets/images/posts/076-stuck-in-the-middle/076-stuck-in-the-middle-feature-image.png
 ---
 Mean, median and mode. All three of them are often mistakenly referred to as averages, whilst strictly speaking only the arithmetic mean, is an average. All three measures can be used to represent a dataset as a single number. The statistical term for these measures is the central tendency.
 This blog will explain the similarities and differences between these central tendency measures, and show which are used by GO-EUC in the researches that are done and why.
