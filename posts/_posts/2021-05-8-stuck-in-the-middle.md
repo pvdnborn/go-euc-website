@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stuck in the middle, an introduction into statistical analysis for GO-EUC"
-hidden: true
+hidden: false
 authors: [eltjo]
 categories: [ 'Website' ]
 tags: [ 'data', 'analytics', 'statistics', 'performance']
