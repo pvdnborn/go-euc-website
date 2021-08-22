@@ -27,7 +27,7 @@ There are several different storage options available for the profile containers
 
 The two native Azure solutions consisoft of Azure Files and the new Azure NetApp Files offering from NetApp. If a self-managed solutions is preferred, a Windows Fileserver option with Storage Spaces Direct can be considered.
 
-More in-depth information on the different available storage solutions for FSlogix with Azure, see the official FSlogix documentation: [Storage FSLogix profile container Windows Virtual Desktop - Azure | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile){:target="_blank}.
+More in-depth information on the different available storage solutions for FSlogix with Azure, see the official FSlogix documentation: [Storage FSLogix profile container Windows Virtual Desktop - Azure - Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile){:target="_blank}.
 
 ## Azure Files
 Microsofts Azure Files is fully managed file share in the cloud that is accessible via the Server Message Block (SMB) protocol or Network File System (NFS) protocol. Azure file shares can be mounted concurrently by cloud and on-premises deployments.
@@ -44,7 +44,7 @@ Azure Files shares are deployed into storage accounts, which are top-level objec
 
 *Up to a max of 100,000 IOPS
 
-More information on the performance tiers: [Azure Files scalability and performance targets | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets){:target="_blank"}.
+More information on the performance tiers: [Azure Files scalability and performance targets - Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets){:target="_blank"}.
 
 At the time of writing, Azure Files shares are available in all current Azure regions.
 
@@ -73,20 +73,20 @@ As shown in the picture above, all 3 tiers will have different pricing and throu
 
 In this case Premium is the most viable option, because it is the cheapest. The performance between the tiers are identical expect on the troughput, as this is limited per tier. The maximum of bandwith for Premium and Ultra is 4500MiB/s and Standard, according to the calculator 1600MiB/s.
 
-For more specific limitations, see the Azure Netapp Files documentation: [Performance considerations for Azure NetApp Files | Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-performance-considerations){:target="_blank"}
+For more specific limitations, see the Azure Netapp Files documentation: [Performance considerations for Azure NetApp Files - Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-performance-considerations){:target="_blank"}
 
 Source: [TCO ANF | NetApp](https://cloud.netapp.com/azure-netapp-files/tco){:target="_blank"}.
 
 The service level of an existing volume can be changed dynamnically by moving the volume to another capacity pool that uses the service level you want for the volume. This in-place service-level change for the volume does not require data to me migrated and does not does not impact access to the volume.
 
-ANF might not be available in all Azure regions yet, please consult: [Azure products by region | Microsoft Azure for more information on availability.](https://azure.microsoft.com/en-ca/global-infrastructure/services/?products=netapp){:target="_blank"}
+ANF might not be available in all Azure regions yet, please consult: [Azure products by region - Microsoft Azure for more information on availability.](https://azure.microsoft.com/en-ca/global-infrastructure/services/?products=netapp){:target="_blank"}
 
-Apart from regional availability, Microsoft requires that you have been granted access to the Azure NetApp Files service. To request access to the service, see Submit a waitlist request for accessing the service: [Submit a waitlist request for accessing the service |  Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-register#waitlist){:target="_blank"}
+Apart from regional availability, Microsoft requires that you have been granted access to the Azure NetApp Files service. To request access to the service, see Submit a waitlist request for accessing the service: [Submit a waitlist request for accessing the service -  Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-register#waitlist){:target="_blank"}
 
-More information on Azure NetApp files: [Azure File Storage Service For Enterprise Workloads | NetApp](https://cloud.netapp.com/azure-netapp-files){:target="_blank"}.
+More information on Azure NetApp files: [Azure File Storage Service For Enterprise Workloads - NetApp](https://cloud.netapp.com/azure-netapp-files){:target="_blank"}.
 
 ## Setup and configuration
-This research has taken place in the GO-EUC lab environment in combination with Microsoft Azure. Using a site-to-site VPN the on-premises resources are made available, where multiple roles are leveraged as Active Directory and the LoadGen infrastructure. Desktops are delivered with Citrix Cloud, using a Windows 10 build 20H2 multi-session VDA which is optimized using the recommended template of the Citrix Optimizer. One single Citrix Cloud Connector is deployed in Azure just as an additional domain controller. As a single Citrix Cloud Connector more than capable of handling the amount of sessions launched during the runs in the research: [Scale and size considerations for Cloud Connectors | Citrix](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops-service/install-configure/resource-location/cc-scale-and-size.html){:target="_blank"}
+This research has taken place in the GO-EUC lab environment in combination with Microsoft Azure. Using a site-to-site VPN the on-premises resources are made available, where multiple roles are leveraged as Active Directory and the LoadGen infrastructure. Desktops are delivered with Citrix Cloud, using a Windows 10 build 20H2 multi-session VDA which is optimized using the recommended template of the Citrix Optimizer. One single Citrix Cloud Connector is deployed in Azure just as an additional domain controller. As a single Citrix Cloud Connector more than capable of handling the amount of sessions launched during the runs in the research: [Scale and size considerations for Cloud Connectors - Citrix](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops-service/install-configure/resource-location/cc-scale-and-size.html){:target="_blank"}
 
 An on-premises LoadGen configuration is used which means the user sessions are simulated using the existing GO-EUC lab infrastructure as described [here](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}.
 
@@ -100,7 +100,8 @@ Decides the normal application set used in other research, we’ve added the FSl
 | VHD location | UNC path depending on the sceanrio |
 | Virtual disk type	| VHDX |
 
-100 users and 20 WVD machine using the SKU DS3v2 with a maximum of 5 sessions each to avoid maximizing the CPU utilization. This is based on our previous research: [What is the best Azure Virtual Machine size for WVD using Citrix Cloud? | GO-EUC](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/){:target="_blank"}.
+
+100 users and 20 WVD machine using the SKU DS3v2 with a maximum of 5 sessions each to avoid maximizing the CPU utilization. This is based on our previous research: [What is the best Azure Virtual Machine size for WVD using Citrix Cloud? - GO-EUC](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/){:target="_blank"}.
 
 Performance is measured from a machine perspective, in the WVD machine.
 
@@ -131,7 +132,7 @@ Azure NetApp files supports multi channel and SMB Multichannel is enabled by def
 The default testing methodolidy is applicable for this research which is described [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}. As the initial run contains a the FSLogix profile created this run has been excluded from all scenarios.
 
 ## Expectation and results
-Based a previous research, [The impact of managing user profiles with FSLogix | GO-EUC](https://www.go-euc.com/the-impact-of-managing-user-profiles-with-fslogix/){:target="_blank"}, and initial estimation both Azure Files Premium and Azure NetApp Files should have enough throughput to facilitate the 100 FSLogix profiles. It is expected to see a higher disk queue when using Azure Files Standard due to the throughput limitation of 60 MiB/sec. This might result in higher logon times for the Azure Files Standard compared to the other scenarios.
+Based a previous research, [The impact of managing user profiles with FSLogix - GO-EUC](https://www.go-euc.com/the-impact-of-managing-user-profiles-with-fslogix/){:target="_blank"}, and initial estimation both Azure Files Premium and Azure NetApp Files should have enough throughput to facilitate the 100 FSLogix profiles. It is expected to see a higher disk queue when using Azure Files Standard due to the throughput limitation of 60 MiB/sec. This might result in higher logon times for the Azure Files Standard compared to the other scenarios.
 
 The GO-EUC workload is CPU heavy, which in previous researches often resulted in a CPU. As mentioned in the setup and configurations section, hitting this bottleneck needs to be prevented as this can influence and skew re results. This can be confirmed by looking at the CPU utilization of each individual machine.
 
@@ -223,8 +224,8 @@ There is a clear difference between the standard and both premium and NetApp fil
 
 Finally cost is an important factor that needs to be taken into account, escapiccly in the cloud.
 
-<a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cost.png.png" data-lightbox="cost">
-![cost]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cost.png.png)
+<a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cost.png" data-lightbox="cost">
+![cost]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cost.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Lower is better</i>
