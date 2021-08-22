@@ -75,7 +75,7 @@ In this case Premium is the most viable option, because it is the cheapest. The 
 
 For more specific limitations, see the Azure Netapp Files documentation: [Performance considerations for Azure NetApp Files - Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-performance-considerations){:target="_blank"}
 
-Source: [TCO ANF | NetApp](https://cloud.netapp.com/azure-netapp-files/tco){:target="_blank"}.
+Source: [TCO ANF - NetApp](https://cloud.netapp.com/azure-netapp-files/tco){:target="_blank"}.
 
 The service level of an existing volume can be changed dynamnically by moving the volume to another capacity pool that uses the service level you want for the volume. This in-place service-level change for the volume does not require data to me migrated and does not does not impact access to the volume.
 
@@ -116,11 +116,11 @@ Because all Azure storage solutions have dynamic bandwidth limitations the follo
 
 ### Azure Files Standard
 By default Azure Files Standard is by default limited to 60 MiB/sec for both ingress and egress, which can not be adjusted by increasing the volume size. For this scenario, a volume of 1 TiB is used. This scenario has the large file share feature not enabled.
-Source: [Azure Files scalability and performance targets | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets){:target="_blank"}
+Source: [Azure Files scalability and performance targets - Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets){:target="_blank"}
 
 ### Azure Files Premium
 Based on the ingress the default 40 MiB/sec + 0.04 * provisioned GB. A volume size of 3.2 TB is configured resulting in a 168 MiB/sec ingress and 252 MiB/sec egress. The maximum throughput for this scenario will be the lowest number, which is 168 MiB/sec.
-Source: [Azure Files scalability and performance targets | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets){:target="_blank"}
+Source: [Azure Files scalability and performance targets - Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets){:target="_blank"}
 
 Azure Files Premium Multichannel SMB was not available in West-Europe, so in our testing this was not active.
 
