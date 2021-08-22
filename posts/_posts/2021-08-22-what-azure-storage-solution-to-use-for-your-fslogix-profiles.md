@@ -9,6 +9,8 @@ image: assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslog
 ---
 Since the acquisition of FSLogix, Microsoft has decided to include FSLogix in to the majority of the Office365 offerings. This move is resulted in a great adoption of FSLogix as it is for almost everybody available. Now of the design recommendations is to ensure the profiles are stored as close as possible. When moving to Azure cloud, it is therefore recommended to use an Azure storage services, but which one should you choose? This research will compare various Azure storage configuration to store the FSLogix profiles.
 
+> Disclaimer: This research intends to validate the performance difference between the various storage solutions and not to reach the saturation point.
+
 ## FSLogix
 FSLogix is profile container solution, designed to roam user profiles and settings between different devices and/or sessions. The FSLogix Profile Container is a more advanced solution, compared to the classic Microsoft roaming profile. A functional difference between the two is that a Profile Container persists all Windows settings and applications, regardless of where they are stored in the user profile by mounting a virtual disk to the users session at session startup and redirecting the user profile this virtual disk.
 Elibility for using the FLogix profile container is included in most Office365 offerings including:
