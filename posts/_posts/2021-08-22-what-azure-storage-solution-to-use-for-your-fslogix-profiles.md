@@ -103,9 +103,9 @@ Decides the normal application set used in other research, we’ve added the FSl
 | Virtual disk type	| VHDX |
 
 
-100 users and 20 WVD machine using the SKU DS3v2 with a maximum of 5 sessions each to avoid maximizing the CPU utilization. This is based on our previous research: [What is the best Azure Virtual Machine size for WVD using Citrix Cloud? - GO-EUC](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/){:target="_blank"}.
+100 users and 20 AVD machine using the SKU DS3v2 with a maximum of 5 sessions each to avoid maximizing the CPU utilization. This is based on our previous research: [What is the best Azure Virtual Machine size for WVD using Citrix Cloud? - GO-EUC](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/){:target="_blank"}.
 
-Performance is measured from a machine perspective, in the WVD machine.
+Performance is measured from a machine perspective, in the AVD machine.
 
 The following scenarios are included in this research:
   * Azure Files Standard 
@@ -236,11 +236,11 @@ Finally cost is an important factor that needs to be taken into account, escapic
 It is important to mention these are cost estimation and may be different depanding on the region and other factors like bandwith and transactions. From a cost perspetvice Azure Storage standard is the most cost effiencent solution but does come with a performance penalty. When sizing a storage solution it is important to take the bandwith limitation into account, as this will have an effect on the cost. 
 
 ## Conclusion
-With the transition to the cloud it is becoming a common pratice to impelemtn Fslogix as the default profile solution. There is a varitity on storage solutions avaible in Microsoft Azure and depnading on the requirements and workload. The following conclusion is based on FSLogix in a Azure WVD context and does not take any other storage workloads into account. As described in the setup and configuration, this is done using the GO-EUC workload with a total of 100 simulated users distributed over 20 WVD machines.
+With the transition to the cloud it is becoming a common pratice to impelemtn Fslogix as the default profile solution. There is a varitity on storage solutions avaible in Microsoft Azure and depnading on the requirements and workload. The following conclusion is based on FSLogix in a Azure AVD context and does not take any other storage workloads into account. As described in the setup and configuration, this is done using the GO-EUC workload with a total of 100 simulated users distributed over 20 AVD machines.
 
 A conclusion can be formed from multiple perspectives. Based on the best performance, Azure NetApp files is the best option, with Azure Files Permium on a close second place. When exploratation the data on a larger sclace, it is likely NetApp will outperformn Azure Files permium. Now this is a theoretic execition and may vary due to other depencadies or limitations. This is primaly based on the disk queue length as this is the most reliable metric to mesure the performance of the storage system from a user perspective.
 
-Based on this research taking both cost and performance in consideration, it is not recommened to use Azure File Standard for storing the FSLogix profiles in a WVD context on this size or larger.
+Based on this research taking both cost and performance in consideration, it is not recommened to use Azure File Standard for storing the FSLogix profiles in a AVD context on this size or larger.
 
 From a cost perpective, the recommendation is to go for Azure Files Permium. Now this is depanding on the size of the comanpy, but looking at mid-sized companies, this probappply would be the best fit. Ofcourse this may vary due to other storage workloads which is not taken into account. Using the premium allows you to adjust the bandwith based on size, which provides more fexbility.
 
