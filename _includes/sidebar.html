@@ -77,11 +77,14 @@
            </div>
         -->
         <div class="sidebar-section">
-            {% if site.categories.events.size != 0 %}
+            {% assign today_date = 'now' | date: "%y %m %d" %}
+            {% assign events = site.categories.events | where: eventdate >= today_date |sort: "eventdate" %}
+
+            {% if events.size != 0 %}
            
                 <h5><span>Upcoming Events</span></h5>
 
-                {% assign events = site.categories.events | sort: "eventdate" %}
+                
 
                 {% for event in events %}
                     
