@@ -141,6 +141,17 @@ authors:
     linkedin: https://www.linkedin.com/in/jeffstokes/
     page: jeff-stokes
     description: "Jeff Stokes is a Principal Engineer at Tanium, and an expert in the fields of Windows performance analytics, debugging, VDI, and Windows imaging and deployment."
+  benny:
+    name: Benny 
+    display_name: Benny Tritsch
+    company: Dr. Tritsch IT Consulting
+    title: Owner 
+    picture: 'assets/images/authors/benny.png'
+    web: http://drtritsch.com/
+    twitter: https://twitter.com/drtritsch
+    linkedin: https://www.linkedin.com/in/drtritsch
+    page: benny-tritsch
+    description: "Dr. Benny Tritsch is a self-employed end-user computing expert located in Germany, specializing in modern workplace designs, graphics remoting and end-user experience analysis."
 
 # Sponsors
 sponsors:
