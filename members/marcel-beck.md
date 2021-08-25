@@ -7,7 +7,7 @@ comments: false
 
 <img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Marcel is a full-time Workspace Consultant/Architect and part-time beer drinker from the north of The Netherlands.
 
-He has been bringing speed to virtual environments all around Europe and is now working at ICT-Partners, spreading EUC love and working hard to get the best performance out of every single Citrix & VMware environment he encounters.
+He has been bringing speed to virtual environments all around Europe and is now working at BeckSpace, spreading EUC love and working hard to get the best performance out of every single Citrix & VMware environment he encounters.
 
 Feel free to contact him on LinkedIn
 
