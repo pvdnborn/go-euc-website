@@ -130,6 +130,17 @@ authors:
     linkedin: https://www.linkedin.com/in/gerjonkunst/
     page: gerjon-kunst
     description: "Gerjon Kunst is Principal Consultant at RawWorks in het Netherlands, focusing on future Workspace and Cloud."
+  jeff:
+    name: Jeff 
+    display_name: Jeff Stokes
+    company: Tanium
+    title: Principal Engineer
+    picture: 'assets/images/authors/jeff.png'
+    web: https://illuminati.services/
+    twitter: https://twitter.com/WindowsPerf
+    linkedin: https://www.linkedin.com/in/jeffstokes/
+    page: jeff-stokes
+    description: "Jeff Stokes is a Principal Engineer at Tanium, and an expert in the fields of Windows performance analytics, debugging, VDI, and Windows imaging and deployment."
 
 # Sponsors
 sponsors:
