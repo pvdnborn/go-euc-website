@@ -189,8 +189,9 @@ The focus of this research is to evaluate the performance of the tested storage 
   <i>Lower is better</i>
 </p>
 
+As expected is the overall patten simular. The difference is clearly cause by the peaks but will not be noticbale from an end-user perspective.
 
-It is clear the peaks are affected  by the used storage solution, which is primarlly caused due the bandwith limitation. In order to confirm this the Logical Disk Queue Length should show a significant difference.
+To confirm the throughput and latency the metric Logical Disk Queue Length should show a noticeable difference.
 
 <a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-disk-queue.png" data-lightbox="disk-queue">
 ![disk-queue]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-disk-queue.png)
@@ -208,7 +209,7 @@ It is clear the peaks are affected  by the used storage solution, which is prima
 
 There are multiple factors that can influence the Logical Disk queue length. First and primary reason is the amount of IOPs the underlying storage solution can handle. Secondly this is cause by the bandwith limitation, which will result in the queueing.
 
-Anohter important factor are the logon times, because this is the first action a user will encounter. As a multi user operating system is used it is recommended to compare the initial logon times of the first couple of users. This will show the cleanest compare between the performance of the Azure storage solutions.
+The data from the logon times are an important metric, as this is normally the first interaction that and end user will have with the environment. In a multi user OS, it is recommended to compare the initial logon times of the first percentage of users to showcase the cleanest comparison between the storage solutions tested.
 
 <a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-logon.png" data-lightbox="logon">
 ![logon]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-logon.png)
@@ -224,9 +225,7 @@ Anohter important factor are the logon times, because this is the first action a
   <i>Lower is better</i>
 </p>
 
-There is a clear difference between the standard and both premium and NetApp files. As the the first 10 minutes are used, there results are not effected by any bandwith limitation and does show the true perofmrnace of the storage solution. This show both premium and NetApp are similar from a logon performance.
-
-Finally cost is an important factor that needs to be taken into account, escapiccly in the cloud.
+Both Azure Premium storage as ANF show a 10 to 11 percent decrease in logon times. These results are not affected by any possible bandwidth limitations of the underlying storage system.
 
 <a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cost.png" data-lightbox="cost">
 ![cost]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cost.png)
@@ -235,7 +234,7 @@ Finally cost is an important factor that needs to be taken into account, escapic
   <i>Lower is better</i>
 </p>
 
-It is important to mention these are cost estimation and may be different depanding on the region and other factors like bandwith and transactions. From a cost perspetvice Azure Storage standard is the most cost effiencent solution but does come with a performance penalty. When sizing a storage solution it is important to take the bandwith limitation into account, as this will have an effect on the cost. 
+From a cost perspective, Azure Storage standard is the most cost effiencent solution but does come with a performance penalty. While ANF is the better performing solution of Azure Premium, when sizing a storage solution it is important to take the bandwith limitation into account, as this will have an effect on the cost. In this case the ANF costs are significantly higher than the Microsoft's solutions.
 
 ## Conclusion
 With the transition to the cloud it is becoming a common pratice to implement Fslogix as the default profile solution. There is a varitity on storage solutions avaible in Microsoft Azure and depnading on the requirements and workload. The following conclusion is based on FSLogix in a Azure AVD context and does not take any other storage workloads into account. As described in the setup and configuration, this is done using the GO-EUC workload with a total of 100 simulated users distributed over 20 AVD machines.
@@ -244,8 +243,6 @@ A conclusion can be formed from multiple perspectives. Based on the best perform
 
 Based on this research taking both cost and performance in consideration, it is not recommened to use Azure File Standard for storing the FSLogix profiles in a AVD context on this size or larger.
 
-From a cost perpective, the recommendation is to go for Azure Files Permium. Now this is depanding on the size of the comanpy, but looking at mid-sized companies, this probappply would be the best fit. Ofcourse this may vary due to other storage workloads which is not taken into account. Using the premium allows you to adjust the bandwith based on size, which provides more fexbility.
-
-To summurize, size does matter and it is therefore very important to take the required bandwith into account. When the bandwith limit is reached it will have a tremndus impact on the overall performance and user experiance.
+To summarize, size does matter and it is therefore very important to take the required bandwidth into account when selecting the appropriate storage solution for the FSLogix profiles. When the bandwith limit is reached it will have a tremendus impact on the overall performance and user experience.
 
 Photo by [Vincent Botta](https://unsplash.com/@0asa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/storage?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
