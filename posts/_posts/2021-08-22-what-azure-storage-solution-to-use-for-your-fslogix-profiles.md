@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What Azure storage solution to use for your FSlogix profiles"
-hidden: true
+hidden: false
 authors: [ryan, tom, eltjo]
 categories: [ 'FSLogix' ]
 tags: [ 'Citrix', 'Azure', 'Storage', 'NetApp']
