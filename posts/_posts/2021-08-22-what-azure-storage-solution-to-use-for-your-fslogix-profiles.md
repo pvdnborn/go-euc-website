@@ -27,12 +27,12 @@ FSLogix solutions may be used in any public or private data center, as long as a
 ## Available storage solutions
 There are several different storage options available for the profile containers in Windows Virtual Desktop and Citrix Cloud environments on the Microsoft Azure platform service.
 
-The two native Azure solutions consisoft of Azure Files and the new Azure NetApp Files offering from NetApp. If a self-managed solutions is preferred, a Windows Fileserver option with Storage Spaces Direct can be considered.
+The two native Azure solutions comprise of Azure Files and the new Azure NetApp Files offering from NetApp. If a self-managed solutions is preferred, a Windows Fileserver option with Storage Spaces Direct can be considered. The latter option is out of scope for this particular research however.
 
 More in-depth information on the different available storage solutions for FSlogix with Azure, see the official FSlogix documentation: [Storage FSLogix profile container Windows Virtual Desktop - Azure - Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile){:target="_blank}.
 
 ## Azure Files
-Microsofts Azure Files is fully managed file share in the cloud that is accessible via the Server Message Block (SMB) protocol or Network File System (NFS) protocol. Azure file shares can be mounted concurrently by cloud and on-premises deployments.
+Microsofts Azure Files service is a fully managed file share in the cloud that is accessible via the Server Message Block (SMB) or Network File System (NFS) protocol. Azure file shares can be mounted concurrently by cloud and on-premises deployments.
 
 Azure Files shares are deployed into storage accounts, which are top-level objects that represent a shared pool of storage within an Azure subscription. The Azure Files offering comes in two performance tiers, Standard and Premium.
 
@@ -61,25 +61,25 @@ ANF are divided into capacity pools that can consist of one or more volumes as s
 
 The maximum throughput levels for ANF is determined by the Service levels. Service levels are an attribute of a capacity pool. Service levels are defined and differentiated by the allowed maximum throughput for a volume in the capacity pool based on the quota that is assigned to the volume.
 
-ANF comes in three service levels: Standard, Premium and Ultra. In fact, all 3 service levels are hosted on the same hardware, and the chosen tier will have pro’s and cons. For an example, if you want to host 1TiB on Azure Netap files, you can run it trough the calculator and it will show you the following:
+ANF comes in three service levels: Standard, Premium and Ultra. In fact, all 3 service levels are hosted on the same hardware, and the chosen tier will have pro’s and cons. As an example given, the following calculation was based on the requirement to host 1TiB on ANF:
 
 <a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-netapp-calc-volume-1.png" data-lightbox="netapp-calc-volume-1">
 ![netapp-calc-volume-1]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-netapp-calc-volume-1.png)
 </a>
 
-As shown in the picture above, all 3 tiers will have different pricing and throughputs. Also you can change the amount of bandwith needed, for an example if you need a minimum of 200MiB/s, which tiers and size of volume you need.
+As shown in the picture above, all 3 tiers will have different pricing and throughputs. In addition, the amount of bandwidth needed is also adjustable. In the example below a minimum bandwidth of 200MiB/s was selected.
 
 <a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-netapp-calc-volume-1-throughput-200.png" data-lightbox="069-netapp-calc-volume-1-throughput-200">
 ![069-netapp-calc-volume-1-throughput-200]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-netapp-calc-volume-1-throughput-200.png)
 </a>
 
-In this case Premium is the most viable option, because it is the cheapest. The performance between the tiers are identical expect on the troughput, as this is limited per tier. The maximum of bandwith for Premium and Ultra is 4500MiB/s and Standard, according to the calculator 1600MiB/s.
+In this case Premium is the most viable option, as it is has the lowest cost overhead. The performance between the tiers are identical expect on for troughput, as this is limited per tier. The maximum of bandwith for Premium and Ultra is 4500MiB/s and Standard, according to the calculator 1600MiB/s.
 
-For more specific limitations, see the Azure Netapp Files documentation: [Performance considerations for Azure NetApp Files - Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-performance-considerations){:target="_blank"}
+For more specific details, consult the Azure Netapp Files documentation: [Performance considerations for Azure NetApp Files - Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-performance-considerations){:target="_blank"}
 
 Source: [TCO ANF - NetApp](https://cloud.netapp.com/azure-netapp-files/tco){:target="_blank"}.
 
-The service level of an existing volume can be changed dynamnically by moving the volume to another capacity pool that uses the service level you want for the volume. This in-place service-level change for the volume does not require data to me migrated and does not does not impact access to the volume.
+The service level of an existing volume can be changed dynamnically by moving the volume to another capacity pool that uses the service level required for the volume. This in-place service-level change for the volume does not require data to me migrated and does not does not impact access to the volume.
 
 ANF might not be available in all Azure regions yet, please consult: [Azure products by region - Microsoft Azure for more information on availability.](https://azure.microsoft.com/en-ca/global-infrastructure/services/?products=netapp){:target="_blank"}
 
@@ -88,11 +88,13 @@ Apart from regional availability, Microsoft requires that you have been granted 
 More information on Azure NetApp files: [Azure File Storage Service For Enterprise Workloads - NetApp](https://cloud.netapp.com/azure-netapp-files){:target="_blank"}.
 
 ## Setup and configuration
-This research has taken place in the GO-EUC lab environment in combination with Microsoft Azure. Using a site-to-site VPN the on-premises resources are made available, where multiple roles are leveraged as Active Directory and the LoadGen infrastructure. Desktops are delivered with Citrix Cloud, using a Windows 10 build 20H2 multi-session VDA which is optimized using the recommended template of the Citrix Optimizer. One single Citrix Cloud Connector is deployed in Azure just as an additional domain controller. As a single Citrix Cloud Connector more than capable of handling the amount of sessions launched during the runs in the research: [Scale and size considerations for Cloud Connectors - Citrix](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops-service/install-configure/resource-location/cc-scale-and-size.html){:target="_blank"}
+This research has taken place in the GO-EUC lab environment in combination with Microsoft Azure. Using a site-to-site VPN the on-premises resources are made available to the Azure subscription, where multiple roles are leveraged as Active Directory and the LoadGen infrastructure. Desktops are delivered with Citrix Cloud, using a Windows 10 build 20H2 multi-session VDA which is optimized using the recommended template of the Citrix Optimizer. 
+
+A single Cloud Connector was deployed in the Azure subscription as a one Cloud Connector is sufficient of handling the amount of sessions launched during the runs in the research: [Scale and size considerations for Cloud Connectors - Citrix](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops-service/install-configure/resource-location/cc-scale-and-size.html){:target="_blank"}
 
 An on-premises LoadGen configuration is used which means the user sessions are simulated using the existing GO-EUC lab infrastructure as described [here](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}.
 
-Decides the normal application set used in other research, we’ve added the FSlogix agent version 2009 (2.9.7621.30127) with the following configuration: 
+In addition to the normal application set used in other research, we’ve added the FSlogix agent version 2009 (2.9.7621.30127) with the following configuration: 
 
 | Policy | Value |
 | :----- | :---- | 
@@ -103,21 +105,21 @@ Decides the normal application set used in other research, we’ve added the FSl
 | Virtual disk type	| VHDX |
 
 
-100 users and 20 AVD machine using the SKU DS3v2 with a maximum of 5 sessions each to avoid maximizing the CPU utilization. This is based on our previous research: [What is the best Azure Virtual Machine size for WVD using Citrix Cloud? - GO-EUC](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/){:target="_blank"}.
+In total 100 users are simluated on 20 AVD machine based on the DS3v2 SKU. To avoid hitting the maximizing the CPU utilization only 5 user are active on a single AVD machine. This is based on our previous research: [What is the best Azure Virtual Machine size for WVD using Citrix Cloud? - GO-EUC](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/){:target="_blank"}.
 
-Performance is measured from a machine perspective, in the AVD machine.
+Performance data from each individual AVD machine is collected during the research.
 
 The following scenarios are included in this research:
   * Azure Files Standard 
   * Azure Files Premium 
   * Azure NetApp File Premium
 
-As the NetApp offerings are bandwidth limited it has been decided to test a single NetApp offering as all storage levels are delivered using the same physical hardware. In theory, this means there are no performance differences between the offerings depending on the configured size. This has been confirmed by the NetApp team which is in close collaboration with GO-EUC on this research. This can be validated using the NetApp sizing calculator which can be found [here](https://anftechteam.github.io/calc/){:target="_blank"}.
+As the NetApp offerings are bandwidth limited it has been decided to test a single NetApp offering as all storage levels are delivered using the same physical hardware. In theory, this means there are no performance differences between the offerings depending on the configured size. GO-EUC worked in close collaboration with NetApp on the configuration. For more information on available configurations, please consult the [NetApp sizing calculator](https://anftechteam.github.io/calc/){:target="_blank"}.
 
 Because all Azure storage solutions have dynamic bandwidth limitations the following sizes are used in this research:
 
 ### Azure Files Standard
-By default Azure Files Standard is by default limited to 60 MiB/sec for both ingress and egress, which can not be adjusted by increasing the volume size. For this scenario, a volume of 1 TiB is used. This scenario has the large file share feature not enabled.
+By default Azure Files Standard is by default limited to 60 MiB/sec for both ingress and egress, which can not be adjusted by increasing the volume size. For this scenario, a volume of 1 TiB is used. For this scenario the large File share feature was left at the default value of 'disabled'.
 Source: [Azure Files scalability and performance targets - Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets){:target="_blank"}
 
 ### Azure Files Premium
@@ -127,16 +129,16 @@ Source: [Azure Files scalability and performance targets - Microsoft Docs](https
 Azure Files Premium Multichannel SMB was not available in West-Europe, so in our testing this was not active.
 
 ### Azure NetApp Files Premium
-The Azure NetApp File will be configured using the medium size capacity pool of 4TiB with a volume of 3.2TiB, resulting in a throughput of 200 MiB/sec. Like mentioned before, all Netapp tiers are provided on the same hardware, which should in theory result in the same performance.
+The Azure NetApp File was configured using the medium size capacity pool of 4TiB with a volume of 3.2TiB, resulting in a theoretical throughput of 200 MiB/sec. Like mentioned before, all NetApp tiers are provided on the same hardware, which should in theory result in the same performance.
 
 Azure NetApp files supports multi channel and SMB Multichannel is enabled by default for ANF volumes.
 
-The default testing methodolidy is applicable for this research which is described [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}. As the initial run contains a the FSLogix profile created this run has been excluded from all scenarios.
+The default testing methodology was used for this research which is described [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}. Because as part of the initial run the FSLogix profile created, the data for the initial run been excluded from all scenarios.
 
 ## Expectation and results
-Based a previous research, [The impact of managing user profiles with FSLogix - GO-EUC](https://www.go-euc.com/the-impact-of-managing-user-profiles-with-fslogix/){:target="_blank"}, and initial estimation both Azure Files Premium and Azure NetApp Files should have enough throughput to facilitate the 100 FSLogix profiles. It is expected to see a higher disk queue when using Azure Files Standard due to the throughput limitation of 60 MiB/sec. This might result in higher logon times for the Azure Files Standard compared to the other scenarios.
+Based a previous research, [The impact of managing user profiles with FSLogix - GO-EUC](https://www.go-euc.com/the-impact-of-managing-user-profiles-with-fslogix/){:target="_blank"}, and initial estimation both Azure Files Premium and Azure NetApp Files should have enough throughput to facilitate the 100 FSLogix profiles. It is expected to see a higher disk queue length when using Azure Files Standard considering the throughput limitation of 60 MiB/sec. This might result in higher logon times for the Azure Files Standard compared to the other scenarios.
 
-The GO-EUC workload is CPU heavy, which in previous researches often resulted in a CPU. As mentioned in the setup and configurations section, hitting this bottleneck needs to be prevented as this can influence and skew re results. This can be confirmed by looking at the CPU utilization of each individual machine.
+The GO-EUC workload is CPU heavy, which in previous researches often resulted in a CPU bottleneck. As mentioned in the setup and configurations section, hitting this bottleneck needs to be prevented as this can influence and skew the results. This can be confirmed by analyzing the CPU utilization of each individual machine.
 
 <a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cpu-wvds.png" data-lightbox="host-cpu-wvds">
 ![host-cpu-wvds]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-cpu-wvds.png)
@@ -162,9 +164,9 @@ Please note, this is the average CPU utilization of the selected runs as per the
   <i>Lower is better</i>
 </p>
 
-There is a minimal difference between the scenario might be caused by the logical disk queueing, which will be covered later.
+There is a minute difference between the scenarios that might be caused by the logical disk queueing, which will be covered later.
 
-This research is primary focus on the various storage solution, which is mesued from the VM perspective. The logical disk metrics that are available in perfmon will include all FSLogix profiles located on the Azure storage solution. It is expected to see a similar pattern in both read and write activity.
+The focus of this research is to evaluate the performance of the tested storage solution measured from the VM perspective. The logical disk metrics that are available in perfmon will include all FSLogix profiles located on the Azure storage solution. It is expected to see a similar pattern in both read and write activity.
 
 <a href="{{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-reads.png" data-lightbox="disk-reads">
 ![disk-reads]({{site.baseurl}}/assets/images/posts/069-what-azure-storage-solution-to-use-for-your-fslogix-profiles/069-azure-storage-fslogix-reads.png)
