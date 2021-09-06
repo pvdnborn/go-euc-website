@@ -11,6 +11,9 @@ Since the acquisition of FSLogix, Microsoft has decided to include FSLogix in th
 
 > Disclaimer: This research intends to validate the performance difference between the various storage solutions and is not aimed as a scalability research into the saturation point of the tested solutions.
 
+## Table of Content
+{% include toc.html html=content %}
+
 ## FSLogix
 FSLogix is a profile container solution, designed to roam user profiles and settings between different devices and/or sessions. The FSLogix Profile Container is a more advanced solution, compared to the classic Microsoft roaming profile. A functional difference between the two is that a Profile Container persists all Windows settings and applications, regardless of where they are stored in the user profile by mounting a virtual disk to the user's session at session startup and redirecting the user profile to this virtual disk.
 Eligibility for using the FLogix profile container is included in most Office365 offerings including:
