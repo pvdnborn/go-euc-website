@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "windows 11 vdi performance short"
+title:  "Microsoft Windows 11 VDI performance short"
 hidden: true
 authors: [eltjo, omar]
 categories: [ 'Windows 11' ]
 tags: [ 'Windows 10', 'Windows 11', 'VDI','21h2','21h1']
-image: assets/images/posts/079-windows-11-VDI-performance-short/079-windows-11-VDI-performance-short-feature-image.png
+image: assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-feature-image.png
 
 ---
 On August 31st 2021, Microsoft announced that Windows 11 will become available on October 5th, 2021. Microsoft will start the upgrade to Windows 11 on eligible devices, and pre-loaded devices will also become available for order with Windows 11 as standard. GO-EUC tested previous releases of Windows 10 and concluded that with each new release, there are performance, and therefore scalability implications. This Go-EUC Short will focus on the performance differences between the latest insider preview build 22000.100 in comparison to Windows 10.
@@ -17,8 +17,8 @@ Possibly the biggest, but at least the most apparent change, is the new interfac
 
 Microsoft Teams will be integrated directly into the Windows taskbar for easier accessibility. 
 
-<a href="{{site.baseurl}}/assets/images/posts/079-windows-11-VDI-performance-short/079-windows-11-VDI-performance-short-desktop.png" data-lightbox="Windows 11">
-![watermark-example]({{site.baseurl}}/assets/images/posts/079-windows-11-VDI-performance-short/079-windows-11-VDI-performance-short-desktop.png)
+<a href="{{site.baseurl}}/assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-desktop.png" data-lightbox="Windows 11">
+![watermark-example]({{site.baseurl}}/assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-desktop.png)
 <p align="center" style="margin-top: -30px;" >
   <i>Image courtesy of Microsoft</i>
 </p>
@@ -30,11 +30,10 @@ One of the more interesting highlights that the blogpost mentioned is:
 "Windows 11 is optimized for speed", in itself that is a bold statement, but the main question is: how does it compare to the previous Windows releases?
 
 ## Setup and testing methodology
-
 For these preliminary tests, the Windows 11 Insider Preview build from the Microsoft Insider Dev Channel, Build 22000.100 was used. This built was announced on July 22, and was the latest available version at the time of testing. More information on this specific build can be found here: [https://blogs.windows.com/windows-insider/2021/07/22/announcing-windows-11-insider-preview-build-22000-100/](https://blogs.windows.com/windows-insider/2021/07/22/announcing-windows-11-insider-preview-build-22000-100/){:target="_blank"}
 
-<a href="{{site.baseurl}}/assets/images/posts/079-windows-11-VDI-performance-short/079-windows-11-VDI-performance-short-version.png" data-lightbox="Windows 11">
-![watermark-example]({{site.baseurl}}/assets/images/posts/079-windows-11-VDI-performance-short/079-windows-11-VDI-performance-short-version.png)
+<a href="{{site.baseurl}}/assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-version.png" data-lightbox="Windows 11">
+![watermark-example]({{site.baseurl}}/assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-version.png)
 
 The Windows 11 build was tested and compared against Windows 10 in the following versions:
 * Windows 10 version 20h2 as the baseline
@@ -55,30 +54,40 @@ To get an impression of the overall performance of Windows 11, the first metric 
 
 <iframe title="CPU utilization" aria-label="Interactive line chart" id="datawrapper-chart-67188" src="https://datawrapper.dwcdn.net/67188/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
+<p align="center" style="margin-top: -30px;" >
+  <i>Lower is better</i>
+</p>
 
 <iframe title="CPU comparison in %" aria-label="Column Chart" id="datawrapper-chart-U1aJj" src="https://datawrapper.dwcdn.net/U1aJj/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
+<p align="center" style="margin-top: -30px;" >
+  <i>Lower is better</i>
+</p>
 
 The intial findings show that the trend of strong increases in the CPU utilization for each new Windows version, has been discontinued. The average CPU utilization for Windows 10 21H1 and Windows 11 is identical.
 
 <iframe title="Available memory comparison in %" aria-label="Column Chart" id="datawrapper-chart-tC0nb" src="https://datawrapper.dwcdn.net/tC0nb/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
+<p align="center" style="margin-top: -30px;" >
+  <i>Lower is better</i>
+</p>
 
 Memory consumption for Windows 11 does not show a significant change during our workloads compared to Windows 10, with a 3% increase from 20H2 to 21H1 and a 2% increase from 20H2 to Windows 11.
 
 <iframe title="Storage comparison in %" aria-label="Grouped Bars" id="datawrapper-chart-ohZjv" src="https://datawrapper.dwcdn.net/ohZjv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="496"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
+<p align="center" style="margin-top: -30px;" >
+  <i>Lower is better</i>
+</p>
 
 The impact on storage however, is more significant with an increase of 13% compared to Windows 10 21h1 for the commands per second. In more detail, there is a significantly increased load in terms of writes of 15%. These patterns are observed during the whole of the test runs, and are consistent in each individual run.
 
-
-
 ## Preliminary conclusion
-
 Despite the fact that Microsoft increased the system requirements for Windows 11, the initial findings show that there is only a small increase in resource utilization for Windows 11 compared to the previous Windows 10 builds 20h2 and 21h1.
 
 The increase in load on the storage is significant, although with fast storage this will most likely not have a noticeable impact on user experience. This might however impact scalability and could have an impact on logon times during peak hours for example.
 
 Big shoutout to Omar Bouhaj for setting up and running the tests.
 
-Please let us know what you think of these preliminary results via Social media or on our Slack Channel [GO-EUC Slack channel](https://GO-EUC.slack.com){:target="_blank"}!
+Please let us know what you think of these preliminary results via Social media or on our [GO-EUC Slack channel](https://GO-EUC.slack.com){:target="_blank"}!
+
