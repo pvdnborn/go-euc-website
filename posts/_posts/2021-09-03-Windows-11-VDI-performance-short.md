@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Windows 11 VDI performance short"
+title:  "windows 11 vdi performance short"
 hidden: true
 authors: [eltjo, omar]
 categories: [ 'Windows 11' ]
@@ -11,7 +11,7 @@ image: assets/images/posts/079-windows-11-VDI-performance-short/079-windows-11-V
 On August 31st 2021, Microsoft announced that Windows 11 will become available on October 5th, 2021. Microsoft will start the upgrade to Windows 11 on eligible devices, and pre-loaded devices will also become available for order with Windows 11 as standard. GO-EUC tested previous releases of Windows 10 and concluded that with each new release, there are performance, and therefore scalability implications. This Go-EUC Short will focus on the performance differences between the latest insider preview build 22000.100 in comparison to Windows 10.
 
 ## Background information
-In a blog post Microsoft announced on August 31st that Windows 11 will become available on October 5, 2021.  Windows 11 will be the first major update to the Windows operating platform since Windows 10 was launched in 2015. More details on the announcement can be found in the official announcement blog post: [https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/](https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/){:target="_blank"}
+Windows 11 will be the first major update to the Windows operating platform since Windows 10 was launched in 2015. More details on the announcement can be found in the official announcement blog post: [https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/](https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/){:target="_blank"}
 
 Possibly the biggest, but at least the most apparent change, is the new interface. With a redesigned Start menu which is now located in the middle of the screen by default, the new look is sleeker and more akin to the Mac-like interfaces from Apple.
 
