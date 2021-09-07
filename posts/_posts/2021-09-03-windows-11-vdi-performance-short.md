@@ -36,7 +36,7 @@ The Windows 11 build was tested and compared against Windows 10 in the following
 * Windows 10 version 20h2 as the baseline
 * Windows 10 version 21h1
 
-The standard workload and testing methodology was used.
+The standard workload and testing methodology was used, which is described [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}.
 
 Normally Remote Display Analyzer is used to collect the protocol data that is used for analysis. Protocol data includes framerate, bandwidth usage, and RTT for example. In this case, RDA wasn’t able to collect valid data for these metrics for the Windows 11 build.  As a result, the results in this research will not include any protocol data.
 As a cautionary remark, because Windows 11 hasn’t been released, there is no official Citrix support for Windows 11 yet. As always Citrix will most likely offer Day 1 support when Windows 11 will be GA.
