@@ -11,7 +11,7 @@ image: assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-v
 On August 31st 2021, Microsoft announced that Windows 11 will become available on October 5th, 2021. Microsoft will start the upgrade to Windows 11 on eligible devices, and pre-loaded devices will also become available for order with Windows 11 as standard. GO-EUC tested previous releases of Windows 10 and concluded that with each new release, there are performance, and therefore scalability implications. This Go-EUC Short will focus on the performance differences between the latest insider preview build 22000.100 in comparison to Windows 10.
 
 ## Background information
-Windows 11 will be the first major update to the Windows operating platform since Windows 10 was launched in 2015. More details on the announcement can be found in the official announcement blog post: [https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/](https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/){:target="_blank"}
+Windows 11 will be the first major update to the Windows operating platform since Windows 10 was launched in 2015. More details on the announcement can be found in the official announcement [blog post](https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/){:target="_blank"}.
 
 Possibly the biggest, but at least the most apparent change, is the new interface. With a redesigned Start menu which is now located in the middle of the screen by default, the new look is sleeker and more akin to the Mac-like interfaces from Apple.
 
@@ -32,9 +32,6 @@ One of the more interesting highlights that the blogpost mentioned is:
 ## Setup and testing methodology
 For these preliminary tests, the Windows 11 Insider Preview build from the Microsoft Insider Dev Channel, Build 22000.100 was used. This built was announced on July 22, and was the latest available version at the time of testing. More information on this specific build can be found here: [https://blogs.windows.com/windows-insider/2021/07/22/announcing-windows-11-insider-preview-build-22000-100/](https://blogs.windows.com/windows-insider/2021/07/22/announcing-windows-11-insider-preview-build-22000-100/){:target="_blank"}
 
-<a href="{{site.baseurl}}/assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-version.png" data-lightbox="Windows 11">
-![watermark-example]({{site.baseurl}}/assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-version.png)
-
 The Windows 11 build was tested and compared against Windows 10 in the following versions:
 * Windows 10 version 20h2 as the baseline
 * Windows 10 version 21h1
@@ -49,18 +46,19 @@ Consequently, there was no Citrix Optimizer template available yet, therfore Cit
 Once Windows 11 is GA and the official Windows 11 Citrix Optimizer templates are available, the tests will be rerun and a complete research will be published.
 
 ## Preliminary results
-
 To get an impression of the overall performance of Windows 11, the first metric to report on is the average CPU utilization.
 
 <iframe title="CPU utilization" aria-label="Interactive line chart" id="datawrapper-chart-67188" src="https://datawrapper.dwcdn.net/67188/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
-<p align="center" style="margin-top: -30px;" >
+
+<p align="center">
   <i>Lower is better</i>
 </p>
 
 <iframe title="CPU comparison in %" aria-label="Column Chart" id="datawrapper-chart-U1aJj" src="https://datawrapper.dwcdn.net/U1aJj/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
-<p align="center" style="margin-top: -30px;" >
+
+<p align="center">
   <i>Lower is better</i>
 </p>
 
@@ -68,7 +66,7 @@ The intial findings show that the trend of strong increases in the CPU utilizati
 
 <iframe title="Available memory comparison in %" aria-label="Column Chart" id="datawrapper-chart-tC0nb" src="https://datawrapper.dwcdn.net/tC0nb/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
-<p align="center" style="margin-top: -30px;" >
+<p align="center">
   <i>Lower is better</i>
 </p>
 
@@ -76,7 +74,7 @@ Memory consumption for Windows 11 does not show a significant change during our 
 
 <iframe title="Storage comparison in %" aria-label="Grouped Bars" id="datawrapper-chart-ohZjv" src="https://datawrapper.dwcdn.net/ohZjv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="496"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
-<p align="center" style="margin-top: -30px;" >
+<p align="center">
   <i>Lower is better</i>
 </p>
 
