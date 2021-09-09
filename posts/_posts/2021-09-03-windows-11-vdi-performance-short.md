@@ -8,7 +8,7 @@ tags: [ 'Windows 10', 'Windows 11', 'VDI','21h2','21h1']
 image: assets/images/posts/079-windows-11-vdi-performance-short/079-windows-11-vdi-performance-short-feature-image.png
 
 ---
-On August 31st 2021, Microsoft announced that Windows 11 will become available on October 5th, 2021. Microsoft will start the upgrade to Windows 11 on eligible devices, and pre-loaded devices will also become available for order with Windows 11 as standard. GO-EUC tested previous releases of Windows 10 and concluded that with each new release, there are performance, and therefore scalability implications. This Go-EUC Short will focus on the performance differences between the latest insider preview build 22000.100 in comparison to Windows 10.
+On August 31st 2021, Microsoft announced that Windows 11 will become available on October 5th, 2021. Microsoft will start the upgrade to Windows 11 on eligible devices, and pre-loaded devices will also become available for order with Windows 11 as standard. GO-EUC tested previous releases of Windows 10 and concluded that with each new release, there are performance, and therefore scalability implications. This GO-EUC Short will focus on the performance differences between the latest insider preview build 22000.100 in comparison to Windows 10.
 
 ## Background information
 Windows 11 will be the first major update to the Windows operating platform since Windows 10 was launched in 2015. More details on the announcement can be found in the official announcement [blog post](https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/){:target="_blank"}.
@@ -78,14 +78,14 @@ Memory consumption for Windows 11 does not show a significant change during our 
   <i>Lower is better</i>
 </p>
 
-The impact on storage however, is more significant with an increase of 13% compared to Windows 10 21h1 for the commands per second. In more detail, there is a significantly increased load in terms of writes of 15%. These patterns are observed during the whole of the test runs, and are consistent in each individual run.
+The impact on storage however, is more significant with an increase of 13% compared to Windows 10 21H1 for the commands per second. In more detail, there is a significantly increased load in terms of writes of 15%. These patterns are observed during the whole of the test runs, and are consistent in each individual run.
 
 ## Preliminary conclusion
-Despite the fact that Microsoft increased the system requirements for Windows 11, the initial findings show that there is only a small increase in resource utilization for Windows 11 compared to the previous Windows 10 builds 20h2 and 21h1.
+Despite the fact that Microsoft increased the system requirements for Windows 11, the initial findings show that there is only a small increase in resource utilization for Windows 11 compared to the previous Windows 10 builds 20H2 and 21H1.
 
 The increase in load on the storage is significant, although with fast storage this will most likely not have a noticeable impact on user experience. This might however impact scalability and could have an impact on logon times during peak hours for example.
 
 Big shoutout to Omar Bouhaj for setting up and running the tests.
 
-Please let us know what you think of these preliminary results via Social media or on our [GO-EUC Slack channel](https://GO-EUC.slack.com){:target="_blank"}!
+Please let us know what you think of these preliminary results via social media or on our [GO-EUC Slack channel](https://GO-EUC.slack.com){:target="_blank"}!
 
