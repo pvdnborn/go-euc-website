@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Microsoft Windows 11 VDI performance short"
-hidden: true
+hidden: false
 authors: [eltjo, omar]
 categories: [ 'Windows 11' ]
 tags: [ 'Windows 10', 'Windows 11', 'VDI','21h2','21h1']
