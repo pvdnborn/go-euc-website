@@ -21,7 +21,8 @@ Although there aren’t any new features for multiuser use cases there is always
 
 Please be advised that on moment of testing Microsoft 365 apps are not supported on Windows Server 2022. Microsoft Office 2019 is the only supported Office product! So when upgrading your environment check the [Windows and Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI){:target="_blank"}.
 
-## This research will focus on answering the following question
+## Context
+This research will focus on answering the following question:
 
 > What is the performance impact of the new Windows Server 2022 on performance in comparison to the older versions
 
@@ -41,7 +42,7 @@ executed:
   * Microsoft Windows Server 2019 Datacenter ([version 1809 build:17763.1999](https://docs.microsoft.com/en-us/windows/release-health/status-windows-10-1809-and-windows-server-2019){:target="_blank"})
   * Microsoft Windows Server 2022 Datacenter ([version 21H2 build: 20348.169](https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-2022){:target="_blank"})
 
-Each scenario was tested using the default testing methodology which is described in detail [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}. As it is a best practice, each deployment is fully updated and optimized using the Citrix Optimizer with the corresponding template. For Server 2022 there is not yet a specific template and the template for Server 2019 was used.
+Each scenario was tested using the default testing methodology which is described in detail [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}. As it is a best practice, each deployment is fully updated and optimized using the Citrix Optimizer with the corresponding template. For Server 2022 there is <b>not</b> yet a specific template and the template for Server 2019 was used.
 
 ## Expectations and results
 
