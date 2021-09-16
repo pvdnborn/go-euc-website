@@ -103,15 +103,15 @@ When looking at the host reads and writes (these are the read and writes to the 
 
 When looking at memory consumption, measured from a hypervisor perspective, there aren’t big differences in the memory usage between the three Windows Server versions.
 
-## Result comparison to older research
+## Results compared to prior research
 
-When comparing the previous research with the results from this research the performance pattern has changed. There is a steady increase in load when upgrading based on previous researches. However, simular to the Windows 10 researches there has been a shift as Windows Server 2019 now has a lower impact.
+When comparing the prior research with the results from this research the performance pattern has changed. There is a steady increase in load when upgrading based on prior researches. However, simular to the Windows 10 researches there has been a shift as Windows Server 2019 now has a lower impact.
 
 ## Conclusion
 
-Based on this research there is a clear impact on scalability when using Widnows Server 2022. This is primarly based on a higher CPU utilization which could be caused by new features, code optimization that need to be carried out etcetera. Based on the scope of the research the reason for this cannot be confirmed by data. Additional tests will be scheduled to look at protocol data and other features inside the OS.
+Based on this research there is a clear impact on scalability when using Windows Server 2022. This is primarly based on a higher CPU utilization which could be caused by new features, code optimization that need to be carried out etcetera. Based on the scope of the research the reason for this cannot be confirmed by data. Additional tests will be scheduled to look at protocol data and other features inside the OS.
 
-In terms of user density,the primary bottleneck is CPU bound, so it is expect to see a simular decrease in users based on the CPU. In the GO-EUC envrioment this resulted in 30% less users per session host. Recommendation, the test showed a significantly higher usage of CPU, but the results can be different with your specific workloads so be sure to check how Windows Server 2022 impacts your workload.
+In terms of user density, the primary bottleneck is CPU bound, so it is expect to see a simular decrease in users based on the CPU. In the GO-EUC envrioment this resulted in 30% less users per session host. Recommendation, the test showed a significantly higher usage of CPU, but the results can be different with your specific workloads so be sure to check how Windows Server 2022 impacts your workload.
 
 Are you planning to upgrade to Windows Server 2022 on a short notice? Let us know what you are expecing in the comments below... or visit our [Slack Channel](https://go-euc.slack.com){:target="_blank"}!
 
