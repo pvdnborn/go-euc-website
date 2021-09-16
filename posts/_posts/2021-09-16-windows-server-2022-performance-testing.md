@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Microsoft Windows Server 2022 performance testing"
-hidden: true
+hidden: false
 authors: [gerjon, tom]
 categories: [ 'Windows Server 2022' ]
 tags: [ 'Windows Server 2022', 'Windows Server 2019', 'Windows Server 2016', 'Citrix']
