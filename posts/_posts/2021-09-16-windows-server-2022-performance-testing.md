@@ -19,7 +19,7 @@ Other new features include Nested virtualization for AMD processors, Edge browse
 
 Although there aren’t any new features for multiuser use cases there is always the question of how does the new Windows Server 2022 version scale compare to the older versions. So, if you are thinking about updating your environment to Windows Server 2022, one of the considerations is the impact this change has on user density and performance. There are other considerations as well, application compatibility and support for example.
 
-Please be advised that on moment of testing Microsoft 365 apps are not supported on Windows Server 2022. Microsoft Office 2019 is the only supported Office product! So when upgrading your environment check the [Windows and Office confgiuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI){:target="_blank"}.
+Please be advised that on moment of testing Microsoft 365 apps are not supported on Windows Server 2022. Microsoft Office 2019 is the only supported Office product! So when upgrading your environment check the [Windows and Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI){:target="_blank"}.
 
 ## This research will focus on answering the following question
 
