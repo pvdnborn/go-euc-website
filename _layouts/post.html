@@ -24,25 +24,28 @@ post_class: post-template
             <!-- Post Date -->
             <p>
                 <small>
-                    <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+                    <span class="post-date" style="float: left"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
                     {% if page.authors %}
-                    {% assign count = 0 %}
-                     by
                     {% for page_author in page.authors %}
                     {% assign author = site.authors[page_author] %}
-                         {{ author.display_name }}
-                         {% if page.authors.size > 1 %}
-                        
-                         {% assign temp = count | plus: 1 %}
-                         {% if temp < page.authors.size %}
-                             &
-                        {% endif %}
- 
-                        {% endif %}
-                        {% assign count = count | plus: 1 %}
+                        <a href="{{site.baseurl}}/members/{{author.page}}" title="{{author.display_name}}">
+                            <img src="{{site.baseurl}}/{{author.picture}}"  class="post-author-image"></img>
+                        </a>
                     {% endfor %}
                     {% endif %}
-                    </span>           
+                    </span>
+
+                    <span style="float: right">
+                    {% if page.reviewers %}
+                    {% for page_reviewer in page.reviewers %}
+                    {% assign reviewer = site.authors[page_reviewer] %}
+                        <a href="{{site.baseurl}}/members/{{reviewer.page}}" title="{{reviewer.display_name}}">
+                            <img src="{{site.baseurl}}/{{reviewer.picture}}" class="post-author-image"></img>
+                        </a>
+                    {% endfor %}
+                    {% endif %}
+                    </span>
+                             
                     {% if page.last_modified_at %}
                     (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                     {% endif %}

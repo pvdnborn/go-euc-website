@@ -986,3 +986,9 @@ td, th {
     width: 32px;
     margin: 6px;
 }
+
+.post-author-image {
+    border-radius: 50%; 
+    width: 30px; 
+    margin-bottom: 5px;
+}

@@ -8,7 +8,9 @@ comments: false
 
     {% for author in site.authors %}
     {% assign name = author[0] %}
+    
     {% assign info = site.authors[name] %}
+    {% if info.reviewer == false %}
         <div style="width: 49%; margin-bottom: 20px; text-align: center; float: left; display: inline" >
             <diV>
                <a href="{{site.baseurl}}/members/{{info.page}}"><img style="height: 150px; box-shadow: none" src="{{ site.baseurl }}/{{ info.picture }}" alt="{{ info.display_name }}"></a>
@@ -25,7 +27,7 @@ comments: false
         
         
     
-    
+    {% endif %}
     {% endfor %}
 
 
