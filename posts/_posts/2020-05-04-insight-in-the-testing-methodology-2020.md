@@ -20,13 +20,15 @@ Our goal is to see the behavior of a solution in an environment that is under lo
 >
 > More information about LoadGen can be found [here](https://www.loadgen.com){:target="_blank"}.
 
-Workload and applications
+### Workload and applications
 By default, LoadGen does not come with any standardized workloads and therefore GO-EUC created a self-maintained workload which can be found here:
 
 | Date       | Name            | Version  |
 | :--------: | :-------------: | :------: |
 | 04-20-2020 | KnowledgeWorker | [v2004.01](https://github.com/GO-EUC/go-euc-workloads/blob/master/KnowledgeWorker_v2004.1.lgs){:target="_blank"} | 
 | 05-01-2020 | KnowledgeWorker | [v2005.01](https://github.com/GO-EUC/go-euc-workloads/blob/master/KnowledgeWorker_v2005.1.lgs){:target="_blank"} |
+| 06-11-2021 | KnowledgeWorker | [v2106.01](https://github.com/GO-EUC/go-euc-workloads/blob/master/KnowledgeWorker_v2106.1.lgs){:target="_blank"} |
+| 10-15-2021 | KnowledgeWorker | [v2110.01](https://github.com/GO-EUC/go-euc-workloads/blob/master/KnowledgeWorker_v2110.1.lgs){:target="_blank"} |
 
 This workload contains the following default applications:
 
@@ -95,8 +97,12 @@ Our platform is continuously improving the automation and testing methodology. A
 If you have comments, questions, or suggestions, please feel free to share those in the comment below. Or start the conversation at our Slack channel.
 
 ## Change log
-<b>04-20-2020: version 2004.01</b> – Initial release
+<b>04-20-2020: version 2004.1</b> – Initial release.
 <br>
-<b>05-01-2020: version 2005.01</b> – Extended the Excel block
+<b>05-01-2020: version 2005.1</b> – Extended the Excel block.
+<br>
+<b>06-11-2021: version 2106.1</b> – Transformed the workload to the enhanced, allowing to have more control.
+<br>
+<b>10-14-2021: version 2110.1</b> – More error handling en refinement in the workload.
 
 Photo by [Isaac Smith](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_bank"} on [Unsplash](https://unsplash.com/s/photos/measure?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
