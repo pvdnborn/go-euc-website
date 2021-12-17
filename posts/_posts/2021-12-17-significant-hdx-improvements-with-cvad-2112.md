@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Significant HDX improvements with CVAD 2112?"
-hidden: true
+hidden: false
 authors: [eltjo, ryan]
 reviewers: [tom]
 categories: [ 'Citrix' ]
