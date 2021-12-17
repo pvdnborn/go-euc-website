@@ -196,9 +196,9 @@ There is a direct correlation between the FPS count and the bandwidth output: wh
 | SSIM | 0.9315 |	0.9458 |
 
 
-<i>MSE = Lower is better</i>
-<i>PSNR =  Higher is better</i>
-<i>SSIM = Higher is better</i>
+<i>MSE = Lower is better; </i>
+<i>PSNR =  Higher is better; </i>
+<i>SSIM = Higher is better.</i>
 
 Image quality degradation is present for both CVAD 2109 and 2112 as depicted in the MSE, PSNR, and SSIM metrics, however, the visual image degradation is less apparent with CVAD 2112.
 
@@ -216,9 +216,9 @@ Image quality degradation is present for both CVAD 2109 and 2112 as depicted in 
 | SSIM | 0.9571 |	0.9570 |
 
 
-<i>MSE = Lower is better</i>
-<i>PSNR =  Higher is better</i>
-<i>SSIM = Higher is better</i>
+<i>MSE = Lower is better; </i>
+<i>PSNR =  Higher is better; </i>
+<i>SSIM = Higher is better.</i>
 
 For scene 2 the perceived visual quality is near indistinguishable between CVAD 2109 and 2112; the SSIM values are almost identical.
 
@@ -235,9 +235,9 @@ For scene 2 the perceived visual quality is near indistinguishable between CVAD 
 | SSIM | 0.9573 |	0.9688 |
 
 
-<i>MSE = Lower is better</i>
-<i>PSNR =  Higher is better</i>
-<i>SSIM = Higher is better</i>
+<i>MSE = Lower is better; </i>
+<i>PSNR =  Higher is better; </i>
+<i>SSIM = Higher is better.</i>
 
 ## Conclusion
 For graphics-related workloads in 3D-Pro use cases, in release 2112 Citrix has made impressive improvements compared to the previous releases. No denying Citrix has outdone themselves with this release and delivered on their HDX graphics improvements.
