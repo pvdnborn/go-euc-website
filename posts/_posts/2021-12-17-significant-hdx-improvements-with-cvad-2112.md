@@ -195,12 +195,14 @@ There is a direct correlation between the FPS count and the bandwidth output: wh
 | PSNR | 26.03dB | 27.32dB |
 | SSIM | 0.9315 |	0.9458 |
 
+</br>
 <i>
 MSE = Lower is better
-PSNR =  Higher is better
+
+PSNR =  Higher is better;
+
 SSIM = Higher is better
 </i>
-
 Image quality degradation is present for both CVAD 2109 and 2112 as depicted in the MSE, PSNR, and SSIM metrics, however, the visual image degradation is less apparent with CVAD 2112.
 
 ### Scene 9
@@ -216,9 +218,12 @@ Image quality degradation is present for both CVAD 2109 and 2112 as depicted in 
 | PSNR | 34.23dB | 34.21dB |
 | SSIM | 0.9571 |	0.9570 |
 
+</br>
 <i>
 MSE = Lower is better
-PSNR =  Higher is better
+
+PSNR =  Higher is better;
+
 SSIM = Higher is better
 </i>
 
@@ -236,9 +241,12 @@ For scene 2 the perceived visual quality is near indistinguishable between CVAD 
 | PSNR | 36.57dB | 38.11dB |
 | SSIM | 0.9573 |	0.9688 |
 
+</br>
 <i>
 MSE = Lower is better
-PSNR =  Higher is better
+
+PSNR =  Higher is better;
+
 SSIM = Higher is better
 </i>
 
