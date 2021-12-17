@@ -179,7 +179,7 @@ It is clearly visible CVAD 2109 is not capable to deliver a constant amount of F
 <iframe title="Comparison Session Bandwidth" aria-label="Grouped Bars" id="datawrapper-chart-M8dwD" src="https://datawrapper.dwcdn.net/M8dwD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="161"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
-While sending more frames to the endpoint does have a direct effect on the bandwidth output. This is therefore important to consider when running in a bandwidth-limited scenario. This will result in a quality degradation when leaving the Quality Slider on the option “Let the system decide”.
+There is a direct correlation between the FPS count and the bandwidth output: when sending more frames to the endpoint this does have a direct effect on the bandwidth output as seen in the CVAD 2112 results. This is therefore important to consider when running in a bandwidth-limited scenarios because this could  result in a quality degradation when leaving the Quality Slider on the option “Let the system decide”.
 
 ## Image Quality Assessment (IQA)
 
@@ -195,6 +195,10 @@ While sending more frames to the endpoint does have a direct effect on the bandw
 | PSNR | 26.03dB | 27.32dB |
 | SSIM | 0.9315 |	0.9458 |
 
+MSE = Lower is better
+PSNR =  Higher is better
+SSIM = Higher is better
+
 Image quality degradation is present for both CVAD 2109 and 2112 as depicted in the MSE, PSNR, and SSIM metrics, however, the visual image degradation is less apparent with CVAD 2112.
 
 ### Scene 9
@@ -206,9 +210,13 @@ Image quality degradation is present for both CVAD 2109 and 2112 as depicted in 
 
 | | 2109 | 2112 |
 |:-- | :-- | :-- |
-| MSE | 19.74 | 22.4 | 
+| MSE | 19.74 | 22.4 |
 | PSNR | 34.23dB | 34.21dB |
 | SSIM | 0.9571 |	0.9570 |
+
+MSE = Lower is better
+PSNR =  Higher is better
+SSIM = Higher is better
 
 For scene 2 the perceived visual quality is near indistinguishable between CVAD 2109 and 2112; the SSIM values are almost identical.
 
@@ -218,12 +226,15 @@ For scene 2 the perceived visual quality is near indistinguishable between CVAD 
 | :------: | :--: | :--: |
 | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-baseline.png" data-lightbox="scene-17-baseline"> ![scene-17-baseline]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-baseline.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2109.png" data-lightbox="scene-17-cvad2109"> ![scene-17-cvad2109]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2109.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2112.png" data-lightbox="scene-17-cvad2112"> ![scene-17-cvad2112]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2112.png) </a> |
 
-
 | | CVAD 2109 | CVAD 2112 |
 |:-- | :-- | :-- |
 | MSE | 11.07 | 7.96 | 
 | PSNR | 36.57dB | 38.11dB |
 | SSIM | 0.9573 |	0.9688 |
+
+MSE = Lower is better
+PSNR =  Higher is better
+SSIM = Higher is better
 
 ## Conclusion
 For graphics-related workloads in 3D-Pro use cases, in release 2112 Citrix has made impressive improvements compared to the previous releases. No denying Citrix has outdone themselves with this release and delivered on their HDX graphics improvements.
