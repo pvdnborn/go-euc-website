@@ -49,6 +49,7 @@ For the research, the “3D workload best practices” as described in the [Tech
 | HDX Adapative transport | Off | 
 | Hardware Acceleration or graphics |	Enabled |
 | H265 Decoding for Graphics | Enabled** |
+| Optimize for 3D graphics workload | Enabled |
 
 > \* Deviation from the best practices listed in the article
 > \*\* H265 decoding was not available for the used hardware graphics cards
