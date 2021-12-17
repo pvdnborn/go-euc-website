@@ -181,8 +181,7 @@ While sending more frames to the endpoint does have a direct effect on the bandw
 
 | Baseline | CVAD 2109 | CVAD 2112 |
 | :------: | :--: | :--: |
-| ![scene-1-baseline]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-baseline.png)
- | ![scene-1-cvad2109]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2109.png) | ![scene-1-cvad2112]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2112.png)  |
+| ![scene-1-baseline]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-baseline.png) | ![scene-1-cvad2109]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2109.png) | ![scene-1-cvad2112]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2112.png)  |
 
 Image quality degradation is present for both CVAD 2109 and 2112 as depicted in the MSE, PSNR, and SSIM metrics, however, the visual image degradation is less apparent with CVAD 2112.
 
