@@ -26,7 +26,9 @@ Source: [Citrix Virtual Apps and Desktops 7 2112](https://docs.citrix.com/en-us/
 
 According to the release notes Citrix is stating the improvement mentioned above. Based on previous researches and customer use-cases we can be confirmed a limitation in the protocol FPS is quick to reach when using GPU benchmark or high-end graphics applications. This is visible as the rendered FPS on the VM is higher compared to the delivered FPS shown in the example screenshot below.
 
+<a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/customer-use-case.png" data-lightbox="customer-case">
 ![customer-case]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/customer-use-case.png)
+</a>
 
 ## Setup and configuration
 Thanks to NVIDIA for sponsoring GO-EUC and providing the platform with the GPU capabilities necessary for testing the 3D pro capabilities and enhancements. NVIDIA kindly sent us four [T4 cards](https://www.nvidia.com/en-us/data-center/tesla-t4/){:target="_blank"} and one [M10 card](https://www.nvidia.com/en-us/data-center/tesla-m10/){:target="_blank"}} as described in the [infrastructure description](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}.
@@ -54,8 +56,9 @@ For the research, the “3D workload best practices” as described in the [Tech
 
 On the VDA, the [graphics quality slider](https://docs.citrix.com/en-us/linux-virtual-delivery-agent/current-release/configuration/configuring-graphics.html){:target="_blank"} was left at default, with “let the system decide” selected and “Pixel Perfect” off.
 
+<a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/cvad-image-quality.png" data-lightbox="cvad-image-quality">
 ![cvad-image-quality]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/cvad-image-quality.png)
-
+</a>
 With the default setting the image quality is selected based on available bandwidth ensuring that the set target framerate can be met. Additionally, the NVIDIA frame limiter has been disabled on the virtual machine so this is not limited to 60FPS rendering in the benchmark. This way the max FPS will be protocol limited.
 
 Additionally, for this research, an Image Quality Assessment (IQA) was also used in the comparisons. For the IQA the image quality degradation was calculated and compared to reference or baseline images taken from recordings of the runs, effectively using a Full-Reference (FR) approach. The recordings of the runs were made using an Elgato HD60s hardware capture card. The videos were captured using a fixed 60FPS framerate, an HD resolution, and a Constant Bitrate (CBR) using OBS Studio. This resulted in a video file with the following specifications:
@@ -117,8 +120,9 @@ This dedicated system is used as the baseline, running with a fixed FPS of 60, w
 
 For each build tested, three runs were done and for the final analysis, the best run for each build was selected. The best run was selected based on the end score of the Superposition Benchmark. The data used for the analysis aren’t tied to that specific run and therefore the data used is based on the averages as normal.
 
+<a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/benchmark-superposition-score.png" data-lightbox="benchmark-superposition-score">
 ![benchmark-superposition-score]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/benchmark-superposition-score.png)
-
+</a>
 ## Videos
 To experience the difference, we made the videos available on [YouTube](https://www.youtube.com/watch?v=6DkASfa0W2o&list=PLof9ZpIRuTnFZrClb4L0SzMNZjLPptABN){:target="_blank"}. Please take into account YouTube applies additional compression on the video which might affect the overall quality.
 
@@ -179,13 +183,11 @@ While sending more frames to the endpoint does have a direct effect on the bandw
 
 ## Image Quality Assessment (IQA)
 
+### Scene 1
+
 | Baseline | CVAD 2109 | CVAD 2112 |
 | :------: | :--: | :--: |
-| ![scene-1-baseline]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-baseline.png) | ![scene-1-cvad2109]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2109.png) | ![scene-1-cvad2112]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2112.png)  |
-
-Image quality degradation is present for both CVAD 2109 and 2112 as depicted in the MSE, PSNR, and SSIM metrics, however, the visual image degradation is less apparent with CVAD 2112.
-
-### Scene 1
+| <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-baseline.png" data-lightbox="scene-1-baseline"> ![scene-1-baseline]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-baseline.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2109.png" data-lightbox="scene-1-cvad2109"> ![scene-1-cvad2109]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2109.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2112.png" data-lightbox="scene-1-cvad2112"> ![scene-1-cvad2112]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-1-cvad2112.png) </a> |
 
 | | CVAD 2109 | CVAD 2112 |
 |:-- | :-- | :-- |
@@ -193,7 +195,14 @@ Image quality degradation is present for both CVAD 2109 and 2112 as depicted in 
 | PSNR | 26.03dB | 27.32dB |
 | SSIM | 0.9315 |	0.9458 |
 
-### Scene 2
+Image quality degradation is present for both CVAD 2109 and 2112 as depicted in the MSE, PSNR, and SSIM metrics, however, the visual image degradation is less apparent with CVAD 2112.
+
+### Scene 9
+
+| Baseline | CVAD 2109 | CVAD 2112 |
+| :------: | :--: | :--: |
+| <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-9-baseline.png" data-lightbox="scene-9-baseline"> ![scene-9-baseline]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-9-baseline.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-9-cvad2109.png" data-lightbox="scene-9-cvad2109"> ![scene-9-cvad2109]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-9-cvad2109.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-9-cvad2112.png" data-lightbox="scene-9-cvad2112"> ![scene-9-cvad2112]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-9-cvad2112.png) </a> |
+
 
 | | 2109 | 2112 |
 |:-- | :-- | :-- |
@@ -203,7 +212,12 @@ Image quality degradation is present for both CVAD 2109 and 2112 as depicted in 
 
 For scene 2 the perceived visual quality is near indistinguishable between CVAD 2109 and 2112; the SSIM values are almost identical.
 
-### Scene 3
+### Scene 17
+
+| Baseline | CVAD 2109 | CVAD 2112 |
+| :------: | :--: | :--: |
+| <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-baseline.png" data-lightbox="scene-17-baseline"> ![scene-17-baseline]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-baseline.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2109.png" data-lightbox="scene-17-cvad2109"> ![scene-17-cvad2109]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2109.png) </a> | <a href="{{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2112.png" data-lightbox="scene-17-cvad2112"> ![scene-17-cvad2112]({{site.baseurl}}/assets/images/posts/085-significant-hdx-improvements-with-cvad-2112/scene-17-cvad2112.png) </a> |
+
 
 | | CVAD 2109 | CVAD 2112 |
 |:-- | :-- | :-- |
