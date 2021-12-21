@@ -31,7 +31,7 @@ According to the release notes Citrix is stating the improvement mentioned above
 </a>
 
 ## Setup and configuration
-Thanks to NVIDIA for sponsoring GO-EUC and providing the platform with the GPU capabilities necessary for testing the 3D pro capabilities and enhancements. NVIDIA kindly sent us four [T4 cards](https://www.nvidia.com/en-us/data-center/tesla-t4/){:target="_blank"} and one [M10 card](https://www.nvidia.com/en-us/data-center/tesla-m10/){:target="_blank"}} as described in the [infrastructure description](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}.
+Thanks to NVIDIA for sponsoring GO-EUC and providing the platform with the GPU capabilities necessary for testing the 3D pro capabilities and enhancements. NVIDIA kindly sent us four [T4 cards](https://www.nvidia.com/en-us/data-center/tesla-t4/){:target="_blank"} and one [M10 card](https://www.nvidia.com/en-us/data-center/tesla-m10/){:target="_blank"} as described in the [infrastructure description](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}.
 
 Contrary to the regular researches, this research is mainly focused on graphics performance and capabilities and as such, the research is conducted slightly differently than normal.
 
