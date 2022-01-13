@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NVIDIA framebuffer sizes for Windows 10"
-hidden: true
+hidden: false
 authors: [ryan, eltjo, tom]
 reviewers: [marcel]
 categories: [ 'NVIDIA' ]
