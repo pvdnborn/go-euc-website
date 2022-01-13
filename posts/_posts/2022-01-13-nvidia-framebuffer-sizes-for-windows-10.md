@@ -8,12 +8,12 @@ categories: [ 'NVIDIA' ]
 tags: [ 'CVAD', 'NVIDIA','Framebuffer', 'vGPU']
 image: assets/images/posts/081-nvidia-framebuffer-sizes-for-windows-10/081-nvidia-framebuffer-sizes-feature-image.png
 ---
-Due to global pandeminc, working from home has become a stable part of our new daily routines, and the VDI has become a more important commodity as a result.
+Due to global pandemic, working from home has become a stable part of our new daily routines, and the VDI has become a more important commodity as a result.
 
 Nowadays the workloads are increasing with GPU-compatible applications in both regular Office, and knowledge worker workloads. Sizing a GPU-enabled environment is primarily determined by the framebuffer available in the physical GPU. But then the question arises, how does Windows go about in the usage of the available framebuffer memory? This research will deep dive into the framebuffer sizes and usage in a Windows 10 VDI scenario.
 
 ## Framebuffer and sizing recommendations
-Let’s first start with explaining what the framebuffer is before going into the results. A framebuffer, also referred to as the framestore, is a portion of random-access memory (RAM) on the grapics card (or GPU), containing a bitmap that drives a video display. It acts like a memory buffer and contains the data representing all the pixels in a complete video frame. Modern video cards contain framebuffer circuitry in their cores. This circuitry converts an in-memory bitmap into a video signal that can be displayed on a computer monitor.
+Let’s first start with explaining what the framebuffer is before going into the results. A framebuffer, also referred to as the framestore, is a portion of random-access memory (RAM) on the graphics card (or GPU), containing a bitmap that drives a video display. It acts as a memory buffer and contains the data representing all the pixels in a complete video frame. Modern video cards contain framebuffer circuitry in their cores. This circuitry converts an in-memory bitmap into a video signal that can be displayed on a computer monitor.
 
 Source: [Framebuffer - Wikipedia](https://en.wikipedia.org/wiki/Framebuffer){:target="_blank"}
 
@@ -32,13 +32,13 @@ Source: [Application-Sizing-Guide-NVIDIA-GRID-Virtual-PC.pdf](https://www.nvidia
 As explained above, multiple factors will influence the framebuffer size, but how is Windows utilizing the framebuffer when the framebuffer size is increased and therefore more framebuffer is available to Windows.
 
 ## Infrastructure and configuration
-This research has taken place on the GO-EUC platform, which is described [here](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}. The default operating system is Windows 10 21H1 delivered using Citrix Virtual Apps and Desktops. This research is not focused on density, like most studies, but the implications of various framebuffer sizes. To ensure all the results can be compared, the maximum virtual machine density is configured, based on the largest framebuffer configuration. The host has 4 NVIDIA Tesla T4 cards, each with 16GB of memory available, summing up to 64GB in total. That means that in this case, all tests are done using 16 VMs. The amount of VM’s is based on 16 multiplied by 4GB  which is equal to 64GB memory, the maximum capacity of the NVIDIA GPU’s available on the host. Using 4GB as the maximum this will determined that the 4Q profile will be used as the max.
+This research has taken place on the GO-EUC platform, which is described [here](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}. The default operating system is Windows 10 21H1 delivered using Citrix Virtual Apps and Desktops. This research is not focused on density, like most studies, but on the implications of various framebuffer sizes. To ensure all the results can be compared, the maximum virtual machine density is configured, based on the largest framebuffer configuration. The host has 4 NVIDIA Tesla T4 cards, each with 16GB of memory available, summing up to 64GB in total. That means that in this case, all tests are done using 16 VMs. The amount of VM’s is based on 16 multiplied by 4GB  which is equal to 64GB memory, the maximum capacity of the NVIDIA GPU’s available on the host. Using 4GB as the maximum will be determined that the 4Q profile will be used as the max.
 
-Because the driver version could also have impact on the testresults, it is worth mentioning that the driver version used was version 13.0, the lastest version available at the time of testing. 
+Because the driver version could also have an impact on the test results, it is worth mentioning that the driver version used was version 13.0, the latest version available at the time of testing. 
 
 This research will use two primary data sources, Remote Display Analyzer, which provides the data from an individual user (session charts), and ESXtop data including NVIDIA SMI to provide the perspective from the hypervisor (host charts).
 
-The NVIDIA System Management Interface (nvidia-smi) is a command line utility that is used to collect the NVIDIA performance data from the host perspective. More information about NVIDIA SMI can be found [here](https://developer.nvidia.com/nvidia-system-management-interface){:target="_blank"}.
+The NVIDIA System Management Interface (nvidia-smi) is a command-line utility that is used to collect the NVIDIA performance data from the host perspective. More information about NVIDIA SMI can be found [here](https://developer.nvidia.com/nvidia-system-management-interface){:target="_blank"}.
 
 The following framebuffer sizes are included in this research:
 
@@ -48,7 +48,7 @@ The following framebuffer sizes are included in this research:
 
 All scenarios are configured with a 1920x1080 resolution and a single display. The only configuration that is changed between each scenario is the framebuffer size. The recommended Citrix policies are used, which are described [here](https://docs.citrix.com/en-us/tech-zone/design/design-decisions/hdx-graphics.html#3d-workload){:target="_blank"}.
 
-This research is executed using the GO-EUC testing methodology, which is described [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}. With the expection of the decision to extend the workload running time to a total of 90 minutes, as this will ensure, that at least one cycle of the workload is completed for each individual simulated user. 
+This research is executed using the GO-EUC testing methodology, which is described [here](https://www.go-euc.com/insight-in-the-testing-methodology-2020/){:target="_blank"}. Except for the workload running time as this is extended to a total of 90 minutes. This will ensure, that at least one cycle of the workload is completed for each individual simulated user. 
 
 The default GO-EUC knowledge worker workload is used for two reasons: first and foremost to see the effect of the framebuffer usage in a regular workload. Secondly, it is not intended to fully utilize the GPU as this will have a negative effect on the framebuffer usage. The GO-EUC knowledge worker workload is a productivity workload using Microsoft Office, web-based content, and videos. This workload does not include any heavy GPU applications.
 
@@ -95,7 +95,7 @@ It is important to consider that framebuffer usage is <b>very</b> dependent on t
 
 Worth mentioning is that there is no clear definition of what the ‘short time is’ that NVIDIA mentions in their documentation.
 
-The data shown for the 1Q profile a peak usage of 98% (1003MB) for three minutes, but is that a short time? On average the 1Q profile is spot on, showing an average usage of 68% (712MB).
+The data shown for the 1Q profile has a peak usage of 98% (1003MB) for three minutes, but is that a short time? On average the 1Q profile is spot on, showing an average usage of 68% (712MB).
 
 As the workload is the same between the different profiles, it is expected to see a similar pattern in the GPU utilization from a host perspective.
 
