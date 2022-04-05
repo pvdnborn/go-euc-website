@@ -166,6 +166,18 @@ authors:
     linkedin: https://www.linkedin.com/in/drtritsch
     page: benny-tritsch
     description: "Dr. Benny Tritsch is a self-employed end-user computing expert located in Germany, specializing in modern workplace designs, graphics remoting and end-user experience analysis."
+  anton:
+    reviewer: false
+    name: Anton 
+    display_name: Anton van Pelt
+    company: AntonvanPelt.com
+    title: Senior IT consultant 
+    picture: 'assets/images/authors/anton.png'
+    web: https://www.antonvanpelt.com/
+    twitter: https://twitter.com/antonvanpelt
+    linkedin: https://www.linkedin.com/in/antonvanpelt/
+    page: anton-van-pelt
+    description: "Anton van Pelt is an independent senior IT consultant and architect with over 18 years of experience in complex IT environments."
 
 # Sponsors
 sponsors:
