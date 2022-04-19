@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Is Citrix Virtual Apps and Desktops 2112 improving overall scalability?"
-hidden: true
+hidden: false
 authors: [ryan]
 reviewers: [eltjo, silas, gerjon]
 categories: [ 'CVAD' ]
