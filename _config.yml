@@ -178,6 +178,17 @@ authors:
     linkedin: https://www.linkedin.com/in/antonvanpelt/
     page: anton-van-pelt
     description: "Anton van Pelt is an independent senior IT consultant and architect with over 18 years of experience in complex IT environments."
+  silas:
+    reviewer: true
+    name: Silas 
+    display_name: Silas Arentsen
+    company: STYR-IT
+    title: Freelance System Engineer
+    picture: 'assets/images/authors/silas.png'
+    web: https://styr-it.nl/
+    linkedin: https://www.linkedin.com/in/silasarentsen/
+    page: silas-arentsen
+    description: "Silas is calm and reliable system engineer. Love complex challenges and automating repetitive tasks. Extensive experience on Citrix (CVAD, ADC, CEM) and Microsoft products. Very eager to learn and open to new challenges."
 
 # Sponsors
 sponsors:
