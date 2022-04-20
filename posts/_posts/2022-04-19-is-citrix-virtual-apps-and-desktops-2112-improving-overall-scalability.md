@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Is Citrix Virtual Apps and Desktops 2112 improving overall scalability?"
-hidden: true
+hidden: false
 authors: [ryan]
 reviewers: [eltjo, silas, gerjon]
 categories: [ 'CVAD' ]
@@ -45,46 +45,47 @@ As stated, this research is focused on scalability. Based on the improvement in 
 
 To confirm this improvement, let's first focus on the hypervisor performance results.
 
-<iframe title="Host CPU Utilization %" aria-label="Interactive line chart" id="datawrapper-chart-7N97l" src="https://datawrapper.dwcdn.net/7N97l/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu.json' %}
 
-<iframe title="Comparison Host CPU Utilization in %" aria-label="Grouped Bars" id="datawrapper-chart-ReM9G" src="https://datawrapper.dwcdn.net/ReM9G/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="224"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<br/>
+
+{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu-compare.json' %}
 
 These results show there is minimal to no difference between the tested versions. The results are not as expected and are the first indication that the release notes are not entirely correct.
 
-<iframe title="Host Free Memory in mbytes" aria-label="Interactive line chart" id="datawrapper-chart-En62O" src="https://datawrapper.dwcdn.net/En62O/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-mem.json' %}
 
-<iframe title="Comparison Host Free Memory in mbytes in %" aria-label="Grouped Bars" id="datawrapper-chart-LT3ac" src="https://datawrapper.dwcdn.net/LT3ac/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="224"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<br/>
+
+{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu-compare.json' %}
 
 The memory footprint between the various versions is similar and shows a minimal increase.
 
-<iframe title="Host Storage Reads/sec" aria-label="Interactive line chart" id="datawrapper-chart-AiV3A" src="https://datawrapper.dwcdn.net/AiV3A/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-reads.json' %}
 
-<iframe title="Host Storage Writes/sec" aria-label="Interactive line chart" id="datawrapper-chart-WvFXj" src="https://datawrapper.dwcdn.net/WvFXj/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<br/>
 
-<iframe title="Comparison Host Storage in %" aria-label="Grouped Bars" id="datawrapper-chart-pengj" src="https://datawrapper.dwcdn.net/pengj/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="329"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-writes.json' %}
+
+<br/>
+
+{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-compare.json' %}
 
 There is a notable difference in both reads and writes. However, depending on the storage configuration, this will be unnoticed from a user experience perspective. This behavior cannot be directly clarified but won't affect the stability negatively but will require further investigation.
 
-<iframe title="Session Frames per Second (FPS)" aria-label="Interactive line chart" id="datawrapper-chart-fN3gu" src="https://datawrapper.dwcdn.net/fN3gu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-fps.json' %}
 
-<iframe title="Comparison Session Frames per Second (FPS) in %" aria-label="Grouped Bars" id="datawrapper-chart-8yXi6" src="https://datawrapper.dwcdn.net/8yXi6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="201"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<br/>
+
+{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-fps-compare.json' %}
 
 The previous research showed significant improvement in the session FPS compared to the earlier versions. These results indicate a different pattern primarily caused by the outliers in the 1912 results. For some reason, the 1912 VDA tests consistently produced more FPS at the end of the video, resulting in a higher average, which directly impacts the results.
 
-<iframe title="Session Round Trip Time (RTT)" aria-label="Interactive line chart" id="datawrapper-chart-yeay0" src="https://datawrapper.dwcdn.net/yeay0/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-rtt.json' %}
 
-<iframe title="Comparison Session Round Trip Time (RTT) in %" aria-label="Grouped Bars" id="datawrapper-chart-ADdIz" src="https://datawrapper.dwcdn.net/ADdIz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="224"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<br/>
+
+{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-rtt-compare.json' %}
 
 It is essential to know a high round trip time will negatively influence the user experience as there is a higher delay in interaction with the session. The results show a decrease in RTT for all versions. As the difference might be 9%, the absolute difference is only 2ms, which any user will not directly notice. 
 
