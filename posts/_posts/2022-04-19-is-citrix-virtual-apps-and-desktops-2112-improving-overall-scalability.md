@@ -45,47 +45,35 @@ As stated, this research is focused on scalability. Based on the improvement in 
 
 To confirm this improvement, let's first focus on the hypervisor performance results.
 
-{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu.json' %}
+{% include chart.html type='line' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu.json' %}
 
-<br/>
-
-{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu-compare.json' %}
+{% include chart.html type='bar' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu-compare.json' %}
 
 These results show there is minimal to no difference between the tested versions. The results are not as expected and are the first indication that the release notes are not entirely correct.
 
-{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-mem.json' %}
+{% include chart.html type='line' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-mem.json' %}
 
-<br/>
-
-{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu-compare.json' %}
+{% include chart.html type='bar' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-cpu-compare.json' %}
 
 The memory footprint between the various versions is similar and shows a minimal increase.
 
-{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-reads.json' %}
+{% include chart.html type='line' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-reads.json' %}
 
-<br/>
+{% include chart.html type='line' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-writes.json' %}
 
-{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-writes.json' %}
-
-<br/>
-
-{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-compare.json' %}
+{% include chart.html type='bar' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/host-storage-compare.json' %}
 
 There is a notable difference in both reads and writes. However, depending on the storage configuration, this will be unnoticed from a user experience perspective. This behavior cannot be directly clarified but won't affect the stability negatively but will require further investigation.
 
-{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-fps.json' %}
+{% include chart.html type='line' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-fps.json' %}
 
-<br/>
-
-{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-fps-compare.json' %}
+{% include chart.html type='bar' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-fps-compare.json' %}
 
 The previous research showed significant improvement in the session FPS compared to the earlier versions. These results indicate a different pattern primarily caused by the outliers in the 1912 results. For some reason, the 1912 VDA tests consistently produced more FPS at the end of the video, resulting in a higher average, which directly impacts the results.
 
-{% include chart-line.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-rtt.json' %}
+{% include chart.html type='line' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-rtt.json' %}
 
-<br/>
-
-{% include chart-bar.html data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-rtt-compare.json' %}
+{% include chart.html type='bar' data_file='assets/data/086-is-citrix-virtual-apps-and-desktops-2112-improving-overall-scalability/session-rtt-compare.json' %}
 
 It is essential to know a high round trip time will negatively influence the user experience as there is a higher delay in interaction with the session. The results show a decrease in RTT for all versions. As the difference might be 9%, the absolute difference is only 2ms, which any user will not directly notice. 
 
