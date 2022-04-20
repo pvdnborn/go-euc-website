@@ -1,6 +1,6 @@
 {
     "title":  "Comparison Session Round Trip Time (RTT) in %",
-    "subTitle":  "",
+    "subTitle":  "Lower is better",
     "series":  [
                    {
                        "serie":  "CVAD 1912 LTSR",

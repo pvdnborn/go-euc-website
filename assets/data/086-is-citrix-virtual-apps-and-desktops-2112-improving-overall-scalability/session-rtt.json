@@ -1,6 +1,6 @@
 {
     "title":  "Session Round Trip Time (RTT)",
-    "subTitle":  "",
+    "subTitle":  "Lower is better",
     "series":  [
                    {
                        "serie":  "CVAD 1912 LTSR",
