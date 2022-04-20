@@ -1,0 +1,187 @@
+<canvas id="temp" width="800" height="450"></canvas>
+
+<script>
+    function fetchJSONFile(path, id, callback) {
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function() {
+            if (httpRequest.readyState === 4) {
+                if (httpRequest.status === 200) {
+                    var data = JSON.parse(httpRequest.responseText);
+                    if (callback) callback(data, id);
+                }
+            }
+        };
+        httpRequest.open('GET', path);
+        httpRequest.send();
+    }
+
+    function guidGenerator() {
+        var S4 = function() {
+            return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+        };
+
+        return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+    }
+
+    function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+    }
+
+    function createChart(json, id) {
+        var title = json.title
+        var subTitle = json.subTitle
+        
+        var labels = json.series.map(function(e) {
+            return e.data.map(function(d) {
+                return d.x
+            });
+        });
+
+        var data = json.series.map(function(e) {
+            return e.y
+        });
+
+        var obj = json.series.map(function(e) {
+            return e
+        });
+
+        var cleanLabels = []
+        labels.forEach(function (labelArray, i) {
+            
+            labelArray.forEach(function(label, j){
+                cleanLabels.push(label);
+            });            
+        });
+
+        cleanLabels = cleanLabels.filter(onlyUnique);
+
+        const image = new Image();
+        image.src = '/assets/images/watermark.png';
+
+        const custom_canvas_background_color = {
+            id: 'custom_canvas_background_color',
+            beforeDraw: (chart, args, options) => {
+                
+                if (image.complete) {
+                    const ctx = chart.ctx;
+                    const {top, left, width, height} = chart.chartArea;
+                    const x = left + width / 2 - image.width / 2;
+                    const y = top + height / 2 - image.height / 2;
+                    ctx.drawImage(image, x, y);
+                } else {
+                    image.onload = () => chart.draw();
+                }
+
+                const ctx = chart.canvas.getContext('2d');
+                ctx.save();
+                ctx.globalCompositeOperation = 'destination-over';
+                ctx.fillStyle = '#333D4E';
+                ctx.fillRect(0, 0, chart.width, chart.height);
+                ctx.restore();
+            },
+        };
+
+        colors = ['#387b94', '#ed7d31', '#9f9f9f', '#ffc000']
+
+        var config = {
+            type: 'line',
+            data: {
+                labels: cleanLabels,
+                backgroundColor: colors,
+            },
+            plugins: [ChartDataLabels, custom_canvas_background_color],
+            options: {
+                plugins: {
+                    tooltip: {
+                        enabled: true
+                    },
+                    subtitle: {
+                        display: true,
+                        text: subTitle,
+                        position: 'bottom',
+                        color: '#ffffff',
+                        font: {
+                            size: 16,
+                            style: 'italic'
+                        },
+                        padding: {
+                            top: 10,
+                            bottom: 10
+                        }
+                    },
+                    datalabels: {
+                        display: false,
+                        formatter: function(value, context) {
+                            return data[context.dataIndex];
+                        },
+                        color: '#ffffff',
+                        anchor: 'end',
+                        align: 'bottom',
+                        offset: 8
+                    },
+                    legend: {
+                        labels: {
+                            color: '#ffffff',
+                        },
+                        display: true,
+                        position: 'top'
+                    },
+                    title: {
+                        display: true,
+                        text: title,
+                        color: '#ffffff',
+                        font: {
+                            size: 26
+                        }
+                    },
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#ffffff'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            display: true,
+                            color: '#ffffff'
+                        }
+                    }
+                },
+            },
+        };
+
+        var ctx = document.getElementById(id).getContext("2d");
+        var lineChart = new Chart(ctx, config);     
+    
+        obj.forEach(function (value, i) {
+
+            values = value.data.map(function (e) {
+                return e.y
+            });
+
+            lineChart.data.datasets.push({
+                backgroundColor: colors[i],
+                borderColor: colors[i],
+                label: value.serie,
+                data: values,
+                tension: 0.5,
+                pointStyle: 'circle',
+                pointRadius: 0,
+                fill: false
+            }); 
+        })
+        
+        lineChart.update();
+    }
+
+    var id = guidGenerator();
+    var e = document.getElementById("temp");
+    e.id = id;
+
+    fetchJSONFile("/{{ include.data_file }}", id, createChart);
+</script>
