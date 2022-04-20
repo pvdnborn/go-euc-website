@@ -55,39 +55,25 @@ The default GO-EUC knowledge worker workload is used for two reasons: first and 
 ## Expectation and results
 At GO-EUC there was a debate on how the framebuffer is behaving when the size is increased. Some of us expected to see the same results whereas others instead were of the opinion that Windows would most likely claim more of the framebuffer. So, beforehand there was no clear consensus on the expected outcome.
 
-<iframe title="Session Frames per Second (FPS)" aria-label="Interactive line chart" id="datawrapper-chart-HvVRx" src="https://datawrapper.dwcdn.net/HvVRx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='line' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-fps.json' %}
 
-<iframe title="Average Session Frames per Second (FPS)" aria-label="Grouped Bars" id="datawrapper-chart-yclMH" src="https://datawrapper.dwcdn.net/yclMH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="204"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='bar' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-fps-compare.json' %}
 
 It is expected to see a minimal to no difference in the session FPS as the workload is neither CPU nor GPU heavy. As the Frames per Second is a highly sensitive metric a difference of 5% will not be noticeable and is most likely caused by randomization in the workload. It is important to ensure the overall pattern is similar, which is the case for this dataset.
 
-<iframe title="Session GPU Usage %" aria-label="Interactive line chart" id="datawrapper-chart-l8QyB" src="https://datawrapper.dwcdn.net/l8QyB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='line' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-gpu.json' %}
 
-<iframe title="Session GPU Usage % Max." aria-label="Grouped Bars" id="datawrapper-chart-mGS1c" src="https://datawrapper.dwcdn.net/mGS1c/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="204"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='bar' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-gpu-compare.json' %}
 
 What’s more, the session GPU usage confirms a single user is not maximizing the GPU capabilities, and therefore should not impact the framebuffer usage. The comparison chart shows the maximum session GPU.
 
-<iframe title="Session Framebuffer Usage in MB" aria-label="Interactive line chart" id="datawrapper-chart-vCu3P" src="https://datawrapper.dwcdn.net/vCu3P/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='line' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-memory-mb.json' %}
 
-<iframe title="Session Framebuffer Usage in MB Avg." aria-label="Grouped Bars" id="datawrapper-chart-XWmlq" src="https://datawrapper.dwcdn.net/XWmlq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="181"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='bar' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-memory-mb-compare.json' %}
 
-<iframe title="Session Framebuffer Usage in MB Max." aria-label="Grouped Bars" id="datawrapper-chart-9irfD" src="https://datawrapper.dwcdn.net/9irfD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="181"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='line' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-memory-percentage.json' %}
 
-<iframe title="Session Framebuffer Usage %" aria-label="Interactive line chart" id="datawrapper-chart-W48Ew" src="https://datawrapper.dwcdn.net/W48Ew/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
-
-<iframe title="Session Framebuffer Usage % Avg." aria-label="Grouped Bars" id="datawrapper-chart-7gVHp" src="https://datawrapper.dwcdn.net/7gVHp/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="181"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
-
-<iframe title="Session Framebuffer Usage % Max." aria-label="Grouped Bars" id="datawrapper-chart-HIyeL" src="https://datawrapper.dwcdn.net/HIyeL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="181"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='bar' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/session-memory-percentage-compare.json' %}
 
 The various framebuffer charts above, show the session GPU framebuffer usages in both MB’s and percentage. These values are the absolute values. In terms of framebuffer usage, there are two important factors to take into account. First, it is important to look at the average usage of the workload, which should be around 70% framebuffer usage according to the NVIDIA recommendation. Secondly, it is expected to get higher peak performance, but those should not exceed 90% for a short time.
 
@@ -99,29 +85,23 @@ The data shown for the 1Q profile has a peak usage of 98% (1003MB) for three min
 
 As the workload is the same between the different profiles, it is expected to see a similar pattern in the GPU utilization from a host perspective.
 
-<iframe title="Host GPU Utilization %" aria-label="Interactive line chart" id="datawrapper-chart-1G8LH" src="https://datawrapper.dwcdn.net/1G8LH/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='line' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/host-gpu.json' %}
 
-<iframe title="Host GPU Utilization % Avg." aria-label="Grouped Bars" id="datawrapper-chart-n86ie" src="https://datawrapper.dwcdn.net/n86ie/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="204"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='bar' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/host-gpu-compare.json' %}
 
 The overall GPU utilization for this research is low, as only 16 users are simulated on the host. The overall pattern looks very consistent showing an increasing GPU utilization caused by adding more simulated users over the first 60 minutes. There is a noticeable difference in the last 30 minutes which is caused by the workload randomization.
 
-<iframe title="Host GPU Memory Utilization %" aria-label="Interactive line chart" id="datawrapper-chart-7bTIi" src="https://datawrapper.dwcdn.net/7bTIi/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='line' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/host-gpu-mem.json' %}
 
-<iframe title="Host GPU Memory Utilization % Avg." aria-label="Grouped Bars" id="datawrapper-chart-ehzfD" src="https://datawrapper.dwcdn.net/ehzfD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="204"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='bar' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/host-gpu-mem-compare.json' %}
 
 The host GPU memory utilization is the same as the host GPU utilization. As the overall usage is very low, this difference won’t be directly noticeable on this scale. However, this might be different when the load is increasing. 
 
 Now from a host CPU perspective, it is expected to see no difference between the scenarios.
 
-<iframe title="Host CPU Utilization %" aria-label="Interactive line chart" id="datawrapper-chart-hod7c" src="https://datawrapper.dwcdn.net/hod7c/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='line' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/host-cpu.json' %}
 
-<iframe title="Host CPU Utilization % Avg." aria-label="Grouped Bars" id="datawrapper-chart-GWnGE" src="https://datawrapper.dwcdn.net/GWnGE/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="204"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+{% include chart.html type='bar' data_file='assets/data/081-nvidia-framebuffer-sizes-for-windows-10/host-cpu-compare.json' %}
 
 The main difference is due to the start of the workload, which is caused by the short idle time for this scenario. The pattern is spot on after 15 minutes and is overall very low.
 
