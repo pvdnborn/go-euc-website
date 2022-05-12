@@ -3,7 +3,7 @@ layout: post
 title:  "Performance impact of Microsoft Office 2021 LTSC"
 hidden: false
 authors: [krishan]
-reviewers: [omar, jeff, bas, sven, tom, ryan]
+reviewers: [omar, jeff, bas, sven, tom, ryan, eltjo]
 categories: [ 'Office' ]
 tags: [ 'Office', '2019', '2021', '2016']
 image: assets/images/posts/091-performance-impact-of-microsoft-office-2021-ltsc/performance-impact-of-microsoft-office-2021-ltsc-feature-image.png
