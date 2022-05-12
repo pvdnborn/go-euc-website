@@ -10,7 +10,7 @@ image: assets/images/posts/091-performance-impact-of-microsoft-office-2021-ltsc/
 ---
 Microsoft released Office 2021 LTSC on October 5th, 2021. Microsoft Office is a popular software suite, widely used by both consumers and organizations. It is most well-known for programs such as Word, Excel, PowerPoint and Outlook.
 
-LTSC is a term that is also used with Windows 10 and Windows Server on-premises editions. This article covers the notable differences between the two editions, as well as the performance impact of the LTSC version compared to Microsoft Office 2021. 
+LTSC, which stands for Long-Term Servicing Channel, is a term that is also used with Windows 10 and Windows Server on-premises editions. This article covers the notable differences between the two other editions, as well as the performance impact of the LTSC version compared to Microsoft Office 2021. 
 
 This release is the most recent perpetual or non-subscription based Office version of Microsoft. This release is an LTSC version that will not receive any new features. However, the monthly security and quality updates will be released. More information can be found [here](https://docs.microsoft.com/en-us/officeupdates/update-history-office-2021){:target="_blank"}.
 
@@ -34,7 +34,7 @@ Before covering the results, some of the new features are summed up:
   * Dark Mode in Word.
   * Performance improvements in Word, Excel, PowerPoint and Outlook.
 
-For a complete overview of all the new features and improvements, please read the following article: [What's new in Office 2021 - Microsoft](https://support.microsoft.com/en-us/office/what-s-new-in-office-2021-43848c29-665d-4b1b-bc12-acd2bfb3910a#:~:text=In%20Office%202021%2C%20you'll,features%2C%20and%20so%20much%20more!){:target=_"blank"}.
+For a complete overview of all the new features and improvements, please read the following article: [What's new in Office 2021 - Microsoft](https://support.microsoft.com/en-us/office/what-s-new-in-office-2021-43848c29-665d-4b1b-bc12-acd2bfb3910a#:~:text=In%20Office%202021%2C%20you'll,features%2C%20and%20so%20much%20more!){:target="_blank"}.
 
 ## Infrastructure and configuration
 This research has taken place on the GO-EUC infrastructure, which is described [here](https://www.go-euc.com/architecture-and-hardware-setup-overview-2020/){:target="_blank"}. All Windows 10 21H2 deployments are created using a similar MDT deployment, including all required software. Conform best practices, the latest Windows updates are applied, including the recommended optimization template of the latest available Citrix Optimizer version. 
