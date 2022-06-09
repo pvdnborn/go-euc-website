@@ -189,6 +189,18 @@ authors:
     linkedin: https://www.linkedin.com/in/silasarentsen/
     page: silas-arentsen
     description: "Silas is calm and reliable system engineer. Love complex challenges and automating repetitive tasks. Extensive experience on Citrix (CVAD, ADC, CEM) and Microsoft products. Very eager to learn and open to new challenges."
+  esther:
+    reviewer: false
+    name: Esther 
+    display_name: Esther Barthel
+    company: cognition IT
+    title: Solutions Architect
+    picture: 'assets/images/authors/esther.png'
+    web: https://www.cloud-devops.ninja/
+    twitter: https://twitter.com/virtuEs_IT
+    linkedin: https://www.linkedin.com/in/ebarthel/
+    page: esther-barthel
+    description: "Esther Barthel is an independentsolutions architect focussed on End User Computing, DevOps engineering and Cloud."
 
 # Sponsors
 sponsors:
