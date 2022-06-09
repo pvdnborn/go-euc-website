@@ -23,7 +23,7 @@ Within GO-EUC, there are several DevOps principles we apply in our work:
   * Think big, start small
 
 ### Collaboration and recognition 
-Even though collaboration a principal should be evident, it is a critical factor in the success of the DevOps way of working. When great minds collaborate together, this can lead to a brilliant outcome. All information and output produced is available and accessible to each member to enable and facilitate collaboration. Furthermore , getting proper recognition is vital to support the individual brands of our members. Our platform facilitates and helps to create and share content, so they can grow in the EUC community.
+Even though collaboration a principal should be evident, it is a critical factor in the success of the DevOps way of working. When great minds collaborate together, this can lead to a brilliant outcome. All information and output produced is available and accessible to each member to enable and facilitate collaboration. Furthermore, getting proper recognition is vital to support the individual brands of our members. Our platform facilitates and helps to create and share content, so they can grow in the EUC community.
 
 ### Automation and reproducibility 
 It is an utopia to automate everything, and there needs to be a consideration if it will be beneficial even to automate it. One of the architectural principles at GO-EUC is automate *where possible*. This is essential to keep our standards high and ensure the reproducibility of what we do.
@@ -43,17 +43,17 @@ To enable this kind of approach, the following technologies are selected:
 
 | Vendor | Solution | Reason |
 | :-------- |:----------| :---------- |
-| Hashicorp | Terraform | IaC, which supports all major clouds and vendors. |
-| Hashicorp | Packer | IaC image management with support for major clouds and vendors. |
-| RedHat | Ansible | Desired state with support for both Linux and Windows. |
-| Docker Inc. | Docker | Containers for a couple of services. |
-| Microsoft | PowerShell | Main scripting language used as our last resort. |
-| Microsoft | Azure DevOps | Primary DevOps solution for pipelines. GitHub actions could replace it. |
-| Microsoft | GitHub | Source code location. |
+| Hashicorp | [Terraform](https://www.terraform.io/){:target="_blank"} | IaC, which supports all major clouds and vendors. |
+| Hashicorp | [Packer](https://www.packer.io/){:target="_blank"} | IaC image management with support for major clouds and vendors. |
+| RedHat | [Ansible](https://www.ansible.com/){:target="_blank"} | Desired state with support for both Linux and Windows. |
+| Docker Inc. | [Docker](https://www.docker.com/){:target="_blank"} | Containers for a couple of services. |
+| Microsoft | [PowerShell](https://docs.microsoft.com/en-us/powershell/){:target="_blank"} | Main scripting language used as our last resort. |
+| Microsoft | [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/){:target="_blank"} | Primary DevOps solution for pipelines. |
+| Microsoft | [GitHub](https://github.com){:target="_blank"} | Source code location. |
 
 These technologies enable us to achieve our goals. As one of the GO-EUC principles is continuous improvement, it is also important to keep track of new and emerging technologies that might be a better fit. The team has decided on the the technology stack listed above, but who knows what new insights the future might bring.
 
 ## Next steps
-More information will be provided in upcoming publications on how our repository is set up and how you can use it in your environments.
+More information will be provided in upcoming publications on how [our repository](https://github.com/GO-EUC/go-euc-lab){:target="_blank"} is set up and how you can use it in your environments.
 
 Photo by [S Migaj](https://unsplash.com/@simonmigaj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/yoga?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
