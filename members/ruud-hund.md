@@ -34,3 +34,4 @@ You can get in touch via LinkedIn
 {% endif %}
 </div>
 
+{% include contributions.html name='ruud' %}

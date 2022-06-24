@@ -35,3 +35,5 @@ You can follow Ryan on Twitter and his blog or get in touch via LinkedIn.
 {% endif %}
 </div>
 
+{% include contributions.html name='ryan' %}
+

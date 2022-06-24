@@ -38,3 +38,4 @@ Feel free to contact him on Twitter or Linkedin.
 {% endif %}
 </div>
 
+{% include contributions.html name='eltjo' %}

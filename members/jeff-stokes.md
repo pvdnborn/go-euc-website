@@ -31,3 +31,4 @@ He lives in the metro Atlanta area and is an avid gamer, reader, blogger, and mu
 {% endif %}
 </div>
 
+{% include contributions.html name='jeff' %}

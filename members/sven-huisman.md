@@ -33,3 +33,4 @@ You can follow Sven on Twitter or get in touch via LinkedIn.
 {% endif %}
 </div>
 
+{% include contributions.html name='sven' %}

@@ -35,3 +35,4 @@ You can get in touch via LinkedIn. Feel free to contact me.
 {% endif %}
 </div>
 
+{% include contributions.html name='krishan' %}

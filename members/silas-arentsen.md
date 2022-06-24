@@ -32,3 +32,4 @@ Likes to do both sides of the coin, engineering, and some administration. Is hal
 {% endif %}
 </div>
 
+{% include contributions.html name='silas' %}

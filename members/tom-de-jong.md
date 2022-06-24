@@ -33,3 +33,4 @@ Feel free to contact him on LinkedIn.
 {% endif %}
 </div>
 
+{% include contributions.html name='tom' %}

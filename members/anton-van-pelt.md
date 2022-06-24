@@ -32,3 +32,5 @@ You can follow Anton on twitter, LinkedIn or personal blog.
 <a style="text-decoration: none;" href="{{author.reddit}}" target="_blank"><img class="author-box-socials-icon" src="{{ site.baseurl }}/assets/images/social/018-reddit.png" alt="reddit"></a>
 {% endif %}
 </div>
+
+{% include contributions.html name='anton' %}

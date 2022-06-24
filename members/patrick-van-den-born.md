@@ -33,3 +33,4 @@ You can follow Patrick on twitter, LinkedIn or personal blog.
 {% endif %}
 </div>
 
+{% include contributions.html name='patrick' %}

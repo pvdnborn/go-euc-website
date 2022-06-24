@@ -31,3 +31,4 @@ Gerjon is a known presenter on Citrix User Groups and E2EVC and as he is a Micro
 {% endif %}
 </div>
 
+{% include contributions.html name='gerjon' %}
