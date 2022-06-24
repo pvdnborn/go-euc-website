@@ -179,7 +179,7 @@ authors:
     page: anton-van-pelt
     description: "Anton van Pelt is an independent senior IT consultant and architect with over 18 years of experience in complex IT environments."
   silas:
-    reviewer: true
+    reviewer: false
     name: Silas 
     display_name: Silas Arentsen
     company: STYR-IT
