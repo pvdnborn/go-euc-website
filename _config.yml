@@ -201,6 +201,18 @@ authors:
     linkedin: https://www.linkedin.com/in/ebarthel/
     page: esther-barthel
     description: "Esther Barthel is an independent solutions architect focussed on End User Computing, DevOps engineering and Cloud."
+  fredrik:
+    reviewer: false
+    name: Fredrik 
+    display_name: Fredrik Brattstig
+    company: IGEL Technology
+    title: Technology Evangelist
+    picture: 'assets/images/authors/fredrik.png'
+    web: https://virtualbrat.com
+    twitter: https://twitter.com/virtualbrat
+    linkedin: https://www.linkedin.com/in/fredrikbrattstig/
+    page: fredrik-brattstig
+    description: "Fredrik Brattstig is a Technology Evangelist at IGEL Technology with over 20 years of experience of the VDI/Remote Apps and Desktops niche, and lives by the mantra of providing High-End User Experience."
 
 # Sponsors
 sponsors:
