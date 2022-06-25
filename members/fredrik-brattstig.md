@@ -12,7 +12,8 @@ Fredrik enjoys greatly to examine performance metrics and User Experience of Rem
 He has a great understanding of the importance of the tech Community and doesn’t hesitate to share hints and tricks on the different technologies he gets his hands on. 
 Fredrik lives in Sweden with his family of 4 kids and wife. Enjoys well cooled Lager and does his fair share of running (some might say it’s jogging)….
 
-**Community Awards:**
+
+| Community Awards                    |                           |
 | :---------------------------------- | :------------------------ |
 | NVIDIA NGCA vGPU Community Advisor  | 2019, 2020, 2021 and 2022 | 
 | Microsoft MVP – Enterprise Mobility | 2020-2021 |
