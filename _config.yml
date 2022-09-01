@@ -213,6 +213,18 @@ authors:
     linkedin: https://www.linkedin.com/in/fredrikbrattstig/
     page: fredrik-brattstig
     description: "Fredrik Brattstig is a Technology Evangelist at IGEL Technology with over 20 years of experience of the VDI/Remote Apps and Desktops niche, and lives by the mantra of providing High-End User Experience."
+  sven-j:
+    reviewer: false
+    name: Sven 
+    display_name: Sven Jansen
+    company: deviceTRUST
+    title: Pre-Sales Manager
+    picture: 'assets/images/authors/sven-j.png'
+    twitter: https://twitter.com/jansvensen
+    linkedin: https://www.linkedin.com/in/sven-jansen-b763b654/
+    github: https://github.com/dTSvenJansen
+    page: sven-jansen
+    description: "Sven Jansen is a Pre-Sales Manager for “deviceTRUST”, and is responsible for anything technical between customers, partners and deviceTRUST. A responsible position that mixes being close to technology and also to people very well."
 
 # Sponsors
 sponsors:
