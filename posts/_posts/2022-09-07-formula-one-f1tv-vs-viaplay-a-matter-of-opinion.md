@@ -3,7 +3,7 @@ layout: post
 title:  "Formula One: F1 TV vs Viaplay a matter of opinion?"
 hidden: true
 authors: [eltjo, ryan]
-reviewers: []
+reviewers: [esther]
 categories: [ 'UX' ]
 tags: [ 'Formula One', 'F1 TV', 'Viaplay', 'SSIM', 'NIQE']
 image: assets/images/posts/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion-feature-image.png
@@ -16,7 +16,7 @@ Both have different options when it comes to streaming and to the quality in whi
 
 At GO-EUC we're very passionate about end-user computing. That being said, we're also very passionate about Formula One™. 
 
-> Please note that this will not be a complete comparison, and that is for a couple of different reasons. Firstly, the F1 streams are copyrighted which means that it will not be possible to show footage from the races in the comparisons.
+> Please note, that this will not be a complete comparison and that is for a couple of different reasons. Firstly, the F1 streams are copyrighted which means that it will not be possible to show footage from the races in the comparisons.
 > 
 > Secondly, because the quality of the streams is dependent on a lot of factors, it is neigh impossible to have a completely objective comparison done.
 
@@ -116,11 +116,11 @@ There were some complications, however. Due to the nature of full reference comp
 
 Due to the inherent issues with SSIM outlined above, and to provide an additional metric for the perceived image quality, NIQE was chosen, which is a blind or no reference image quality metric.
 
-> Whereas full reference IQA assessments rely on a reference image that is used in the comparison, a blind or no reference IQA, as the name implies, does not use a reference and instead relies on image features to determine the perceived quality.
-> 
-> The score used is a no reference (NR)  image quality score using the Naturalness Image Quality Evaluator (NIQE). The NIQE metric used is using the default model which is computed from images of natural scenes. A lower score indicates better perceptual quality with higher NIQE score indicate a lower perceived image quality. This means when comparing two images, the original undistorted image that has best perceptual quality will have the lowest NIQE score.
+Whereas full reference IQA assessments rely on a reference image that is used in the comparison, a blind or no reference IQA, as the name implies, does not use a reference and instead relies on image features to determine the perceived quality.
+ 
+The score used is a no reference (NR)  image quality score using the Naturalness Image Quality Evaluator (NIQE). The NIQE metric is using the default model which is computed from images of natural scenes. A lower score indicates better perceptual quality. This means when comparing two images, the original undistorted image that has best perceptual quality will have the lowest NIQE score.
 
-Source: [niqe_spl.pdf (utexas.edu)](http://live.ece.utexas.edu/research/quality/niqe_spl.pdf){:target="_blank"}
+More information about NIQE can be found here [niqe_spl.pdf (utexas.edu)](http://live.ece.utexas.edu/research/quality/niqe_spl.pdf){:target="_blank"}.
 
 ## F1 TV data
 The first comparison presented is the perceived quality differences between the different quality settings of both F1 TV and Viaplay.
@@ -135,7 +135,7 @@ For F1 TV there were a total number of 21 keyframes extracted from the ~50 secon
 
 For SSIM a higher value means a closer likeness to the reference or baseline image and will indicate a higher perceived image quality.
 
-The comparison clearly shows a higher SSIM score for the 1280x720 stream in comparison to the 640x360 stream across the board, while this is to be expected the change in quality does reflect back directly to the perceived quality as measured by the SSIM metric.
+The comparison clearly shows a higher SSIM score for the 1280x720 stream in comparison to the 640x360 stream across the board, while this is to be expected the change in quality does directly reflect back on the perceived quality as measured by the SSIM metric.
 
 The SSIM difference between both quality streams might not seem very significant, but when the images are compared side by side, the difference is very apparent:
 
