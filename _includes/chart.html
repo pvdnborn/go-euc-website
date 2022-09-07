@@ -101,9 +101,19 @@
         
         var displayLabel = false;
         var tooltip = true;
+        var axis = 'x';
+
         if (type == "bar") {
             displayLabel = true;
             tooltip = false;
+        }
+
+        if (type == "hbar") {
+            displayLabel = true;
+            tooltip = false;
+            axis = 'y';
+
+            type = "bar"; // set back to bar
         }
 
         var config = {
@@ -114,6 +124,7 @@
             },
             plugins: [ChartDataLabels, custom_canvas_background_color],
             options: {
+                indexAxis: axis,
                 plugins: {
                     tooltip: {
                         enabled: tooltip
@@ -139,8 +150,8 @@
                         },
                         color: '#ffffff',
                         anchor: 'end',
-                        align: 'bottom',
-                        offset: 4
+                        align: 'end',
+                        offset: 10
                     },
                     legend: {
                         labels: {
@@ -185,14 +196,15 @@
         var chart = new Chart(ctx, config);
 
         
-    
+        var dataArray = [];
         obj.forEach(function (value, i) {
             
             values = value.data.map(function (e) {
+                dataArray.push(e.y);
                 return e.y
             });
-            
-            if (type == 'bar') {
+
+            if (type == 'bar' || type == 'hbar') {
                 chart.data.datasets.push({
                     backgroundColor: colors[i],
                     label: value.serie,
@@ -210,15 +222,39 @@
                     fill: false
                 });
             }
-        })
+        });
         
+        if (type == 'bar' || type == 'hbar') {
+
+            var maxValue = Math.max(...dataArray);
+
+            if (chart.config.options.indexAxis == 'x') {
+                if (maxValue <= 1) {
+                    chart.config.options.scales.y.max = maxValue * 1.2;
+                } else {
+                    chart.config.options.scales.y.max = Math.ceil(maxValue * 1.2);
+                }              
+            } else {
+                if (maxValue <= 1) {
+                    chart.config.options.scales.x.max = maxValue * 1.2;
+                } else {
+                    chart.config.options.scales.x.max = Math.ceil(maxValue * 1.2);
+                }
+            }
+        }
+
         chart.update();
     }
 
     var id = guidGenerator();
     var e = document.getElementById("temp");
     e.id = id;
+
+    var chartType = "{{ include.type }}";
+
+    if (chartType == "hbar") {
+        e.setAttribute("height", '640');
+    }
     
     fetchJSONFile("/{{ include.data_file }}", id, "{{ include.type }}", createChart);
 </script>
-
