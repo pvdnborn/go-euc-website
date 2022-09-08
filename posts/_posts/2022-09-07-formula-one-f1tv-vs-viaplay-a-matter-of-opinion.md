@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Formula One: F1 TV vs Viaplay a matter of opinion?"
-hidden: true
+hidden: false
 authors: [eltjo, ryan]
 reviewers: [esther, tom]
 categories: [ 'UX' ]
