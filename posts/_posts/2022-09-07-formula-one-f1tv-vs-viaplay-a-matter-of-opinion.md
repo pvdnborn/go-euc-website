@@ -3,35 +3,35 @@ layout: post
 title:  "Formula One: F1 TV vs Viaplay a matter of opinion?"
 hidden: true
 authors: [eltjo, ryan]
-reviewers: [esther]
+reviewers: [esther, tom]
 categories: [ 'UX' ]
 tags: [ 'Formula One', 'F1 TV', 'Viaplay', 'SSIM', 'NIQE']
 image: assets/images/posts/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion-feature-image.png
 ---
-In the Netherlands, there are two streaming options for watching Formula One™ this 2022 season: F1 TV Pro and Viaplay. Both provide live streaming of all Formula One™ races on PCs, mobile devices, and tv boxes, like Chromecast and Fire TVs.
-Formula One™ officially started to show live streaming of each race online with F1 TV in 2018. The F1 TV service includes many other features like a live view of each driver's car, live timings, and replay of all Formula One™, Formula 2™, and Formula 3™ races. Besides the Netherlands, F1TV is available in the US, Germany, France, Mexico, Belgium, Austria, Hungary, and most countries in South America, among others.
+In the Netherlands, there are two streaming options for watching Formula One this 2022 season: F1 TV Pro and Viaplay. Both provide live streaming of all Formula One races on PCs, mobile devices, and tv boxes, like Chromecast and Fire TVs.
+Formula One officially started to show live streaming of each race online with F1 TV in 2018. The F1 TV service includes many other features like a live view of each driver's car, live timings, and replay of all Formula One, Formula 2, and Formula 3 races. Besides the Netherlands, F1TV is available in the US, Germany, France, Mexico, Belgium, Austria, Hungary, and most countries in South America, among others.
 
 Viaplay is a video-on-demand streaming service from the Viaplay Group. Viaplay is available in the Nordic and Baltic countries, Poland, the US, and recently also in the Netherlands. 
 Both have different options when it comes to streaming and to the quality in which they stream. This GO-EUC research will compare the options and the quality of both providers in detail.
 
-At GO-EUC we're very passionate about end-user computing. That being said, we're also very passionate about Formula One™. 
+At GO-EUC we're very passionate about end-user computing. That being said, we're also very passionate about Formula One. 
 
 > Please note, that this will not be a complete comparison and that is for a couple of different reasons. Firstly, the F1 streams are copyrighted which means that it will not be possible to show footage from the races in the comparisons.
 > 
-> Secondly, because the quality of the streams is dependent on a lot of factors, it is neigh impossible to have a completely objective comparison done.
+> Secondly, because the quality of the streams is dependent on a lot of factors, it is nearly impossible to have a completely objective comparison done.
 
 ## Background
-As mentioned in the introduction, In the Netherlands, there are two options available for streaming Formula One™. F1TV streamed in Full HD with a resolution of 1080p and 25fps but F1TV switched to a higher quality stream with 50fps in the 2021 season. The underlying technic used by F1TV is developed by Accenture’s Industry X group and uses their Accenture Video Solution technology.
+As mentioned in the introduction, In the Netherlands, there are two options available for streaming Formula One. F1TV streamed in Full HD with a resolution of 1080p and 25fps but F1TV switched to a higher quality stream with 50fps in the 2021 season. The underlying technique used by F1TV is developed by Accenture’s Industry X group and uses their Accenture Video Solution technology.
 
 [Revamped F1 TV service announced for 2021 season and launches in three new territories - Formula One®](https://www.formula1.com/en/latest/article.revamped-f1-tv-service-announced-for-2021-season-and-launches-in-three-new.gnmATn163HYW6oMYMMkRH.html){:target="_blank"}
 
-Viaplay took over the Formula One™ broadcasting rights from Ziggo in the 2022 season. They received a lot of backlash due to the quality of the commentary and the quality of the streams. Viaplay started streaming in a maximum resolution of 720p originally but quickly switched to Full HD 1080 at 50fps in the beginning of the season: 
+Viaplay took over the Formula One broadcasting rights from Ziggo for the 2022 season. They received a lot of backlash due to the quality of the commentary and the quality of the streams. Viaplay started streaming in a maximum resolution of 720p originally but quickly switched to Full HD 1080 at 50fps in the beginning of the season: 
 
 <blockquote class="twitter-tweet"><p lang="nl" dir="ltr">Vandaag wordt de F1 pre-season testing uitgezonden in Full HD (1080p) en afgespeeld met 50 frames per seconde (fps). Houd er rekening mee dat de ondersteuning voor 50 fps apparaat specifiek is, als het apparaat deze framesnelheid niet ondersteunt, ontvangt deze 25 fps. /Dominique</p>&mdash; Viaplay Sport Nederland (@viaplaysportnl) <a href="https://twitter.com/viaplaysportnl/status/1502587633364520960?ref_src=twsrc%5Etfw">March 12, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Neither of the streaming services has a 4k stream available. This is a step backwards because the previous party that had the rights to broadcast Formula One™ in the Netherlands, Ziggo did broadcast Formula One™ in 4k for certain users.
+Neither of the streaming services has a 4k stream available. This is a step backwards because the previous party that had the rights to broadcast Formula One in the Netherlands, Ziggo did broadcast Formula One in 4k for certain users.
 
-As far as we are aware, there are no other publications available on the internet that focus on the quality difference between both platforms. The reason for this could be that either no one has ever taken the time to research this, or it could be the case that these publications were subjected to take-down notices. Let's hope for our sakes that the former is true and not the latter. Moreover, if the latter should prove to be the case, then none of you will probably have read this publication anyway.
+As far as we are aware, there are no other publications available on the internet that focus on the quality difference between both platforms. The reason for this could be that either no one has ever taken the time to research this, or it could be the case that these publications were subjected to take-down notices. Let's hope for our sake that the former is true and not the latter. Moreover, if the latter should prove to be the case, then none of you will probably have read this publication anyway.
 
 Following the Fundamental Principles set out by the FORMULA 1 organization, we are obligated to note that this research and publication is not official and is therefore not approved or endorsed by them. All rights in still images/ photos/ screenshots are the property of their respective owners.
 
@@ -83,7 +83,7 @@ The different decoding algorithms used for Viaplay and F1TV are as following:
 | F1 TV   | 720     | H.264 | 1280,720   |
 | F1 TV   | 1080    | H.264 | 1920,1080  |
 
-It seems that even in the highest quality setting for Viaplay is limited to 1280x720 and not 1080p. Furthermore, there is no reported difference between the high and average settings with both settings decoding in 960x540. 
+It seems that even when using the highest quality setting, Viaplay is limited to 720p and not 1080p. Furthermore, there is no reported difference between the high and average settings with both settings decoding in 960x540. 
 
 Perhaps this is only related to the web application and with other streaming devices the highest quality will indeed be the promised 1080p quality, but the only other device that we have available is an Amazon FireTV stick. The FireTV sticks (and Google Chromecasts as well for that matter) use High-bandwidth Digital Content Protection (HDCP) as a digital copy protection system. HDCP was designed to prevent the recording and piracy of commercial movies and TV shows. Due to the usage of HDCP, the Elgato capture devices used at GO-EUC cannot capture HDMI signals with HDCP protection enabled.
 
@@ -184,7 +184,7 @@ Just like with the SSIM comparison, the NIQE metric also shows that F1 TV produc
 | <a href="{{site.baseurl}}/assets/images/posts/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion/f1tv-race-1080p.png" data-lightbox="f1tv-race-1080p.png">![f1tv-race-1080p]({{site.baseurl}}/assets/images/posts/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion/f1tv-race-1080p.png)</a> | <a href="{{site.baseurl}}/assets/images/posts/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion/viaplay-race-highest.png" data-lightbox="viaplay-race-highest">![viaplay-race-highest]({{site.baseurl}}/assets/images/posts/093-formula-one-f1tv-vs-viaplay-a-matter-of-opinion/viaplay-race-highest.png)</a> |
 
 ## Conclusion
-Based on the data, GO-EUC can state F1 TV provide better screen quality compared to Viaplay. Please note, this is only taking the video quality into account and not the commentary (as we both have a preference though). However, the quality depends on a lot of different factors, for example, limited bandwidth or latency at both the streaming services of the end-user side.
+Based on the data, GO-EUC can state F1 TV provides better screen quality compared to Viaplay. Please note, this is only taking the video quality into account and not the commentary (as we both have a preference though). However, the quality depends on a lot of different factors, for example, limited bandwidth or latency at both the streaming services of the end-user side.
 
 The main question remains why the 'highest' quality settings for Viaplay remains at 720p instead of 1080p. With only half of the pixel depth used this negatively affects image quality. As mentioned, this might only be an issue in the web browser, but we are not able to validate this at this moment in time.
 
