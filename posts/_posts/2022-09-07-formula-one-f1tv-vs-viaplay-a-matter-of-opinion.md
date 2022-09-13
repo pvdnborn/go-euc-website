@@ -38,11 +38,19 @@ Following the Fundamental Principles set out by the FORMULA 1 organization, we a
 ## Quality
 F1TV provides 6 quality settings, ranging from 1080p all the way down to a measly 480x720 resolution for the main channel:
 
-  * Main channel feed and replays: 1080p 50fps at 6.5 Mbit/s
-  * Other channels live and replay: 720p 50fps at 6.5 Mbit/s
-  * Pre- and post-race show and the likes: 1080p 50fps 6.5 Mbit/s
+| Resolution | Framerate | Bandwidth |
+| :------ | :---- | :--------- |
+| 480x270     | 50 | 256000   |
+| 512x288     | 50 | 512000    |
+| 640x360     | 50 | 1024000    |
+| 960x540     | 50 | 1800000    |
+| 1280x720     | 50 | 3499968  |
+| 1920x1080    | 50 | 6000000 |
 
-The car onboard cameras of course are of a much lower resolution and bitrate to account for the fact that the data needs to be transmitted using mobile transmitters and cars moving in and out of transmission zones at speeds up to 350kph / 217mph.
+Source: [F1MultiViewer](https://gist.github.com/f1multiviewer/2b5eae8d9df6ebf46575aa29992d2228){:target="_blank"}
+Huge shout-out to [F1MultiViewer](https://twitter.com/F1MultiViewer){:target="_blank"} for sharing the exact bandwidth numbers. 
+
+The car onboard cameras of course are of a much lower resolution and bitrate (3500 kbit/s) to account for the fact that the data needs to be transmitted using mobile transmitters and cars moving in and out of transmission zones at speeds up to 350kph / 217mph.
 
 Viaplay doesn’t share their bandwidth numbers, but in the FAQ they state among the requirements is a stable internet connection with a minimum speed of 10 Mbit/s.
 
