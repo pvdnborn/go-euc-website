@@ -47,7 +47,8 @@ F1TV provides 6 quality settings, ranging from 1080p all the way down to a measl
 | 1280x720     | 50 | 3499968  |
 | 1920x1080    | 50 | 6000000 |
 
-Source: [F1MultiViewer](https://gist.github.com/f1multiviewer/2b5eae8d9df6ebf46575aa29992d2228){:target="_blank"}
+Source: [F1MultiViewer](https://gist.github.com/f1multiviewer/2b5eae8d9df6ebf46575aa29992d2228){:target="_blank"}.
+
 Huge shout-out to [F1MultiViewer](https://twitter.com/F1MultiViewer){:target="_blank"} for sharing the exact bandwidth numbers. 
 
 The car onboard cameras of course are of a much lower resolution and bitrate (3500 kbit/s) to account for the fact that the data needs to be transmitted using mobile transmitters and cars moving in and out of transmission zones at speeds up to 350kph / 217mph.
