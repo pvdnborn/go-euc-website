@@ -122,14 +122,14 @@ authors:
     reviewer: false
     name: Patrick 
     display_name: Patrick van den Born
-    company: van den Born IT Consultancy
-    title: Senior IT Consultant | IT Architect
+    company: De Technische Jongens
+    title: The Architect
     picture: 'assets/images/authors/patrick.png'
-    web: https://patrickvandenborn.blogspot.com/
+    web: https://www.vandenborn.it/
     twitter: https://twitter.com/pvdnborn
     linkedin: https://www.linkedin.com/in/patrick-van-den-born-2b3567a/
     page: patrick-van-den-born
-    description: "Patrick van den Born is an independent senior consultant and IT architect focussed on Citrix End User Computing, NVIDIA GRID Technology and cloud computing."
+    description: "Patrick van den Born is an independent senior Consultant and IT Architect focused on the End User Computing, Public Cloud, Everything-as-Code, and DevOps area."
   gerjon:
     reviewer: false
     name: Gerjon 
