@@ -5,7 +5,7 @@ comments: false
 ---
 {% assign author = site.authors['mick-hilhorst'] %}
 
-<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}"> Gerjon Kunst is a Principal Consultant at RawWorks in het Netherlands, focusing on future Workspace and Cloud. Gerjon has 20 years experience in the IT business starting as a system engineer working his way up to a IT pro with broad and in depth knowledge of Workspace and Cloud. 
+<img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}">
 
 Personal Information here
 
