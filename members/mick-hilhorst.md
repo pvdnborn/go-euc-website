@@ -3,7 +3,7 @@ layout: page
 title: Mick Hilhorst
 comments: false
 ---
-{% assign author = site.authors['mick-hilhorst'] %}
+{% assign author = site.authors['mick'] %}
 
 <img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}">
 
@@ -35,4 +35,4 @@ In his sparetime he enjoys videogames, food, geese, development and 3d-printing.
 {% endif %}
 </div>
 
-{% include contributions.html name='mick-hilhorst' %}
+{% include contributions.html name='mick' %}
