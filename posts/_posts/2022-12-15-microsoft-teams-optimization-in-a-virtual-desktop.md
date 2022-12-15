@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Microsoft Teams optimization in a virtual desktop"
-hidden: true
+hidden: false
 authors: [ryan, eltjo]
 reviewers: [esther]
 categories: [ 'Microsoft Teams' ]
