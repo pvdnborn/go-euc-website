@@ -19,7 +19,7 @@ In 2021 we started with our [infrastructure as code](https://github.com/GO-EUC/g
 
 Focussing on positive notes: even though mistakes were made with IaC, we did made significant progress and eventually onboarded [Sven Jansen](https://www.go-euc.com/members/sven-jansen/){:target="_blank"} while on our IaC journey. There is still a lot to explore and improve, but our Github project is growing and we apply continuous improvements.
 
-Talking about onboarding, the GO-EUC community is still growing with both [Mick Hilhorst](https://www.go-euc.com/members/mick-hilhorst/){:target="_blank"} and [Frederick Brattig](https://www.go-euc.com/members/fredrik-brattstig/){:target="_blank"}. This means we got more Citrix Netscaler (yeah!), remote graphics and endpoint experts in our team!
+Talking about onboarding, the GO-EUC community is still growing with both [Mick Hilhorst](https://www.go-euc.com/members/mick-hilhorst/){:target="_blank"} and [Fredrik Brattstig](https://www.go-euc.com/members/fredrik-brattstig/){:target="_blank"}. This means we got more Citrix Netscaler (yeah!), remote graphics and endpoint experts in our team!
 
 One of our goals is to continue to innovate our testing methodologies. Last year we made real progress in improving our LoadGen workload and in addition to that we explored measuring user experience. This is a true learning journey and we strive to continue to provide more depth in the research we publish.
 
