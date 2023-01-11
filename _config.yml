@@ -244,7 +244,7 @@ sponsors:
   tricerat:
     name: Tricerat
     level: 2
-    date: 2022-12-31
+    date: 2023-03-31
     logo-light: 'assets/images/sponsor/tricerat/logo-white.png'
     logo: 'assets/images/sponsor/tricerat/logo.png'
     page: 'tricerat'
@@ -252,7 +252,7 @@ sponsors:
   loadgen:
     name: LoadGen
     level: 2
-    date: 2022-12-31
+    date: 2023-03-31
     logo-light: 'assets/images/sponsor/loadgen/logo-white.png'
     logo: 'assets/images/sponsor/loadgen/logo.png'
     page: 'loadgen'
