@@ -305,7 +305,7 @@ The fact of the matter is that the connecting device plays a significant role in
 
 For the task-worker like workloads the older thin clients can keep up just fine, but for the more graphics intensive workloads they fall behind. The new UD3 from Igel outperformance the other thin client and is, in our particular frame of reference, able to deliver a great user experience even with most intensive sections of the workload.
 
-How do you deal with your thin clients in your environment? Share your experience in the comment below or start the conversation at our Slack channel.
+How do you deal with your thin clients in your environment? Share your experience in the comment below or start the conversation at the Slack channel.
 
 Photo by [Mahir Uysal](https://unsplash.com/@mahiruysal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/western?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.
 

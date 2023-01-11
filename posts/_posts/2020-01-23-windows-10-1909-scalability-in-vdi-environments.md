@@ -269,6 +269,6 @@ There is also a shift when comparing these results to previous researches. The u
 
 Never use an out-of-the-box deployment of any Windows 10 build in your VDI environment. The results proved that applying the right optimizations is still a best practice.
 
-Are you preparing to deploy Windows 10 1909 in your environment? Let us know in the comments below or tell us on our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Are you preparing to deploy Windows 10 1909 in your environment? Let us know in the comments below or tell us on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Andrew Mantarro](https://unsplash.com/@andymant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/microsoft?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

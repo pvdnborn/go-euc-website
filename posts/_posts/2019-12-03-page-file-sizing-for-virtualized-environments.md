@@ -105,6 +105,6 @@ As this research shows, it is not recommended to disable the page file, as this 
 
 We have not seen any difference in the other configuration and, therefore, it is recommended to leave it system managed. When using other storage accelerators like Citrix MCS I/O or [Citrix PVS](https://www.carlstalhood.com/pvs-master-device-preparation/#pagefile){:target="_blank"}, we strongly recommend using a small page file to reduce the size on disk footprint.
 
-We would like to know the sizing used in your environment. Share them in the comments below or join the interaction on our Slack channel [here](https://{{site.title}}.slack.com){:target="_blank"}. And as always, please confirm any findings in your own environment before going live.
+We would like to know the sizing used in your environment. Share them in the comments below or join the interaction on the Slack channel [here](https://worldofeuc.slack.com){:target="_blank"}. And as always, please confirm any findings in your own environment before going live.
 
 Photo by [Patrick Lindenberg](https://unsplash.com/@heapdump?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

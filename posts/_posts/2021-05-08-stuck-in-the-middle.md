@@ -258,6 +258,6 @@ At GO-EUC we always strive for statistical accuracy for, and reproducibility by 
 
 We hope this was informative and has given some deeper insight on central tendency and our way of working with data.
 
-If you have any questions or comments around statistics or any other topics around performance and scalability, please don’t hesitate to reach out to us on social media (twitter/linkedin) or join the [GO-EUC Slack channel](https://GO-EUC.slack.com){:target="_blank"}!
+If you have any questions or comments around statistics or any other topics around performance and scalability, please don’t hesitate to reach out to us on social media (twitter/linkedin) or join the [World of EUC Slack channel](https://worldofeuc.slack.com){:target="_blank"}!
 
 Photo by [Mika Baumeister](https://unsplash.com/@mbaumi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target_"blank" on [Unsplash](https://unsplash.com/s/photos/numbers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

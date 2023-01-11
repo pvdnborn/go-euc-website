@@ -84,7 +84,7 @@ It is essential to take the scope of this research into account, as it is focuse
 
 However, based on the improvement Citrix has added, it is expected to see an improvement when GPU content is part of the workload. GO-EUC often states that without data, you are just another person with an opinion, so this is on the backlog to be researched in the future.
 
-Are you using CVAD 2112 in your environment and seeing overall improvements? Please share your experience in the comments or on the [GO-EUC Slack channel](https://goeuc.slack.com){:target="_blank"}.
+Are you using CVAD 2112 in your environment and seeing overall improvements? Please share your experience in the comments or on the [World of EUC Slack channel](https://goeuc.slack.com){:target="_blank"}.
 
 Photo by [i yunmai](https://unsplash.com/@yunmai?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/scale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
 

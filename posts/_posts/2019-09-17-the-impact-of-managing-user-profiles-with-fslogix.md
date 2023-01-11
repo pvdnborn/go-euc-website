@@ -195,6 +195,6 @@ Logon times are an important part of user experience and FSLogix shows a big imp
 
 To summarize, FSLogix is not a performance booster and focusses specific on use-cases like indexing of Office 365, OneDrive and other profile type applications. Based on these results it is important to validate the impact in your own environment to avoid unexpected capacity issues when implementing FSLogix.
 
-If you want to share your insights on using FSLogix Profile Container or would like to discuss our findings, please reach to us or join our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+If you want to share your insights on using FSLogix Profile Container or would like to discuss our findings, please reach to us or join the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Sergei Akulich](https://unsplash.com/@sakulich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

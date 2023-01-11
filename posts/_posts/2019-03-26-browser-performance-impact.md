@@ -221,6 +221,6 @@ Internet Explorer scores best in terms of scalability and performance but does n
 
 Last but not least, it is very important to validate your own browser setup, testing different configurations with tools like Login VSI is advisable if you want to be sure that you use the best configuration in your own situation.
 
-If you have comments about this research or want to discuss other configurations, please [join](https://{{site.title}}.slack.com){:target="_blank"} us on our {{site.title}} Slack channel.
+If you have comments about this research or want to discuss other configurations, please [join](https://worldofeuc.slack.com){:target="_blank"} us on the World of EUC Slack channel.
 
 Photo by [Florian Olivo](https://unsplash.com/photos/4hbJ-eymZ1o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/html?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

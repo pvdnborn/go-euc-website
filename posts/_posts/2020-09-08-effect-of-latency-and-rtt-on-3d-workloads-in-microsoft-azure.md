@@ -647,7 +647,7 @@ Although playing a racing game this is not a realistic scenario in the corporate
 
 Therefore, it is always important to validate the experience together with the user and explain the effect of RTT and latency. Although this might be the downside, this still enables designers to work remotely, which nowadays is very important for our health.
 
-Want to know more about this topic? Feel free to leave a comment below or start the conversation on our [Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Want to know more about this topic? Feel free to leave a comment below or start the conversation on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Spencer Davis](https://unsplash.com/@spencerdavis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
 

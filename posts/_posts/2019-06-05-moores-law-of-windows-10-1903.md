@@ -154,6 +154,6 @@ In general, it is important to take this trend in account, so you don’t get su
 
 If you decided to deploy Windows 10 1903 ensure to validate the impact in your environment to avoid capacity or performance problems.
 
-Are you planning to deploy Windows 10 1903 in your VDI environment? Get involved and share you experience in our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Are you planning to deploy Windows 10 1903 in your VDI environment? Get involved and share you experience in the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Fabrizio Verrecchia](https://unsplash.com/@fabrizioverrecchia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/@fabrizioverrecchia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

@@ -170,6 +170,6 @@ We advise customers to always choose a region closest to their own location.
 
 From an administrative perspective using the web interface to communicate with the Citrix Studio instance for Citrix Virtual Apps and Desktops requires a lot of patience as it is often very slow. This shows Citrix have chosen a shortcut in the Cloud offering by creating Studio in an HTML5 Citrix connection instead of a native HTML 5 interface.
 
-If you want to contribute or voice your opinion about this research or out other researches a great place to start is to join our slack community right [here](https://{{site.title}}.slack.com){:target="_blank"}.
+If you want to contribute or voice your opinion about this research or out other researches a great place to start is to join the Slack community right [here](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Jason Wong](https://unsplash.com/photos/o_SMqtT8bpU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/cloud?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

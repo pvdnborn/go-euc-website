@@ -195,7 +195,7 @@ To conclude Windows 10 2004 has no significant performance impact and is quite s
 
 Are you deploying each version of Windows 10 within your organization to keep up with latest features or are you deploying the fall editions for longer support?
 
-Let us know in the comments below or share it on our [Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Let us know in the comments below or share it on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Meriç Dağlı](https://unsplash.com/@meric?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/seattle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText){:target="_blank"}
 

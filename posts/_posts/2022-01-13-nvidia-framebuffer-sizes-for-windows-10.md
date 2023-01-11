@@ -118,6 +118,6 @@ Now, this might not have a direct impact in a VDI context, but in an RDS scenari
 
 This research shows it is important to validate the framebuffer usage in your context to ensure the optimal size. Please take into account to measure both average and maximum usage.
 
-Do you see an increase in framebuffer usages over the last years? Please share your experience in the comments below or share it at the [GO-EUC Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Do you see an increase in framebuffer usages over the last years? Please share your experience in the comments below or share it at the [World of EUC Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Karlis Reimanis](https://unsplash.com/@reims?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/electric?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

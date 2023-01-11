@@ -254,6 +254,6 @@ For sake of completion the Google PageSpeed data was also collected but that dat
 
 While Selenium was not primary developed for the performance testing use case, it is an invaluable tool to use in every performance testers arsenal. Selenium could also be leveraged to test internal websites and can be incorporated in a CI/CD pipeline for automated testing.  Selenium also has the capability to make screenshots of websites and can be used in conjunction with image recognition libraries like OpenCV for instance for analysis. The ability to drive web browsers makes it incredibly versatile.
 
-Before we close, we hope you also did enjoy this step outside our regular researches. This was a fun exercise and if you want to see more of these kinds of researches please let us know in the comments or reach out to us on [GO-EUC Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Before we close, we hope you also did enjoy this step outside our regular researches. This was a fun exercise and if you want to see more of these kinds of researches please let us know in the comments or reach out to us on [World of EUC Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [ThisisEngineering RAEng](https://unsplash.com/@thisisengineering?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target_"blank" on [Unsplash](https://unsplash.com/s/photos/packages?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText){:target="_blank"}

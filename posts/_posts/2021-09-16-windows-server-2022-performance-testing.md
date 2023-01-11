@@ -113,6 +113,6 @@ Based on this research there is a clear impact on scalability when using Windows
 
 In terms of user density, the primary bottleneck is CPU bound, so it is expect to see a simular decrease in users based on the CPU. In the GO-EUC envrioment this resulted in 30% less users per session host. Recommendation, the test showed a significantly higher usage of CPU, but the results can be different with your specific workloads so be sure to check how Windows Server 2022 impacts your workload.
 
-Are you planning to upgrade to Windows Server 2022 on a short notice? Let us know what you are expecing in the comments below... or visit our [Slack Channel](https://go-euc.slack.com){:target="_blank"}!
+Are you planning to upgrade to Windows Server 2022 on a short notice? Let us know what you are expecing in the comments below... or visit the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}!
 
 Photo by [Stephen Johnson](https://unsplash.com/@stephenfjohnson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.

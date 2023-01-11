@@ -91,6 +91,6 @@ Please do note, these results are based on our context, described in the infrast
 
 Nevertheless, it is noticeable Microsoft is getting control of the upgrades as the pattern discovered in previous Moore's law of Windows 10 research has been broken. Hopefully, Microsoft will keep this up for both Windows 10 and Windows 11.
 
-Do you see the same consistent results in your environment? Please share your experience below or in our [Slack Channel](https://go-euc.slack.com){:target="_blank"}.
+Do you see the same consistent results in your environment? Please share your experience below or in the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.

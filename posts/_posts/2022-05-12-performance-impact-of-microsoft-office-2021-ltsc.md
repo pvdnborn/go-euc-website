@@ -100,6 +100,6 @@ Storage metrics increased approximately 8 to 17 percent. Although these percenta
 
 Overall the performance on resources usage has been slightly increased, meaning Office 2021 uses more resources. Keep in mind that it does not say anything about the perceived user experience.
 
-Do you see the same results in your environment? Please share your experience below or on our [Slack Channel](https://go-euc.slack.com){:target="_blank"}. 
+Do you see the same results in your environment? Please share your experience below or on the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}. 
 
 Photo by [Sid Suratia](https://unsplash.com/@sid_suratia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/train-office-blur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

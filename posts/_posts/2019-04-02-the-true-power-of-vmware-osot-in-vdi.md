@@ -231,6 +231,6 @@ Right now, there is one universal template for Windows 10 and not for each indiv
 > 
 >  	&nbsp;
 
-Share your thought about these results in the comments below or get involved by joining our public Slack channel right [here](https://{{site.title}}.slack.com){:target="_blank"}.
+Share your thought about these results in the comments below or get involved by joining our Slack channel right [here](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Steven Erixon](https://unsplash.com/photos/LOvpejk4nZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

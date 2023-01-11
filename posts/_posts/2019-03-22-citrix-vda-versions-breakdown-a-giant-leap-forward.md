@@ -258,6 +258,6 @@ In a more real-world scenario’s where multimedia content is becoming more and 
 
 If your Life cycle management process fits within the 6 months release timeframe of CR and performance and user experience are key in your environment, based on these findings we can only recommend using CR instead of LTSR.
 
-If you want to comment on this research and its findings, please feel free reach out. Alternatively, you can [join](https://{{site.title}}.slack.com){:target="_blank"} our slack channel and discuss with the {{site.title}} community.
+If you want to comment on this research and its findings, please feel free reach out. Alternatively, you can [join](https://worldofeuc.slack.com){:target="_blank"} the Slack channel and discuss with the community.
 
 Photo by [Joshua Earle](https://unsplash.com/photos/s00F6-W_OQ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/jump?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

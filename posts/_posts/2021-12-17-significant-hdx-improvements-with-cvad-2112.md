@@ -251,6 +251,6 @@ In terms of image quality data collected with the IQA, release 2112 also showed 
 
 Please note that this is the first research where IQA was incorporated in the data and analysis. We are currently looking into how we can leverage the IQA in future researches. In this research, the frames were manually extracted using VLC, in future comparisons the aim is to automate this process for reproducibility and accuracy. We are committed to continually investing time and effort to produce innovations in our researches.
 
-Please let us know if you value the new IQA approach and let us know how we can improve on this on our [Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Please let us know if you value the new IQA approach and let us know how we can improve on this on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by <a href="https://unsplash.com/@umby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Umberto</a> on <a href="https://unsplash.com/s/photos/graphics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>

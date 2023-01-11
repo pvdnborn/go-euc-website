@@ -145,6 +145,6 @@ If you deployed Microsoft Office in your RDSH environment, support, or the lack 
 
 *Update: On July 1 2019, [Microsoft announced that Office 365 will be supported on Windows Server 2019](https://www.microsoft.com/en-us/microsoft-365/blog/2019/07/01/improving-office-app-experience-virtual-environments){:target="_blank"}. The impact on performance is still a consideration to (not) upgrade to Windows Server 2019.
 
-If you have comments about this research, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+If you have comments about this research, please join us on the World of EUC [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Uriel Soberanes](https://unsplash.com/photos/L1bAGEWYCtk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/fight?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

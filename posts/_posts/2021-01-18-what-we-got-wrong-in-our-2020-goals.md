@@ -71,7 +71,7 @@ Like the previous year, setting yearly goals helps to provide the focus for the 
 Now previous year the goal of an increase in visitors was one of the goals of 2020. Now as this has been accomplished, we decided to not include this as a dedicated goal, as it is a result of interesting researches and the quality we bring to the table.
 
 **1. Even more and better involvement of the community.**
-Although the community involvement is already high, GO-EUC strives to have an even better involvement of the community to ensure the right topics are researched. At this point, we are slacking in the [GO-EUC Slack channel](https://go-euc.slack.com){:target="_blank"}, so this is one of the places activities needs to increase. The Slack channel is the easiest way to reach out to us and share your thoughts, ideas, and opinions.
+Although the community involvement is already high, GO-EUC strives to have an even better involvement of the community to ensure the right topics are researched. At this point, we are slacking in the [World of EUC Slack channel](https://worldofeuc.slack.com){:target="_blank"}, so this is one of the places activities needs to increase. The Slack channel is the easiest way to reach out to us and share your thoughts, ideas, and opinions.
 
 **2. Innovative and ground-breaking research capabilities.**
 To stay ahead of the curve, the platform and the researches need to evolve over time. It is our ambition to develop or integrate innovative solutions to better measure the end-user experience. Additionally, incorporating technologies like machine learning helps us to predict scalability and performance degradations on a new level. These are some of the topics that we are looking into developing for the platform.

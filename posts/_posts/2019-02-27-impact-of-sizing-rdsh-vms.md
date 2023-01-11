@@ -178,6 +178,6 @@ As expected, Read and Write IO are not a bottleneck with the Login VSI workload 
 
 In an upcoming research, we will focus on the impact of Spectre, Meltdown and Foreshadow on Windows server 2016 and 2019 RDSH.
 
-If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+If you have comments about this research or want to discuss other configurations, please join us on the World of EUC [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Laura Ockel](https://unsplash.com/photos/pGVr8YRtQ80?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

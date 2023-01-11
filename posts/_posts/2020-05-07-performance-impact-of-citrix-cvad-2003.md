@@ -160,6 +160,6 @@ When maintaining a virtualized environment is it important to be in control. Eve
 
 From a performance and scalability viewpoint, there is no significantly noticeable difference for the new VDA 2003 version of CVAD, which is the key takeaway of this research. Important metrics like CPU usage, roundtrip time and bandwidth usage all show minor to no noticeable difference. With that in mind, take into consideration that to keep support from Citrix, a migration from a previous CR version is advised.
 
-Are you planning to move to the latest CR? Share you experience in the comments below or start the conversation at the [GO-EUC Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Are you planning to move to the latest CR? Share you experience in the comments below or start the conversation at the [World of EUC Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Franck V.](https://unsplash.com/@franckinjapan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/fork-in-the-road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.

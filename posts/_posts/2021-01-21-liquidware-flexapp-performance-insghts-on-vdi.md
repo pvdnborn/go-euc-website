@@ -203,6 +203,6 @@ As the packages are provided via a file server, it is important to take the addi
 
 As stated in the documentation the logon times will increase when using FlexApp. The results show these are a bit higher than expected but can be reduced based on the packaging strategy. It is important to understand the GO-EUC researched are quite extreme where the resources are pushed to the limit. Therefore it is very important before implementing a solution to validate the impact in your own context and use a monitoring solution to see the effect in production.
 
-Unfortunately, this dataset did not include the application start times and perhaps an additional research will be started in the future. If you have any comments or questions about this research, please leave a comment below or reach out at the [GO-EUC Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Unfortunately, this dataset did not include the application start times and perhaps an additional research will be started in the future. If you have any comments or questions about this research, please leave a comment below or reach out at the [World of EUC Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Kelly Sikkema](https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText){:target_"blank" on [Unsplash](https://unsplash.com/s/photos/packages?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText){:target="_blank"}

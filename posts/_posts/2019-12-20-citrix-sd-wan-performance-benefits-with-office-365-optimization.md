@@ -119,6 +119,6 @@ Citrix SD-WAN Office 365 optimization helps in overcoming current day network ch
 
 This research is an indication on the possibilities with Citrix SD-WAN but can fluctuate because of different variables that we cannot control. Variables such as ISP overbooking, Azure load and Microsoft Office365 load.
 
-Questions or comment about this research? Leave them below in the comments or ask them on our [Slack Channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Questions or comment about this research? Leave them below in the comments or ask them on the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Florian Steciuk](https://unsplash.com/@flo_stk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

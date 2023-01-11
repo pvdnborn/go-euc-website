@@ -87,5 +87,5 @@ The increase in load on the storage is significant, although with fast storage t
 
 Big shoutout to Omar Bouhaj for setting up and running the tests.
 
-Please let us know what you think of these preliminary results via social media or on our [GO-EUC Slack channel](https://GO-EUC.slack.com){:target="_blank"}!
+Please let us know what you think of these preliminary results via social media or on our [World of EUC Slack channel](https://worldofeuc.slack.com){:target="_blank"}!
 

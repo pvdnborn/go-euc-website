@@ -170,6 +170,6 @@ Based on these results it is important to validate this in your own environment 
 
 More information about the HCL can be found here. [http://hcl.vmd.citrix.com/](http://hcl.vmd.citrix.com){:target="_blank"}
 
-If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+If you have comments about this research or want to discuss other configurations, please join us on the World of EUC [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Ramin Khatibi](https://unsplash.com/@raminix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/foundation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

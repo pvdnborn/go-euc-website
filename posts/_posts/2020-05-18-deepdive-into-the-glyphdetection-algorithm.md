@@ -158,4 +158,4 @@ In most cases glyph detection mode can be left, as per default, in automatic mod
 
 Furthermore, because the CPU increase for the algoritm is negligible, we see no reason to disable the algorithm in older versions where the automatic mode is not yet available.
 
-If you want to share your own experiences with glyph detection, consider joining our Slack channel [here](https://{{site.title}}.slack.com)
+If you want to share your own experiences with glyph detection, consider joining the Slack channel [here](https://worldofeuc.slack.com)

@@ -94,7 +94,7 @@ All results used in the GO-EUC publications or presentations are a collection of
 ## Updates and continuous improvement
 Our platform is continuously improving the automation and testing methodology. As the workloads and data library are maintained by GO-EUC, this will be included. Several updates are expected in broth the data library and the workload, which will be shared in this article.
 
-If you have comments, questions, or suggestions, please feel free to share those in the comment below. Or start the conversation at our Slack channel.
+If you have comments, questions, or suggestions, please feel free to share those in the comment below. Or start the conversation at the Slack channel.
 
 ## Change log
 <b>04-20-2020: version 2004.1</b> – Initial release.

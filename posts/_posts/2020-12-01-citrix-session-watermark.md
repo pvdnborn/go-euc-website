@@ -246,4 +246,4 @@ Another option would be to integrate the session watermark in the video stream w
 
 Furthermore, please note it is not that difficult to bypass the session watermark with photo editing tools like Adobe Photoshop, keep in that in mind when considering using session watermark in a production environment.
 
-Are you using the text-based session watermark feature you Citrix environments? Please let us know and discuss below or in our [Slack Channel](https://go-euc.slack.com){:target="_blank"}.
+Are you using the text-based session watermark feature you Citrix environments? Please let us know and discuss below or in the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}.

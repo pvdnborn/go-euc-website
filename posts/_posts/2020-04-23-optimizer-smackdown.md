@@ -184,6 +184,6 @@ It is recommended to review and understand every setting Citrix Optimizer and VM
 
 Citrix and VMware both [advice](https://communities.vmware.com/thread/616245){:target="_blank"} to be careful with using community templates. Our advice is to simply review and use Citrix Optimizer (supported for Citrix environments) for your Citrix image and VMware OSOT (community project, no support) for your VMware image without the use of a template. The combination of both optimizers does not seem to add any performance boost to the image. 
 
-What are you using in your environment? Please share it in the comments below or start the conversation in our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}. 
+What are you using in your environment? Please share it in the comments below or start the conversation in the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}. 
 
 Photo by [Tim Gouw](https://unsplash.com/@punttim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/sprint?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

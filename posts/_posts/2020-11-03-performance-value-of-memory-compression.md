@@ -175,6 +175,6 @@ In theory, the effect of memory compression should be noticeable when memory is 
 
 > <b>Note:</b> There has been some reports that the memory compression causes blue screens, so before implementing in your environment, test! During testing, there were no blue screens in our environment.
 
-What is your experience with memory compression? Please let us know in the comments or at our GO-EUC [Slack channel](https://go-euc.slack.com){:target="_blank"}.
+What is your experience with memory compression? Please let us know in the comments or at the World of EUC [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Michael Dziedzic](https://unsplash.com/@lazycreekimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

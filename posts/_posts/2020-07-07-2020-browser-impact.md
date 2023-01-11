@@ -308,6 +308,6 @@ Will Edge be inferior again, in terms of speed and ease of use, like IE used to 
 
 It is very important to validate your own browser setup or comparison in 2020, testing different configurations with tools such as LoadGen is recommended if you want to be sure you are using the best configuration in your own situation.
 
-If you have comments about this research or want to discuss other configurations, please [join](https://{{site.title}}.slack.com){:target="_blank"} us on our {{site.title}} Slack channel.
+If you have comments about this research or want to discuss other configurations, please [join](https://worldofeuc.slack.com){:target="_blank"} us on the World of EUC Slack channel.
 
 Photo by [Anh Tuan To](https://unsplash.com/@tuan1561?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/@tuan1561?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

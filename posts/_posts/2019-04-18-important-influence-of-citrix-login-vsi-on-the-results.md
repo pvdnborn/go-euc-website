@@ -7,11 +7,11 @@ categories: [ 'infrastructure' ]
 tags: [ 'citrix', 'Login VSI', 'FPS' ]
 image: assets/images/posts/000-important-influence-of-citrix-login-vsi-on-the-results/000-influence-citrix-loginvsi-feature-image.png
 ---
-Over the last couple of months, a lot of new insights have been shared on GO-EUC. After publishing one of our results, we received some feedback regarding these results within our slack channel. It appears that some of the test results were affected by a specific setting, in the OS, which means the results may vary between product versions. This blog post will explain the insights, analysis, and effected results.
+Over the last couple of months, a lot of new insights have been shared on GO-EUC. After publishing one of our results, we received some feedback regarding these results within the Slack channel. It appears that some of the test results were affected by a specific setting, in the OS, which means the results may vary between product versions. This blog post will explain the insights, analysis, and effected results.
 
 > When performing the analysis of data that we collect from the performance tests, no matter how objective we stay, we always have the tendency to interpret the data towards our initial hypotheses. This phenomenon is called confirmation bias. In our VDA post, we saw some exceptional results and performance gains when switching from VDA 7.18 to 1808.2 with an increase of 30% in VSImax. We expected an increase in performance, so we perceived an increase in performance based on previous tests and the collected data. And data doesn’t lie.
 
-Based on our recent research and blog post [Citrix VDA versions breakdown, a giant leap forward]({{site.baseurl}}/citrix-vda-versions-breakdown-a-giant-leap-forward){:target="_blank"} [Muhammad Dawood](https://www.linkedin.com/in/muhammad-dawood){:target="_blank"} (Principal Software Engineer at Citrix) and [Martin Rowan](https://www.linkedin.com/in/martinrowan){:target="_blank"} (Head of Engineering at Highlight, former Citrix employee) have joined our Slack channel to talk about our results. We got challenged by them, specifically on the FPS values of the older VDA versions. These numbers did not exhibit the behavior as Citrix would have expected them to be.
+Based on our recent research and blog post [Citrix VDA versions breakdown, a giant leap forward]({{site.baseurl}}/citrix-vda-versions-breakdown-a-giant-leap-forward){:target="_blank"} [Muhammad Dawood](https://www.linkedin.com/in/muhammad-dawood){:target="_blank"} (Principal Software Engineer at Citrix) and [Martin Rowan](https://www.linkedin.com/in/martinrowan){:target="_blank"} (Head of Engineering at Highlight, former Citrix employee) have joined the Slack channel to talk about our results. We got challenged by them, specifically on the FPS values of the older VDA versions. These numbers did not exhibit the behavior as Citrix would have expected them to be.
 
 Our test results show that both versions of Citrix VDA 7.15 and VDA 7.18 have an overall higher FPS. This is the part which is not as expected and should show a similar pattern as version 1808.2 and 1811.1 (lower FPS). Our analysis tells us that, in theory, something within the workload is continuously generating screen updates.
 
@@ -84,6 +84,6 @@ A couple of our published researches are affected by the differences in FPS beca
 
 Affected researches have been edited with a disclaimer containing a link to this post. Once the tests of the affected researches have been rerun, the posts will also be updated with a link to the new research post.
 
-We are thankful to Muhammad and, Martin for helping us understand our playground. If, in the meantime, you have any questions or remarks please feel free to reach out to us on our [Slack Channel](https://{{site.title}}.slack.com){:target="_blank"}.
+We are thankful to Muhammad and, Martin for helping us understand our playground. If, in the meantime, you have any questions or remarks please feel free to reach out to us on the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Ivan Vranić](https://unsplash.com/photos/j9-2LIZ2_Rc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/broken?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

@@ -55,4 +55,4 @@ Availability of the VDI’s is set to 100%, and peak hours are set to 24-7 so th
 
 The VDI’s are optimized with the current version of the Citrix Optimizer tool ([https://support.citrix.com/article/CTX224676](https://support.citrix.com/article/CTX224676){:target="_blank"}) with the default settings enabled.
 
-If you want more information about this infrastructure, please feel free to ask questions on our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+If you want more information about this infrastructure, please feel free to ask questions on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.

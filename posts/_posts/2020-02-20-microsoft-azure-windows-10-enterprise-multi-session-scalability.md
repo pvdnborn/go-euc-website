@@ -127,6 +127,6 @@ Please note, the estimated compute cost is only for running the VMs. There will 
 
 There is some doubt within the community regarding the reliability of the performance of Azure, as it is not always consistent. This is not noticed, nor proven during this research, but it may be interesting to validate this in an upcoming research. What do you think? Please, let us know in the comments below.
 
-Want to share more about your experience with scalability and performance on Azure, join our Slack channel right [here](https://{{site.title}}.slack.com){:target="_blank"} and start the interaction!
+Want to share more about your experience with scalability and performance on Azure, join the Slack channel right [here](https://worldofeuc.slack.com){:target="_blank"} and start the interaction!
 
 Photo by [Lucas Clara](https://unsplash.com/@lux17?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/cloud-scale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

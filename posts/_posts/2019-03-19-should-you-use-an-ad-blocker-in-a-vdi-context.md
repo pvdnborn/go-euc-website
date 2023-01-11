@@ -165,6 +165,6 @@ The plugin-based ad blocking showed some improvements but is not as effective as
 > <div style="height: 115px;"> <img style="width: 100px; float: left; margin-right: 15px; margin-top: 15px" src="{{site.baseurl}}/assets/images/posts/018-should-you-use-an-ad-blocker-in-a-vdi-context/018-ad-blocker-erik-bakker.png"/> A special thanks to <a href="https://twitter.com/bakker_erik" target="_blank">Erik Bakker</a> as he helped out with this specific research. </div>
 </a>
 
-Want to share your thought about this topic, leave them the comments below or get involved by joining the {{site.title}} community at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Want to share your thought about this topic, leave them the comments below or get involved by joining the World of EUC community at the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Yucel Moran](https://unsplash.com/photos/XJGJh_d0y4g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/ads?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

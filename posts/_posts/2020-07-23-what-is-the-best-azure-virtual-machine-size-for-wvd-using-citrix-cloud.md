@@ -196,6 +196,6 @@ For now, if you are doing a proof of concept with Windows 10 multi-session, besi
   * NV/NVv3-series (GPU: NVIDIA Tesla M60)
   * NVv4-series (GPU: AMD Radeon Instinct MI25)
 
-Are you using Windows 10 multi session in production already? Leave your experience in the comments below or share them on the [Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Are you using Windows 10 multi session in production already? Leave your experience in the comments below or share them on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 <span>Photo by <a href="https://unsplash.com/@teapowered?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Patrick Robert Doyle</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></span>

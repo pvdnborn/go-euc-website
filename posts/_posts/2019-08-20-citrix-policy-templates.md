@@ -276,6 +276,6 @@ The most common alleviation, using server GPUs, can potentially limit the overal
 As per best practice, if you don’t need to delivery 3D of CAD workloads, keep everything at default if you use a VDA 7.18 or later and let the system decide. You get the best balance between user experience and scalability. 
 Source: [https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when](https://www.citrix.com/blogs/2018/10/02/what-graphics-policies-do-i-need-and-when){:target="_blank"}
 
-If you want to share your insights on using the built-in policy templates or would like to discuss our findings, please reach to us or join our [Slack channel](https://{{site.tile}}.slack.com){:target="_blank"}.
+If you want to share your insights on using the built-in policy templates or would like to discuss our findings, please reach to us or join the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Victor Rodriguez](https://unsplash.com/@vimarovi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/metro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.

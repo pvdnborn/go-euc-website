@@ -178,6 +178,6 @@ For these platforms, significant savings in running costs can be realized by opt
 
 When you combine the optimizations with technologies such as [Citrix Autoscale](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops-service/manage-deployment/autoscale.html){:target="_blank"} to shutdown or even remove unused resources, even greater cost reductions can be achieved without sacrificing performance or user experience.
 
-Are you using Windows 10 multi session in production already? Leave your experience in the comments below or share them on the [Slack channel](https://go-euc.slack.com){:target="_blank"}.
+Are you using Windows 10 multi session in production already? Leave your experience in the comments below or share them on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/euro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.

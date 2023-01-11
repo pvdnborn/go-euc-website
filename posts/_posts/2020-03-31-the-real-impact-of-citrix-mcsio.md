@@ -205,6 +205,6 @@ Even when having very fast storage in place, there is still a benefit using MCSI
 
 Please take into account this is a simulated scenario and results may vary in production. Therefore, it is highly recommended to monitor the actual MCSIO usage, as our conclusion may be different in a production environment.
 
-Do you use Citrix MCSIO in your environment? Please share your experience or thoughts in the comment below or at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Do you use Citrix MCSIO in your environment? Please share your experience or thoughts in the comment below or at the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/western?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}.

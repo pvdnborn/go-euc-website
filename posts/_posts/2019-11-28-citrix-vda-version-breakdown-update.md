@@ -180,6 +180,6 @@ On that note we would like to thank Martin Rowan and Muhammad Dawood for their h
 ![conclusion]({{site.baseurl}}/assets/images/posts/042-citrix-vda-version-breakdown-update/042-vda-compare-conclusion.png)
 </a>
 
-Questions or comment about this research? Leave them below in the comments or ask them on our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Questions or comment about this research? Leave them below in the comments or ask them on the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Lindsay Henwood](https://unsplash.com/@lindsayhenwood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/step?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

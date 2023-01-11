@@ -238,6 +238,6 @@ The results show there is only a minimal impact on the overall capacity when ins
 
 This does indicate installing cumulative updates may have an impact on some resources. Therefore, it is important to always validate the impact before deploying in production.
 
-As the updates are released every month, should we do this as a recurring topic? Please share your thought below or share it in {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+As the updates are released every month, should we do this as a recurring topic? Please share your thought below or share it in the World of EUC [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Manasvita S](https://unsplash.com/photos/9q5vptiE2TY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/month?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

@@ -146,6 +146,6 @@ One of the best practices is to ensure all the latest Windows update are install
 
 This research does confirm that you should be very careful applying the right optimizations, as it can make a big difference in user density and perceived user experience. The trend, Moore’s law of Windows 10, continues as each Windows 10 builds still requires more resources.
 
-Are you already trying out Windows 10 1903 in your environment? Share your experience in our [Slack Channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Are you already trying out Windows 10 1903 in your environment? Share your experience in the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Luca Micheli](https://unsplash.com/@lucamicheli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

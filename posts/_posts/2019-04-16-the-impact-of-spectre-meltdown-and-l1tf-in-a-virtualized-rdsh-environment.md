@@ -182,6 +182,6 @@ The question remains, should you enable these mitigations in your RDSH environme
 
 If you don’t enable the mitigations, your environment is vulnerable to these exploits. We cannot decide for you if it’s worth the risk of not enabling the mitigations. We can only advice you to test the mitigations and measure the impact on your environment and take the appropriate measures.
 
-If you have comments about this research or want to discuss other configurations, please join us on our {{site.title}} [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+If you have comments about this research or want to discuss other configurations, please join us on the World of EUC [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Shawn Ang](https://unsplash.com/photos/0VSZVXggySQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/melt-ice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

@@ -205,6 +205,6 @@ Both always lossless and build to lossless shows a clear distinction compared to
 
 In this research using EDT did not show a clear benefit. This may have a more positive effect in a real world or WAN scenario as our connections are within the datacenter without any bandwidth constraints.
 
-What do you use within your environment? Share them in the comments below or start the conversation at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+What do you use within your environment? Share them in the comments below or start the conversation at the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Agence Olloweb](https://unsplash.com/photos/9wYdW55NbnY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/search/photos/lens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}

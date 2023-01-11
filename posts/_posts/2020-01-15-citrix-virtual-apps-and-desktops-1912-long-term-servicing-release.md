@@ -293,7 +293,7 @@ Whether you choose for long-term supportability or looking ahead for new functio
 
 Based on this and previous researches, in either case, upgrading will benefit the user experience, performance and scalability.
 
-Did you already upgrade to the new version? Let us know in the Twitter poll below or discuss it at our [Slack channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Did you already upgrade to the new version? Let us know in the Twitter poll below or discuss it at the [Slack channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let us know what version of Citrix Virtual Apps and Desktops you are running in the poll below <a href="https://twitter.com/hashtag/Citrix?src=hash&amp;ref_src=twsrc%5Etfw">#Citrix</a> <a href="https://twitter.com/hashtag/CitrixSummit2020?src=hash&amp;ref_src=twsrc%5Etfw">#CitrixSummit2020</a></p>&mdash; G0-EUC (@g0_euc) <a href="https://twitter.com/g0_euc/status/1217448627628584960?ref_src=twsrc%5Etfw">January 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

@@ -158,6 +158,6 @@ Another concern is the lower response times (33% lower Login VSI baseline) and s
 
 As a final word of advice, always validate the performance and user experience in your own environment before moving to production.
 
-Is your VDI environment still on Windows 7? Share your experience in our [Slack Channel](https://{{site.title}}.slack.com){:target="_blank"}.
+Is your VDI environment still on Windows 7? Share your experience in the [Slack Channel](https://worldofeuc.slack.com){:target="_blank"}.
 
 Photo by [Alex Mertz](https://unsplash.com/@alexmertz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/seattle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}
