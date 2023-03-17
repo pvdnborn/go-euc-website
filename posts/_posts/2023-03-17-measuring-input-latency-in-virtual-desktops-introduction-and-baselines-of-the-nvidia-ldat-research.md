@@ -62,12 +62,12 @@ To ensure optimal performance, the endpoint machine used as the baseline for mea
 
 The following scenarios are included in the overall research:
 
-  * Baseline 144hz
-  * Baseline 120hz
-  * Baseline 60hz
-  * Citrix HDX on 144hz
-  * VMware Blast on 144hz
-  * Microsoft RDP on 144hz
+  * Baseline 144Hz
+  * Baseline 120Hz
+  * Baseline 60Hz
+  * Citrix HDX on 144Hz
+  * VMware Blast on 144Hz
+  * Microsoft RDP on 144Hz
 
 In this introductory section, we will be discussing the baseline results. In later parts of the series, we will cover the results for Citrix and VMware separately.
 
@@ -80,7 +80,15 @@ It is expected that a higher refresh rate will result in a lower click-to-photon
 
 {% include chart.html type='hbar' data_file='assets/data/097-measuring-input-latency-in-virtual-desktops-introduction-and-baselines-of-the-nvidia-ldat-research/baseline-compare.json' %}
 
-As depicted in the charts, there is a significant difference between 60Hz and 120Hz. This is due to the fact that a higher refresh rate enables faster display of any changes, resulting in a smoother experience.The following website serves as a good demonstration, although the real difference is noticeable when using a higher Hz screen: 
+The data shows that for 144Hz, the mean latency is 20.98 ms, compared to a mean latency of 24.39 ms for 120Hz and finally a mean latency of 52.19 ms for 60Hz.
+
+From these values, it is clear that higher refresh rates will result in lower latency values. This is expected because a higher refresh rate means that the display is updating more frequently, and therefore reducing the time it takes for information to appear on screen.
+
+Delving further into the data, the 144Hz refresh rate offers the lowest mean and median latency values compared to the 120Hz and 60Hz refresh rates. This could indicate that, on average, the 144Hz refresh rate provides faster response times and therefore, in general, a more responsive end-user experience.
+
+However, it's important to note that there might be a diminishing return effect when moving from 120Hz to 144Hz, as the improvement in latency is not as high as when changing from 60Hz to 120Hz.
+
+A higher refresh rate enables faster display updates, resulting in a smoother experience. The following website serves as a good demonstration, although the real difference is noticeable when using a higher Hz screen: 
 
 [UFO Test: Multiple Framerates](https://testufo.com){:target="_blank"}.
 
