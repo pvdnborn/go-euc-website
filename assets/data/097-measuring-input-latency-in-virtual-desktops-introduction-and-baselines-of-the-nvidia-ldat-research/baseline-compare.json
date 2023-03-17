@@ -3,7 +3,7 @@
   "subTitle": "Lower is better",
   "series": [
     {
-      "serie": "144hz",
+      "serie": "144Hz",
       "data": [
         {
           "x": "Average",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "serie": "120hz",
+      "serie": "120Hz",
       "data": [
         {
           "x": "Average",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "serie": "60hz",
+      "serie": "60Hz",
       "data": [
         {
           "x": "Average",
