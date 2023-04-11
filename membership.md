@@ -17,12 +17,9 @@ If that sounds interesting and if you want to join GO-EUC, and to ensure we can 
 
 We are always looking for awesome professionals that want to become an active member of our respected platform.
 ## How to apply
-If you are interested in joining GO-EUC and you fulfill the selection criteria above you can send us your application via the following form:
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5_5J0SajIzb15xiugPXVi5coot7akV79XPGm8dSl1VK3ybQ/viewform?embedded=true" width="790" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+If you are interested in joining GO-EUC and you fulfill the selection criteria above you can send us your application via [this form](https://forms.gle/Ud9n5RLotWTRqSCb9){:target=_"blank"}.
 
 We will evaluate each application personally, this evaluation process will be done on a quarterly base.
-
 ## What can you expect from GO-EUC
 First of all, an important note to remember is that GO-EUC is a non-profit foundation, so even though we would love to welcome you with goodies, you will have to settle with a T-Shirt. 
 
