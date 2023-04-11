@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Membership
+title: What it takes to be a GO-EUC member
 comments: false
 ---
 ![passion]({{site.baseurl}}/assets/images/pages/membership/membership-feature-image.png)
 
-## What it takes to be a GO-EUC member
 GO-EUC is a global platform with like-minded professionals that share a dedicated passion for exploring new technologies. Every member is active in various communities and has a passion for sharing knowledge and are regarded as community leaders. 
 
 If that sounds interesting and if you want to join GO-EUC, and to ensure we can maintain a high standard of content, we have the following selection criterias for new members:
