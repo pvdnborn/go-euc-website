@@ -165,8 +165,7 @@ led.show()
 
 This is all the code you need for the basic setup of the latency measurements. 
 
-## Implementing the Latency Measurement code
-
+## Calibration process
 In order to make sure that the results are calibrated in this section a basic calibration process is defined. 
 
 To make sure that the latency measurements are accurate, it is essential to perform at least a basic calibration process. This calibration serves as a way to determine the inherent latency of the QT Py and the light sensor for example, helping to account for any delays introduced by these components. However, it is important to note that this is only a very basic form of calibration and might not account for all possible sources of latency or variations in latency.
@@ -292,7 +291,7 @@ for i in range(num_clicks):
 
     time.sleep(pause_between_clicks)
 ```
-## Implementing the Latency Measurement code
+## Analyzing the Data
 To analyze the data, review the latency values recorded in the timestamped CSV file on the QT Py's internal storage. These values represent the time it takes for the muzzle flash to appear on the screen after a mouse click. Lower latency values indicate a more responsive system, while higher values may suggest areas for improvement.
 
 It is important to analyze both the calibrated and uncalibrated latency measurements to understand the impact of the inherent latency of the QT Py and the light sensor. Calibrated measurements account for this inherent latency and provide a more accurate representation of the true end-to-end latency.
