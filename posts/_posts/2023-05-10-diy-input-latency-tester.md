@@ -299,7 +299,13 @@ It is important to analyze both the calibrated and uncalibrated latency measurem
 The CSV file can be copied from the QT py’s internal storage to a Windows device and imported into Excel or to a dedicated data analysis tool, to create graphs or to perform more detailed data analysis, such as determining the averages, the standard deviation etc in order to better interpret the data. For more information on statistical analysis, please refer to this post here: [Stuck in the middle, an introduction into statistical analysis for GO-EUC](https://www.go-euc.com/stuck-in-the-middle/){:target="_blank"}
 
 ## Conclusion
-This article detailed a basic solution for measuring end-to-end latency, as a cheap alternative to the NVIDIA LDAT tool. This is only a basic setup and there  is always room for improvement and further customization. By experimenting with different sensors, refining the calibration process, and adjusting the code to suit specific requirements, you can create a setup tailored to your unique needs. The optional Adafruit APDS9960 Proximity, Light, RGB, and Gesture Sensor for example adds  additional functionality, such as proximity sensing that can be used to determine if the sensor is indeed attached to the screen properly. It can also be used to read RGB values instead of just the light intensity.
+This article detailed a basic solution for measuring end-to-end latency, as a cheap alternative to the NVIDIA LDAT tool.
+
+<a href="{{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/complete-setup.jpg" data-lightbox="complete setup">
+![avd-optimization]({{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/complete-setup.jpg)
+</a>
+
+Please note that this is only a basic setup and there is always room for improvement and further customization. By experimenting with different sensors, refining the calibration process, and adjusting the code to suit specific requirements, you can create a setup tailored to your unique needs. The optional Adafruit APDS9960 Proximity, Light, RGB, and Gesture Sensor for example adds  additional functionality, such as proximity sensing that can be used to determine if the sensor is indeed attached to the screen properly. It can also be used to read RGB values instead of just the light intensity.
 
 Photo by <a href="https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vishnu Mohanan</a> on <a href="https://unsplash.com/photos/pfR18JNEMv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
