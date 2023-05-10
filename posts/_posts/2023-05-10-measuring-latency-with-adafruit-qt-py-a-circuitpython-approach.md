@@ -6,7 +6,7 @@ authors: [eltjo]
 reviewers: [ryan]
 categories: [ 'NVIDIA' ]
 tags: [ 'NVIDIA LDAT', 'Click-to-Photon', 'Citrix HDX', 'Microsoft RDP', 'VMware Blast', 'Latency']
-image: assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach-feature-image.png
+image: assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/measuring-latency-with-adafruit-qt-py-a-circuitpython-approach-feature-image.png
 ---
 As mentioned in the introduction post for the Input Latency with NVIDIA LDAT Series There are several compelling alternatives to using NVIDIA’s LDAT tool. This is mainly because the LDAT is not for sale and NVIDIA only makes the tool available for select journalists.
 
