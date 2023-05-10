@@ -1,17 +1,16 @@
 ---
 layout: post
-title:  "DIY input latency tester"
-hidden: true
+title:  "Measuring Latency with Adafruit QT Py: A CircuitPython Approach"
+hidden: false
 authors: [eltjo]
 reviewers: [ryan]
 categories: [ 'NVIDIA' ]
 tags: [ 'NVIDIA LDAT', 'Click-to-Photon', 'Citrix HDX', 'Microsoft RDP', 'VMware Blast', 'Latency']
-image: assets/images/posts/098-diy-input-latency-tester/098-diy-input-latency-tester.png
+image: assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach-feature-image.png
 ---
 As mentioned in the introduction post for the Input Latency with NVIDIA LDAT Series There are several compelling alternatives to using NVIDIA’s LDAT tool. This is mainly because the LDAT is not for sale and NVIDIA only makes the tool available for select journalists.
 
 That post also explored two alternative methods for determining the latency, one by using a high speed camera, and secondly by using an DIY solution for building an LDAT alternative. This post will dive a bit deeper into the latter option.
-
 
 ## Introduction
 NVIDIA's Latency Display Analysis Tool (LDAT) is an excellent example of a hardware latency measurement tool for measuring input latency. LDAT allows users to assess the impact of various settings on end-to-end latency, helping to understand the effect of latency on the user experience in environments like gaming and remote working environments.
@@ -26,22 +25,21 @@ According to Wikipedia, in 2019, resources for CircuitPython were moved to circu
 
 With Circuitpython code can be easily edited on-the-fly, as the microcontrollers will present themselves as USB storage devices when connected to a computer. This means that code can be edited easily with any code- or even text editor, and the changes can be saved directly to the device where the changes can be seen directly.
 
-
 ## Hardware requirements
 To create a DIY latency measurement device, two main components are needed, a microcontroller and a compatible light sensor. 
 
 In a previous attempt a Adafruit Trinket M0 was used in combination with a TCS34725 RGB sensor. This setup however required soldering the light sensor board to the microcontroller:
 
-<a href="{{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/adafruit-trinket-m0.jpg" data-lightbox="adafruit trinket M0">
-![avd-optimization]({{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/adafruit-trinket-m0.jpg)
+<a href="{{site.baseurl}}/assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/adafruit-trinket-m0.jpg" data-lightbox="adafruit trinket M0">
+![avd-optimization]({{site.baseurl}}/assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/adafruit-trinket-m0.jpg)
 </a>
 
 For this setup an Adafruit QT Py was selected mainly because it has a very small form factor, is relatively cheap and it has a Stemma QT connector onboard.
 
 Stemma QT is a plug-and-play system for I2C (Inter-Integrated Circuit) devices, that makes it simple to connect sensors, displays, and other electronic components to microcontrollers without the need for soldering.
 
-<a href="{{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/adafruit-qt-py.jpg" data-lightbox="adafruit QT py">
-![avd-optimization]({{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/adafruit-qt-py.jpg)
+<a href="{{site.baseurl}}/assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/adafruit-qt-py.jpg" data-lightbox="adafruit QT py">
+![avd-optimization]({{site.baseurl}}/assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/adafruit-qt-py.jpg)
 </a>
 
 The main microcontroller component, the Adafruit QT Py microcontroller: The Adafruit QT Py is a compact and versatile microcontroller that supports CircuitPython, making it an ideal choice for this project. The QT Py features a built-in USB-C connector, which makes it easy to connect to a computer for programming and data transfer. More information on the Adafruit QT Py can be found on the Adafruit website: [Adafruit QT Py](https://www.adafruit.com/product/4600){:target="_blank"}
@@ -58,7 +56,7 @@ Connect the QT Py microcontroller to the light sensor with the Stemma QT cable. 
 
 Once you have connected the QT Py with the light sensor, the hardware setup is complete.
 
-To protect the device it is recommended to design and to 3D print a housing for both components, however as I don’t personally have any experience with designing a casing and do not have a 3D printer to my disposal I have not explored that as of yet. There are several compatible designs available for the Adafruit QT Py on Thingiverse for example that could be adapted to include room for the light sensor and an opening for the sensor. One such example is the QT Py holder: [QTPy holder by loretod](https://www.thingiverse.com/thing:4725457){:target="_blank"}, and one found on printables.com for the sensor: [Adafruit BH1750 Case by Making with Matt](https://www.printables.com/en/model/133065-adafruit-bh1750-case){:target="_blank"}
+To protect the device it is recommended to design and to 3D print a housing for both components, however as I don’t personally have any experience with designing a casing and do not have a 3D printer to my disposal I have not explored that as of yet. There are several compatible designs available for the Adafruit QT Py on Thingiverse for example that could be adapted to include room for the light sensor and an opening for the sensor. One such example is the QT Py holder: [QTPy holder by loretod](https://www.thingiverse.com/thing:4725457){:target="_blank"}, and one found on printables for the sensor: [Adafruit BH1750 Case by Making with Matt](https://www.printables.com/en/model/133065-adafruit-bh1750-case){:target="_blank"}
 
 Similarly like with the NVIDIA LDAT, the microcontroller and sensor need to be attached to the monitor for optimal performance, for example with an elastic or rubber band to hold them in place. Please note that when used without a casing, the boards can easily scratch the monitor.
 
@@ -77,8 +75,6 @@ Lastly the adafruit_dotstar library is required to access the onboard addressabl
 For the calibration process, Python will need to be installed on a Windows, MacOS or Linux device to create and run the calibration script. This script will show a series of alternating black and white patterns on the screen and will help to calibrate the latency measurements by determining the inherent latency of the QT Py and the light sensor.
 
 The calibration routine uses the tkinter package. Tkinter is a standard Python interface to the Tcl/Tk GUI toolkit. Both Tk and tkinter are available on most Unix platforms, including macOS, as well as on Windows systems.
-
-
 
 ## Implementing the Latency Measurement code
 In this section, we'll walk you through the process of implementing the latency measurement setup using the Adafruit QT Py, CircuitPython, and the BH1750 light sensor. 
@@ -301,11 +297,10 @@ The CSV file can be copied from the QT py’s internal storage to a Windows devi
 ## Conclusion
 This article detailed a basic solution for measuring end-to-end latency, as a cheap alternative to the NVIDIA LDAT tool.
 
-<a href="{{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/complete-setup.jpg" data-lightbox="complete setup">
-![avd-optimization]({{site.baseurl}}/assets/images/posts/098-diy-input-latency-tester/complete-setup.jpg)
+<a href="{{site.baseurl}}/assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/complete-setup.jpg" data-lightbox="complete setup">
+![avd-optimization]({{site.baseurl}}/assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/complete-setup.jpg)
 </a>
 
 Please note that this is only a basic setup and there is always room for improvement and further customization. By experimenting with different sensors, refining the calibration process, and adjusting the code to suit specific requirements, you can create a setup tailored to your unique needs. The optional Adafruit APDS9960 Proximity, Light, RGB, and Gesture Sensor for example adds  additional functionality, such as proximity sensing that can be used to determine if the sensor is indeed attached to the screen properly. It can also be used to read RGB values instead of just the light intensity.
 
-Photo by <a href="https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vishnu Mohanan</a> on <a href="https://unsplash.com/photos/pfR18JNEMv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+Photo by <a href="https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Vishnu Mohanan</a> on <a href="https://unsplash.com/photos/pfR18JNEMv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
