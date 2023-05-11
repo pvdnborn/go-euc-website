@@ -19,7 +19,7 @@ In this post, the goal is to create a DIY latency measurement setup using a Adaf
 
 It will dive into the hardware and software requirements, provide a step-by-step instruction set for setting up and calibrating the system, and showcase how to interpret the latency data for optimization purposes. For this post, at least a basic understanding of Python and CircuitPython is required.
 
-CircuitPython is an open-source programming language based on Python, and was specifically designed for microcontrollers. Adafruit Industries, a manufacturer for microcontrollers (among other things) is the contributor behind CircuitPython. CircuitPython is a fork of MicroPython, originally created by Damien George.
+CircuitPython is an open-source programming language based on Python, and was specifically designed for microcontrollers. Adafruit Industries, a manufacturer for microcontrollers (among other things) is the main contributor behind CircuitPython. CircuitPython is a fork of MicroPython, originally created by Damien George.
 
 According to Wikipedia, in 2019, resources for CircuitPython were moved to circuitpython.org, a move to show that the number of third-party boards using CircuitPython had grown beyond those only manufactured by Adafruit. This includes both CircuitPython for microcontrollers and CircuitPython on single-board computers using a compatibility layer Adafruit named "Blinka", to access general-purpose input/output functionality and compatibility with a library of over 160 sensors and drivers.
 
@@ -96,7 +96,7 @@ mouse = Mouse()
 led = dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1, brightness=0.1)
 ```
 
-The next section defined a couple of parameters for the latency measurement test, such as the number of clicks, pause between clicks, and the threshold for detecting muzzle flash:
+The next section defines the parameters for the latency measurement test, such as the number of clicks, pause between clicks, and the threshold for detecting muzzle flash:
 
 ```python
 num_clicks = 10 # number of clicks or tests to perform
