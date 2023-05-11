@@ -3,7 +3,7 @@ layout: post
 title:  "Measuring Latency with Adafruit QT Py: A CircuitPython Approach"
 hidden: false
 authors: [eltjo]
-reviewers: [ryan]
+reviewers: [ryan, tom]
 categories: [ 'NVIDIA' ]
 tags: [ 'NVIDIA LDAT', 'Click-to-Photon', 'Citrix HDX', 'Microsoft RDP', 'VMware Blast', 'Latency']
 image: assets/images/posts/098-measuring-latency-with-adafruit-qt-py-a-circuitpython-approach/measuring-latency-with-adafruit-qt-py-a-circuitpython-approach-feature-image.png
