@@ -7,7 +7,7 @@ logo: 'assets/images/logo-white.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 10
 baseurl: ''
-email: 'info@logitblog.com'
+email: 'info@go-euc.com'
 slack: 'https://worldofeuc.slack.com/join/shared_invite/zt-dexotib9-vL0IzKmh9QhPrGxE8LotAA'
 paypal: https://www.paypal.com/donate/?hosted_button_id=FE592EDA2QQT6
 google_analytics: 'G-QERQ4899QY'
@@ -17,7 +17,7 @@ permalink: /:title/
 # Authors
 authors:
   ryan:
-    reviewer: false
+    active: true
     name: Ryan
     display_name: Ryan Ververs-Bijkerk
     company: GO-INIT
@@ -31,7 +31,7 @@ authors:
     page: ryan-ververs-bijkerk
     description: "Ryan is a self-employed Technologist at GO-INIT focused on the EUC and Code area. Ryan is primarily focusing on the user experience in centralized desktop environments. "
   eltjo:
-    reviewer: false
+    active: true
     name: Eltjo
     display_name: Eltjo van Gulik
     company: RawWorks
@@ -43,7 +43,7 @@ authors:
     page: eltjo-van-gulik
     description: "Eltjo van Gulik is a Workspace Consultant and enthusiast. Citrix aficionado. Wannabee PowerShell buff. Blogger. Father and husband. Social, a tad pedantic and suitably lazy. Citrix CTP, PTEC member and SME."
   omar:
-    reviewer: false
+    active: true
     name: Omar
     display_name: Omar Bouhaj
     company: 'SLTN Inter Access'
@@ -54,7 +54,7 @@ authors:
     page: omar-bouhaj
     description: "Dedicated, passionate and innovative IT professional. Omar is an enthusiastic and driven technical consultant and currently a consultant at ICT-Partners West, focused on the End-User Computing (EUC) area. With the primary focus on the user experience in centralized desktop environments."
   sven:
-    reviewer: false
+    active: false
     name: Sven
     display_name: Sven Huisman
     company: Nutanix
@@ -66,7 +66,7 @@ authors:
     page: sven-huisman
     description: "Sven is working as a solutions architect at Nutanix with the focus on End User Computing. The opinions expressed here represent his own and not those of his employer."
   krishan:
-    reviewer: false
+    active: false
     name: Krishan
     display_name: Krishan Khoesial
     company: Cegeka
@@ -76,7 +76,7 @@ authors:
     page: krishan-khoesial
     description: "Krishan is a Workspace Consultant at Cegeka. He has more than a decade experience in End User Computing and conducted many performance scans for customers, national and international."
   marcel:
-    reviewer: false
+    active: false
     name: Marcel
     display_name: Marcel Beck
     company: BeckSpace
@@ -86,7 +86,7 @@ authors:
     page: marcel-beck
     description: "Marcel is a full-time Workspace Consultant/Architect and part-time beer drinker from the north of The Netherlands."
   ruud:
-    reviewer: false
+    active: false
     name: Ruud
     display_name: Ruud Hund
     company: Cegeka
@@ -97,7 +97,7 @@ authors:
     page: ruud-hund
     description: "Ruud is a Thought Leader Connected Workspace at Cegeka. Ruud has over 10+ years experience in designing and building network infrastructures."
   bas:
-    reviewer: false
+    active: true
     name: Bas
     display_name: Bas Stapelbroek
     company: Citrix
@@ -109,8 +109,8 @@ authors:
     page: bas-stapelbroek
     description: "Bas Stapelbroek is a sales engineer and works for Citrix in the Netherlands."
   tom:
-    reviewer: false
-    name: Tom 
+    active: false
+    name: Tom
     display_name: Tom de Jong
     company: RawWorks
     title: Workspace Consultant
@@ -119,8 +119,8 @@ authors:
     page: tom-de-jong
     description: "Tom de Jong is working as a EUC consultant on the Citrix portfolio. He is based in the most beautiful part from the Netherlands, which is the West-Friesland region."
   patrick:
-    reviewer: false
-    name: Patrick 
+    active: true
+    name: Patrick
     display_name: Patrick van den Born
     company: De Technische Jongens
     title: The Architect
@@ -131,8 +131,8 @@ authors:
     page: patrick-van-den-born
     description: "Patrick van den Born is an independent senior Consultant and IT Architect focused on the End User Computing, Public Cloud, Everything-as-Code, and DevOps area."
   gerjon:
-    reviewer: false
-    name: Gerjon 
+    active: false
+    name: Gerjon
     display_name: Gerjon Kunst
     company: RawWorks
     title: Principal consultant
@@ -143,8 +143,8 @@ authors:
     page: gerjon-kunst
     description: "Gerjon Kunst is Principal Consultant at RawWorks in het Netherlands, focusing on future Workspace and Cloud."
   jeff:
-    reviewer: false
-    name: Jeff 
+    active: false
+    name: Jeff
     display_name: Jeff Stokes
     company: Tanium
     title: Principal Engineer
@@ -155,11 +155,11 @@ authors:
     page: jeff-stokes
     description: "Jeff Stokes is a Principal Engineer at Tanium, and an expert in the fields of Windows performance analytics, debugging, VDI, and Windows imaging and deployment."
   benny:
-    reviewer: false
-    name: Benny 
+    active: true
+    name: Benny
     display_name: Benny Tritsch
     company: Dr. Tritsch IT Consulting
-    title: Owner 
+    title: Owner
     picture: 'assets/images/authors/benny.png'
     web: http://drtritsch.com/
     twitter: https://twitter.com/drtritsch
@@ -167,11 +167,11 @@ authors:
     page: benny-tritsch
     description: "Dr. Benny Tritsch is a self-employed end-user computing expert located in Germany, specializing in modern workplace designs, graphics remoting and end-user experience analysis."
   anton:
-    reviewer: false
-    name: Anton 
+    active: true
+    name: Anton
     display_name: Anton van Pelt
     company: AntonvanPelt.com
-    title: Senior IT consultant 
+    title: Senior IT consultant
     picture: 'assets/images/authors/anton.png'
     web: https://www.antonvanpelt.com/
     twitter: https://twitter.com/antonvanpelt
@@ -179,8 +179,8 @@ authors:
     page: anton-van-pelt
     description: "Anton van Pelt is an independent senior IT consultant and architect with over 18 years of experience in complex IT environments."
   silas:
-    reviewer: false
-    name: Silas 
+    active: false
+    name: Silas
     display_name: Silas Arentsen
     company: STYR-IT
     title: Freelance System Engineer
@@ -190,8 +190,8 @@ authors:
     page: silas-arentsen
     description: "Silas is calm and reliable system engineer. Love complex challenges and automating repetitive tasks. Extensive experience on Citrix (CVAD, ADC, CEM) and Microsoft products. Very eager to learn and open to new challenges."
   esther:
-    reviewer: false
-    name: Esther 
+    active: true
+    name: Esther
     display_name: Esther Barthel
     company: cognition IT
     title: Solutions Architect
@@ -202,8 +202,8 @@ authors:
     page: esther-barthel
     description: "Esther Barthel is an independent solutions architect focussed on End User Computing, DevOps engineering and Cloud."
   fredrik:
-    reviewer: false
-    name: Fredrik 
+    active: true
+    name: Fredrik
     display_name: Fredrik Brattstig
     company: IGEL Technology
     title: Technology Evangelist
@@ -214,8 +214,8 @@ authors:
     page: fredrik-brattstig
     description: "Fredrik Brattstig is a Technology Evangelist at IGEL Technology with over 20 years of experience of the VDI/Remote Apps and Desktops niche, and lives by the mantra of providing High-End User Experience."
   sven-j:
-    reviewer: false
-    name: Sven 
+    active: true
+    name: Sven
     display_name: Sven Jansen
     company: deviceTRUST
     title: Pre-Sales Manager
@@ -226,8 +226,8 @@ authors:
     page: sven-jansen
     description: "Sven Jansen is a Pre-Sales Manager for “deviceTRUST”, and is responsible for anything technical between customers, partners and deviceTRUST. A responsible position that mixes being close to technology and also to people very well."
   mick:
-    reviewer: false
-    name: Mick 
+    active: true
+    name: Mick
     display_name: Mick Hilhorst
     company: OBS
     title: Senior Consultant
@@ -267,7 +267,7 @@ sponsors:
     site: 'https://www.ict-partners.nl'
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
