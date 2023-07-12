@@ -83,6 +83,30 @@ As mentioned previously, the predetermined hypothesis is that the using full Rem
 
 Upon visual inspection of the image quality, it is abundantly clear that the text in the second image is much sharper and the colors are significantly less washed out in case of the Word portion of the workload. For the Excel portion, the visual differences are much harder to discern by eye.
 
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_perceived_image_quality.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_perceived_image_quality.png)
+</a>
+
+*Higher is better*
+
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_psnr.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_psnr.png)
+</a>
+
+*Higher is better*
+
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png)
+</a>
+
+*Higher is better*
+
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png)
+</a>
+
+*Higher is better*
+
 In this research the MS-SSIM metric was used in tandem with the 'regular' SSIM metric to determine the perceived image quality of the text elements. 
 
 For these tests, it is important that the text in the images often contains fine details, such as the edges of letters, that can be more apparent at higher resolutions. These details can be lost or distorted during the encoding due to compression or scaling, which could lead to a loss of details and therefore impact the overall sharpness of the text. Because MS-SSIM evaluates similarity at multiple scales, it's more likely to capture these changes in sharpness than SSIM, which operates at a single scale.
@@ -105,7 +129,7 @@ In the case of the PSNR or peak signal-to-noise ratio metric, typical values for
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png)
 </a>
 
-*Word Full screen bwebclient*
+*Word Full screen webclient*
 
 When viewing the results for the full screen comparison, the SSIM values are higher than the cropped images. This is an expected result as the fullscreen screencaptures have a lot of whitespace which naturally results in a higher score.
 
