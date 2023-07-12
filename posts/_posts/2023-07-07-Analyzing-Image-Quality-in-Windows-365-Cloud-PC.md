@@ -57,11 +57,25 @@ All tests were run a total of 10 times and the best result for each test was use
 
 As mentioned previously, the predetermined hypothesis is that the using full Remote Desktop client will exhibit a higher quality image as when using the webclient. For this reason the Remote Desktop client was chosen as the baseline.
 
-(plaatje word baseline)
-(plaatje word test)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png)
+</a>
+Word Baseline (Full client)
 
-(plaatje Excel baseline)
-(plaatje Excel test)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png)
+</a>
+Word webclient
+
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png)
+</a>
+Excel baseline (Full client)
+
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png)
+</a>
+Excel Webclient
 
 Upon visual inspection of the image quality, it is abundantly clear that the text in the second image is much sharper and the colors are significantly less washed out in case of the Word portion of the workload. For the Excel portion, the visual differences are much harder to discern by eye.
 
@@ -77,7 +91,15 @@ For the perceived image quality metrics used, SSIM (Structural Similarity Index 
 
 In the case of the PSNR or peak signal-to-noise ratio metric, typical values for lossy image compression are between 30 and 50dB and here also higher is better. Values over 40dB are considered very good and below are generally accepted as unacceptable low quality.
 
-(charts full screen)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png)
+</a>
+Word Full screen baseline (Full client)
+
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png)
+</a>
+Word Full screen bwebclient
 
 When viewing the results for the full screen comparison, the SSIM values are higher than the cropped images. This is an expected result as the fullscreen screencaptures have a lot of whitespace which naturally results in a higher score.
 
