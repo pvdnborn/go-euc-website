@@ -60,22 +60,26 @@ As mentioned previously, the predetermined hypothesis is that the using full Rem
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png)
 </a>
-Word Baseline (Full client)
+
+*Word Baseline (Full client)*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png)
 </a>
-Word webclient
+
+*Word webclient*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png)
 </a>
-Excel baseline (Full client)
+
+*Excel baseline (Full client)*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png)
 </a>
-Excel Webclient
+
+*Excel Webclient*
 
 Upon visual inspection of the image quality, it is abundantly clear that the text in the second image is much sharper and the colors are significantly less washed out in case of the Word portion of the workload. For the Excel portion, the visual differences are much harder to discern by eye.
 
@@ -94,12 +98,14 @@ In the case of the PSNR or peak signal-to-noise ratio metric, typical values for
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png)
 </a>
-Word Full screen baseline (Full client)
+
+*Word Full screen baseline (Full client)*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png)
 </a>
-Word Full screen bwebclient
+
+*Word Full screen bwebclient*
 
 When viewing the results for the full screen comparison, the SSIM values are higher than the cropped images. This is an expected result as the fullscreen screencaptures have a lot of whitespace which naturally results in a higher score.
 
@@ -129,7 +135,9 @@ Both these factors could have an impact on the measured quality. In any case, un
 In order to rule out these two variables additional tests were performed. We used a Apple MacBook Pro with the Mac version of the remote desktop client. The internet connection used was deliberately congested. The Mac version of the remote desktop client, at the time of writing, does not have RDP shortpath capabilities (CHECK)/ The network did not facilitate UDP connections and therefore was forced to use TCP. The available bandwidth was around 2.5Mbps. The mac full client showed the same quality as the Windows full client and thereby 
 Effectively ruling out these two variables (UDP shortpath and/or available bandwidth) as influencing variables on the results.
 
-(plaatje macbook)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbookproreference.jpg" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbookproreference.jpg)
+</a>
 
 ## Conclusion
 
