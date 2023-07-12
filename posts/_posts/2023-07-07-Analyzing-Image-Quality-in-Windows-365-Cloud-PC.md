@@ -60,25 +60,21 @@ As mentioned previously, the predetermined hypothesis is that the using full Rem
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png)
 </a>
-
 *Word Baseline (Full client)*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png)
 </a>
-
 *Word webclient*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png)
 </a>
-
 *Excel baseline (Full client)*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png)
 </a>
-
 *Excel Webclient*
 
 Upon visual inspection of the image quality, it is abundantly clear that the text in the second image is much sharper and the colors are significantly less washed out in case of the Word portion of the workload. For the Excel portion, the visual differences are much harder to discern by eye.
@@ -86,25 +82,21 @@ Upon visual inspection of the image quality, it is abundantly clear that the tex
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_perceived_image_quality.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_perceived_image_quality.png)
 </a>
-
 *Higher is better*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_psnr.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_psnr.png)
 </a>
-
 *Higher is better*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png)
 </a>
-
 *Higher is better*
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png)
 </a>
-
 *Higher is better*
 
 In this research the MS-SSIM metric was used in tandem with the 'regular' SSIM metric to determine the perceived image quality of the text elements. 
