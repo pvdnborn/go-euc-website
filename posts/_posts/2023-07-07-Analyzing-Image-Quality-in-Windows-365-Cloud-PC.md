@@ -132,14 +132,16 @@ In the case of the PSNR or peak signal-to-noise ratio metric, typical values for
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png)
 </a>
-
-*Word Full screen baseline (Full client)*
+<p align="center" style="margin-top: -30px;" >
+  <i>Word Full screen baseline (Full client)</i>
+</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png)
 </a>
-
-*Word Full screen webclient*
+<p align="center" style="margin-top: -30px;" >
+  <i>Word Full screen webclient</i>
+</p>
 
 When viewing the results for the full screen comparison, the SSIM values are higher than the cropped images. This is an expected result as the fullscreen screencaptures have a lot of whitespace which naturally results in a higher score.
 
