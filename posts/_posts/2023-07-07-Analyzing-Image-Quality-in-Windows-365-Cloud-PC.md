@@ -3,14 +3,14 @@ layout: post
 title:  "Analyzing Image Quality in Windows 365 Cloud PC: HTML5 Webclient vs. Remote Desktop Client"
 hidden: true
 authors: [eltjo]
-reviewers: [benny]
+reviewers: [benny, ryan]
 categories: [ 'Microsoft' ]
-tags: [ 'Windows365', 'cloudpc', 'Cloud pc', 'Microsoft RDP', 'image quality']
+tags: [ 'Windows365', 'cloudpc', 'Cloud pc', 'Microsoft RDP', 'image quality', 'RDP Shortpath']
 image: assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/analyzing-image-quality-in-windows-365-cloud-pc.png
 ---
 Microsoft's Windows 365 Cloud PC service offers users the flexibility to access their Windows environment from anywhere, using either a web client or the Microsoft Remote Desktop Client. But how do these two methods compare in terms of image quality, particularly when it comes to text sharpness in applications like Microsoft Word and Excel? 
 
-When working for a client via a Microsoft Windows365 Cloud PC recently, I noticed that in my Word document that I was working on, the text in Word appeared to be blurry. At that time I was making use of the HTML5 webclient to access my Cloud PC. This made me wonder about the impact of the connection used for the image quality.
+When working for a client via a Microsoft Windows365 Cloud PC recently, I noticed that in my Word document that I was working on, the text in Word appeared to be blurry. At that time I was making use of the HTML5 webclient to access my Cloud PC. This made me wonder about the impact of the connection used for the image quality. My speculation at the time was that using the full client would result in a better inage quality.
 
 In this article, we delve into a detailed comparison of these two access methods, specifically around the quality of the user experience they deliver. Our findings reveal significant differences in image quality between the two, with implications for user comfort and productivity. Whether you're a user considering which method to use, or an IT professional planning a Windows 365 deployment, this article will provide valuable insights to guide your decision.
 
@@ -24,7 +24,7 @@ When using the webclient Microsoft has set the following requirements:
   * Supported operating systems: Windows, macOS, ChromeOS, Linux
   * A modern browser like Microsoft Edge, Google Chrome, Safari, or Mozilla Firefox (v55.0 and later).
 
-In this research the Microsoft Remote Desktop client for Windows from the Microsoft Store was used. This client has the following requirements:
+In this article the Microsoft Remote Desktop client for Windows from the Microsoft Store was used. This client has the following requirements:
   * Operating systems: Windows 10 1703 or later
   * CPU: 1 GHz or faster processor
   * RAM: 1024 MB
@@ -34,11 +34,11 @@ In this research the Microsoft Remote Desktop client for Windows from the Micros
 
 ## Setup and configuration
 
-The setup for this research was kept as simple as possible, with two scenarios:
+The setup for this article was kept as simple as possible, with two scenarios:
   * The baseline, using the Windows-based Microsoft Remote Desktop Client
   * HTML5 based Webclient
 
-The results for the webclient were compared to the baseline scenario using the full client.
+The goal of this article is to compare the image quality between the HTML5 webclient and the full Remote Desktop Client for Windows. For that reason, the results for the webclient were compared to the baseline scenario using the full client.
 
 The browser used for the tests was Microsoft Edge version: Version 114.0.1823.51 (Official build) (64-bit), running on a Windows 11 end point. The same endpoint was used for both tests.
 
@@ -51,7 +51,7 @@ For the Remote Desktop Client, all settings were left as default.
 
 The Cloud PC used was a Cloud PC Enterprise with 2vCPU, 8GB of memory and 128GB of storage. The Cloud PC ran Windows 10 21H2 with OS Build 19044.3086.
 
-All tests were run a total of 10 times and the best result for each test was used for the comparisons in the results.
+All tests were run a total of 5 times and the best result for each test was used for the comparisons in the results. There was very little variance between the 5 runs.
 
 ## Analysis
 
@@ -84,24 +84,32 @@ Upon visual inspection of the image quality, it is abundantly clear that the tex
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_perceived_image_quality.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_perceived_image_quality.png)
 </a>
-*<p style="text-align: center;">Higher is better</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Higher is better</i>
+</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_psnr.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word_psnr.png)
 </a>
-*<p style="text-align: center;">Higher is better</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Higher is better</i>
+</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png)
 </a>
-*<p style="text-align: center;">Higher is better</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Higher is better</i>
+</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png)
 </a>
-*<p style="text-align: center;">Higher is better</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Higher is better</i>
+</p>
 
-In this research the MS-SSIM metric was used in tandem with the 'regular' SSIM metric to determine the perceived image quality of the text elements. 
+In this article the MS-SSIM metric was used in tandem with the 'regular' SSIM metric to determine the perceived image quality of the text elements. 
 
 For these tests, it is important that the text in the images often contains fine details, such as the edges of letters, that can be more apparent at higher resolutions. These details can be lost or distorted during the encoding due to compression or scaling, which could lead to a loss of details and therefore impact the overall sharpness of the text. Because MS-SSIM evaluates similarity at multiple scales, it's more likely to capture these changes in sharpness than SSIM, which operates at a single scale.
 
@@ -140,7 +148,7 @@ Note: Microsoft recommends using a vGPU when enabling this policy but at the tim
 
 There are a couple of other factors that could account for the difference in quality. The webclient uses a TCP connection whereas the full client uses UDP as the underlying protocol. 
 
-For the udp connections of the full cliënt ms uses what's called RDP shortpath. The main difference between the default TCP connection and rdp shortpath is that the default connection uses a gateway  using reverse connect. RDP shortpath uses a direct path that way the protocol can in theory deliver improved connection reliability, lower latency, and higher available bandwidth.
+For the UDP connections of the full cliënt ms uses what's called RDP shortpath. The main difference between the default TCP connection and rdp shortpath is that the default connection uses a gateway  using reverse connect. RDP shortpath uses a direct path that way the protocol can in theory deliver improved connection reliability, lower latency, and higher available bandwidth.
 
 More information about RDP shortpath can be found on the MS documentation site here: [https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath?tabs=public-networks#key-benefits](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath?tabs=public-networks#key-benefits){:target="_blank"} 
 
@@ -150,8 +158,7 @@ Both these factors could have an impact on the measured quality. In any case, un
 
 **UPDATE:**
 
-In order to rule out these two variables additional tests were performed. We used a Apple MacBook Pro with the Mac version of the remote desktop client. The internet connection used was deliberately congested. The Mac version of the remote desktop client, at the time of writing, does not have RDP shortpath capabilities (CHECK)/ The network did not facilitate UDP connections and therefore was forced to use TCP. The available bandwidth was around 2.5Mbps. The mac full client showed the same quality as the Windows full client and thereby 
-Effectively ruling out these two variables (UDP shortpath and/or available bandwidth) as influencing variables on the results.
+In order to rule out these two variables, additional tests were performed. We used a Apple MacBook Pro with the Mac version of the remote desktop client. The internet connection used was deliberately congested to simulate high latecy and low available bandwidth. The Mac version of the remote desktop client, at the time of writing, does not have RDP shortpath capabilities and/or the used network did not facilitate UDP connections and therefore was forced to use TCP. The available bandwidth during testing was around 2.5Mbps. The Mac full client showed the same quality as the Windows full client and thereby effectively ruling out these two variables (UDP shortpath and/or available bandwidth) as influencing variables on the results.
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbookproreference.jpg" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbookproreference.jpg)
