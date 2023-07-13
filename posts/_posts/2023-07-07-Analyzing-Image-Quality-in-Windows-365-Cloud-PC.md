@@ -61,23 +61,31 @@ As mentioned previously, the predetermined hypothesis is that the using full Rem
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png)
 </a>
 
-*<p style="text-align: center;">Word Baseline (Full client)</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Word Baseline (Full client)</i>
+</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png)
 </a>
 
-*<p style="text-align: center;">Word webclient</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Word webclient</i>
+</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png)
 </a>
-*<p style="text-align: center;">Excel baseline (Full client)</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Excel baseline (Full client)</i>
+</p>
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png)
 </a>
-*<p style="text-align: center;">Excel webclient</p>*
+<p align="center" style="margin-top: -30px;" >
+  <i>Excel webclient</i>
+</p>
 
 Upon visual inspection of the image quality, it is abundantly clear that the text in the second image is much sharper and the colors are significantly less washed out in case of the Word portion of the workload. For the Excel portion, the visual differences are much harder to discern by eye.
 
