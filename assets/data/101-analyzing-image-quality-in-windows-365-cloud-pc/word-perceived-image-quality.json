@@ -1,0 +1,59 @@
+{
+    "title":  "Perceived Image quality - Word",
+    "subTitle":  "Higher is better",
+    "series":  [
+                   {
+                       "serie":  "Full Screen 1",
+                       "data":  [
+                                    {
+                                        "x":  "SSIM",
+                                        "y":  "0.994744241"
+                                    },
+                                    {
+                                        "x":  "MS-SSIM",
+                                        "y":  "0.998051345"
+                                    }
+                                ]
+                   },
+                   {
+                       "serie":  "Full Screen 2",
+                       "data":  [
+                                    {
+                                        "x":  "SSIM",
+                                        "y":  "0.988048971"
+                                    },
+                                    {
+                                        "x":  "MS-SSIM",
+                                        "y":  "0.997310102"
+                                    }
+                                ]
+                   },
+                   {
+                       "serie":  "Text Only 1",
+                       "data":  [
+                                    {
+                                        "x":  "SSIM",
+                                        "y":  "0.915799797"
+                                    },
+                                    {
+                                        "x":  "MS-SSIM",
+                                        "y":  "0.975482583"
+                                    }
+                                ]
+                   },
+                   {
+                       "serie":  "Text only 2",
+                       "data":  [
+                                    {
+                                        "x":  "SSIM",
+                                        "y":  "0.944842041"
+                                    },
+                                    {
+                                        "x":  "MS-SSIM",
+                                        "y":  "0.995662332"
+                                    }
+                                ]
+                   }
+               ],
+    "unit":  ""
+}
