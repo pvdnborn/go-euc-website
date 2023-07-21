@@ -103,12 +103,7 @@ Upon visual inspection of the image quality, it is abundantly clear that the tex
   <i>Higher is better</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_perceived_image_quality.png)
-</a>
-<p align="center" style="margin-top: -30px;" >
-  <i>Higher is better</i>
-</p>
+{% include chart.html type='hbar' data_file='assets/data/101-analyzing-image-quality-in-windows-365-cloud-pc/excel-perceived-image-quality.json' %}
 
 <a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png" data-lightbox="clientversion">
 ![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel_psnr.png)
