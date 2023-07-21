@@ -49,10 +49,10 @@
 
         var cleanLabels = []
         labels.forEach(function (labelArray, i) {
-            
+
             labelArray.forEach(function(label, j){
                 cleanLabels.push(label);
-            });            
+            });
         });
 
         cleanLabels = cleanLabels.filter(onlyUnique);
@@ -68,14 +68,14 @@
                 showTicks = true;
             }
         }
-        
+
         const image = new Image();
         image.src = '/assets/images/watermark.png';
 
         const custom_canvas_background_color = {
             id: 'custom_canvas_background_color',
             beforeDraw: (chart, args, options) => {
-                
+
                 if (image.complete) {
                     const ctx = chart.ctx;
                     const {top, left, width, height} = chart.chartArea;
@@ -100,6 +100,11 @@
 
         var scale = true;
         if ("{{ include.scale }}" === 'false') {
+            scale = false;
+        }
+        var scaleManual = false;
+        if ("{{ include.scale }}" === 'manual') {
+            scaleManual = true;
             scale = false;
         }
 
@@ -149,7 +154,7 @@
                     },
                     datalabels: {
                         display: displayLabel,
-                        formatter: function(value, context) {                           
+                        formatter: function(value, context) {
                             return value + unit;
                         },
                         font: {
@@ -202,10 +207,10 @@
         var ctx = document.getElementById(id).getContext("2d");
         var chart = new Chart(ctx, config);
 
-        
+
         var dataArray = [];
         obj.forEach(function (value, i) {
-            
+
             values = value.data.map(function (e) {
                 dataArray.push(e.y);
                 return e.y
@@ -230,26 +235,35 @@
                 });
             }
         });
-        
-        
+
+        if (scaleManual) {
+            if (chart.config.options.indexAxis == 'x') {
+                chart.config.options.scales.y.min = "{{ include.scale_min }}";
+                chart.config.options.scales.y.max = "{{ include.scale_max }}";
+            } else {
+                chart.config.options.scales.x.min = "{{ include.scale_min }}";
+                chart.config.options.scales.x.max = "{{ include.scale_max }}";
+            }
+        }
+
         if (scale) {
             if (type == 'bar' || type == 'hbar') {
 
-            var maxValue = Math.max(...dataArray);
+                var maxValue = Math.max(...dataArray);
 
-            if (chart.config.options.indexAxis == 'x') {
-                if (maxValue <= 1) {
-                    chart.config.options.scales.y.max = maxValue * 1.2;
+                if (chart.config.options.indexAxis == 'x') {
+                    if (maxValue <= 1) {
+                        chart.config.options.scales.y.max = maxValue * 1.2;
+                    } else {
+                        chart.config.options.scales.y.max = Math.ceil(maxValue * 1.2);
+                    }
                 } else {
-                    chart.config.options.scales.y.max = Math.ceil(maxValue * 1.2);
-                }              
-            } else {
-                if (maxValue <= 1) {
-                    chart.config.options.scales.x.max = maxValue * 1.2;
-                } else {
-                    chart.config.options.scales.x.max = Math.ceil(maxValue * 1.2);
+                    if (maxValue <= 1) {
+                        chart.config.options.scales.x.max = maxValue * 1.2;
+                    } else {
+                        chart.config.options.scales.x.max = Math.ceil(maxValue * 1.2);
+                    }
                 }
-            }
             }
         }
 
@@ -266,6 +280,6 @@
     if (chartType == "hbar") {
         e.setAttribute("height", '640');
     }
-    
+
     fetchJSONFile("/{{ include.data_file }}", id, "{{ include.type }}", createChart);
 </script>
