@@ -5,10 +5,12 @@ hidden: false
 authors: [eltjo]
 reviewers: [benny, ryan]
 categories: [ 'Microsoft' ]
+redirect_from:
+  - /Analyzing-Image-Quality-in-Windows-365-Cloud-PC/
 tags: [ 'Windows365', 'cloudpc', 'Cloud pc', 'Microsoft RDP', 'image quality', 'RDP Shortpath']
 image: assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/analyzing-image-quality-in-windows-365-cloud-pc.png
 ---
-Microsoft's Windows 365 Cloud PC service offers users the flexibility to access their Windows environment from anywhere, using either a web client or the Microsoft Remote Desktop Client. But how do these two methods compare in terms of image quality, particularly when it comes to text sharpness in applications like Microsoft Word and Excel? 
+Microsoft's Windows 365 Cloud PC service offers users the flexibility to access their Windows environment from anywhere, using either a web client or the Microsoft Remote Desktop Client. But how do these two methods compare in terms of image quality, particularly when it comes to text sharpness in applications like Microsoft Word and Excel?
 
 When working for a client via a Microsoft Windows365 Cloud PC recently, I noticed that in my Word document that I was working on, the text in Word appeared to be blurry. At that time I was making use of the HTML5 webclient to access my Cloud PC. This made me wonder about the impact of the connection used for the image quality. My speculation at the time was that using the full client would result in a better inage quality.
 
@@ -112,7 +114,7 @@ Upon visual inspection of the image quality, it is abundantly clear that the tex
   <i>Higher is better</i>
 </p>
 
-In this article the MS-SSIM metric was used in tandem with the 'regular' SSIM metric to determine the perceived image quality of the text elements. 
+In this article the MS-SSIM metric was used in tandem with the 'regular' SSIM metric to determine the perceived image quality of the text elements.
 
 For these tests, it is important that the text in the images often contains fine details, such as the edges of letters, that can be more apparent at higher resolutions. These details can be lost or distorted during the encoding due to compression or scaling, which could lead to a loss of details and therefore impact the overall sharpness of the text. Because MS-SSIM evaluates similarity at multiple scales, it's more likely to capture these changes in sharpness than SSIM, which operates at a single scale.
 
@@ -145,17 +147,17 @@ These results also suggest that the full-screen images preserved structural simi
 
 Futhermore, the result seems to suggest that the webclient is rendering the images using chroma subsampling whereas the full client does not, although we could not find any official sources to confirm this.
 
-A related link to the Microsoft Documentation for AVD seems to suggest that by default Microsoft is using YUV 4:2:0 and only switches to 4:4:4 when using a gpu accelerated AVD host and configuring Configure fullscreen video encoding: [https://learn.microsoft.com/en-us/azure/virtual-desktop/enable-gpu-acceleration#configure-fullscreen-video-encoding](https://learn.microsoft.com/en-us/azure/virtual-desktop/enable-gpu-acceleration#configure-fullscreen-video-encoding){:target="_blank"} 
+A related link to the Microsoft Documentation for AVD seems to suggest that by default Microsoft is using YUV 4:2:0 and only switches to 4:4:4 when using a gpu accelerated AVD host and configuring Configure fullscreen video encoding: [https://learn.microsoft.com/en-us/azure/virtual-desktop/enable-gpu-acceleration#configure-fullscreen-video-encoding](https://learn.microsoft.com/en-us/azure/virtual-desktop/enable-gpu-acceleration#configure-fullscreen-video-encoding){:target="_blank"}
 
 *“This policy setting prioritizes the H.264/AVC 444 graphics mode for non-RemoteFX vGPU scenarios. When you use this setting on the RDP server, the server will use H.264/AVC 444 as the codec in an RDP 10 connection where both the client and server can use H.264/AVC 444.”*
 
 Note: Microsoft recommends using a vGPU when enabling this policy but at the time of writing vGPU accelerated Cloud PC’s are not available.
 
-There are a couple of other factors that could account for the difference in quality. The webclient uses a TCP connection whereas the full client uses UDP as the underlying protocol. 
+There are a couple of other factors that could account for the difference in quality. The webclient uses a TCP connection whereas the full client uses UDP as the underlying protocol.
 
 For the UDP connections of the full cliënt ms uses what's called RDP shortpath. The main difference between the default TCP connection and rdp shortpath is that the default connection uses a gateway  using reverse connect. RDP shortpath uses a direct path that way the protocol can in theory deliver improved connection reliability, lower latency, and higher available bandwidth.
 
-More information about RDP shortpath can be found on the MS documentation site here: [https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath?tabs=public-networks#key-benefits](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath?tabs=public-networks#key-benefits){:target="_blank"} 
+More information about RDP shortpath can be found on the MS documentation site here: [https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath?tabs=public-networks#key-benefits](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath?tabs=public-networks#key-benefits){:target="_blank"}
 
 Lastly, there was also a difference in reported available bandwidth with the webclient capping out at 9.5mbps and the full cliënt reaching bandwidth in excess of 150mpbs over the same connection during the tests. This difference in bandwidth could be attributed to the previous point about RDP Shortpath. Using RDP Shortpath could have resulted in a higher available bandwidth for the client.
 
@@ -175,11 +177,11 @@ Microsoft documentation for Cloud PC is still pretty sparse, especially undernea
 
 Users have two connection choices when it comes to connecting to their Windows365 Cloud PC: using the webclient and using the full Remote Desktop client.
 
-In conclusion, there are significant differences in image quality between the HTML5 web client and the Microsoft Remote Desktop Client. Our tests, which focused on the sharpness of text in applications like Microsoft Word and Excel, show that the Full Remote Desktop Client on Windows provides a noticeably superior image quality. The text appears sharper and less washed out, leading to a more comfortable and potentially more productive user experience. 
+In conclusion, there are significant differences in image quality between the HTML5 web client and the Microsoft Remote Desktop Client. Our tests, which focused on the sharpness of text in applications like Microsoft Word and Excel, show that the Full Remote Desktop Client on Windows provides a noticeably superior image quality. The text appears sharper and less washed out, leading to a more comfortable and potentially more productive user experience.
 Generally speaking the text is easier on the eyes when using the full client. Now this is not to say that the image quality when using the webclient is bad, however it is a matter of personal opinion if this is in any way detrimental to the overall user experience.
 
 
-When comparing the image quality in typical Office worker scenarios, the image quality when using the full Remote Desktop Client is significantly better compared to the webclient. This becomes most apparent when examining the sharpness of text when using Microsoft Word and Microsoft Excel. Overall the text quality appears to be blurry and washed out when using the webclient and text appears much sharper when using the full (Windows) client. 
+When comparing the image quality in typical Office worker scenarios, the image quality when using the full Remote Desktop Client is significantly better compared to the webclient. This becomes most apparent when examining the sharpness of text when using Microsoft Word and Microsoft Excel. Overall the text quality appears to be blurry and washed out when using the webclient and text appears much sharper when using the full (Windows) client.
 This experience is backed up by the perceived image quality metrics, where in all cases the full client scores better compared to the webclient.
 
 While the web client offers the convenience of access from any device with a modern browser, end users who prioritize image quality, particularly for text-intensive workloads, will find the Remote Desktop Client to be a better option.
@@ -188,11 +190,10 @@ It is important to note that image quality is just one aspect of the user experi
 
 As Microsoft continues to develop and refine the Windows 365 solutions, we hope to see improvements in the web client's image quality. Until then, users and IT professionals should consider these findings when deciding which access method to use for their Windows 365 Cloud PC environments.
 
-Other scenarios that might be interesting and are being considered are a comparison between CloudPC in combination with Citrix's HDX Plus webclient and the Citrix Workspace App. 
+Other scenarios that might be interesting and are being considered are a comparison between CloudPC in combination with Citrix's HDX Plus webclient and the Citrix Workspace App.
 
 We hope this reasearch was informative, leave a comment, share this article and please let us know if you have any questions.
 
 Special thanks goes out to Dr. Benny Tritsch for his help and insightful comments!
- 
+
 Photo by <a href="https://unsplash.com/@redzeppelin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Red Zeppelin</a> on <a href="https://unsplash.com/photos/zlb7Td_HN8U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
