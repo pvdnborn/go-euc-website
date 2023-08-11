@@ -18,6 +18,7 @@ permalink: /:title/
 authors:
   ryan:
     active: true
+    founder: true
     name: Ryan
     display_name: Ryan Ververs-Bijkerk
     company: GO-INIT
@@ -32,6 +33,7 @@ authors:
     description: "Ryan is a self-employed Technologist at GO-INIT focused on the EUC and Code area. Ryan is primarily focusing on the user experience in centralized desktop environments. "
   eltjo:
     active: true
+    founder: true
     name: Eltjo
     display_name: Eltjo van Gulik
     company: RawWorks
