@@ -91,11 +91,11 @@ As mentioned previously, the predetermined hypothesis is that the using full Rem
 
 Upon visual inspection of the image quality, it is abundantly clear that the text in the second image is much sharper and the colors are significantly less washed out in case of the Word portion of the workload. For the Excel portion, the visual differences are much harder to discern by eye.
 
-{% include chart.html scale='manual' scale_min='15' scale_max='50' type='hbar' data_file='assets/data/101-analyzing-image-quality-in-windows-365-cloud-pc/word-psnr-compare.json' %}
+{% include chart.html scale='true' type='hbar' data_file='assets/data/101-analyzing-image-quality-in-windows-365-cloud-pc/word-psnr-compare.json' %}
 
 {% include chart.html scale='manual' scale_min='0.8' scale_max='1.05' type='hbar' data_file='assets/data/101-analyzing-image-quality-in-windows-365-cloud-pc/word-perceived-image-quality.json' %}
 
-{% include chart.html scale='manual' scale_min='15' scale_max='50' type='hbar' data_file='assets/data/101-analyzing-image-quality-in-windows-365-cloud-pc/excel-psnr-compare.json' %}
+{% include chart.html type='hbar' data_file='assets/data/101-analyzing-image-quality-in-windows-365-cloud-pc/excel-psnr-compare.json' %}
 
 {% include chart.html scale='manual' scale_min='0.8' scale_max='1.05' type='hbar' data_file='assets/data/101-analyzing-image-quality-in-windows-365-cloud-pc/excel-perceived-image-quality.json' %}
 
