@@ -7,17 +7,17 @@ comments: false
 
 <img style="float: left; width: 250px; margin-right: 30px;" src="{{ site.url }}{{ author.picture | relative_url }}" alt="{{ author.display_name }}">
 
-Together with Ryan Ververs-Bijkerk, Eltjo is one of the co-founders of GO-EUC.
+Together with Ryan Ververs-Bijkerk, I co-founded the G0-EUC platform and community. I’m the Principal Product Manager for HDX & Graphics at Citrix, directing the vision and strategy for the Citrix HDX remoting protocol and I have two decades of experience in the End User Computing domain.
 
-Citrix aficionado. Wannabee PowerShell buff. Blogger. Father and husband. Social, a tad pedantic and suitably lazy. Citrix CTP, PTEC member and SME.
+Recognised as a former [CTP](http://www.citrix.com/blogs/2020/02/11/welcome-to-the-2020-class-of-citrix-technology-professionals/){:target="_blank"}, my contributions span blogging, public speaking at international events like Citrix Synergy, and participating in other community-driven initiatives like TeamRGE.
 
-Eltjo van Gulik is a Workspace Consultant and enthusiast from the rural North of Heerhugowaard where he lives with his wife and thirteen year old son. He holds multiple certifications from Citrix and Microsoft, and is a Microsoft Certified Trainer as well as a Citrix Certified Instructor. He has more than 20 years of experience in the field of End User Computing and Application and Desktop Delivery.
+Outside of work, I‘m a proud father and husband. And as a self-proclaimed beer and coffee aficionado, I prefer Russian Imperial Stouts, and the distinct tastes of Brasil/Costa Rica Arabica blends for my coffee.
 
-In 2020 Eltjo was one of the new CTP awardees: [https://www.citrix.com/blogs/2020/02/11/welcome-to-the-2020-class-of-citrix-technology-professionals/](https://https://www.citrix.com/blogs/2020/02/11/welcome-to-the-2020-class-of-citrix-technology-professionals/){:target="_blank"}
+In my spare time, I’m an avid Dungeons and Dragons player. Only 3rd edition though, because the newer versions suck (did I say that I was pedantic yet?).
 
-Besides his profession, he is a self-proclaimed beer and coffee geek. If anyone asks for the specifics, his favorite beers are Russian Imperial Stouts and for coffee, he prefers Brasil/Costa Rica Arabica blends.
+Friends often label me as social, slightly pedantic, and suitably lazy.
 
-Feel free to contact him on Twitter or Linkedin.
+Let's connect! Find me on Twitter and LinkedIn.
 
 <div class="social-button-member">
 {% if author.linkedin %}
