@@ -39,11 +39,10 @@ authors:
     company: Citrix
     title: 'Principal Product Manager'
     picture: 'assets/images/authors/eltjo.png'
-    web: https://www.netwerkhelden.nl/cms/
     twitter: https://twitter.com/eltjovg
     linkedin: https://www.linkedin.com/in/eltjovangulik/
     page: eltjo-van-gulik
-    description: "Eltjo van Gulik is the Principal Product Manager for HDX at Citrix and one of the co-founders of G0-EUC. Social, a tad pedantic and suitably lazy.
+    description: "Eltjo van Gulik is the Principal Product Manager for HDX at Citrix and one of the co-founders of G0-EUC. Social, a tad pedantic and suitably lazy."
   omar:
     active: true
     name: Omar
