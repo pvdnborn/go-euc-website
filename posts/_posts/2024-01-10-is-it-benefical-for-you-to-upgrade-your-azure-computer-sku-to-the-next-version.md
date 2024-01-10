@@ -92,7 +92,11 @@ Based on the specifications, there are minor changes in the CPU types, but overa
 
 Timing the different stages of each test gives us an idea of the time it takes for each VM SKU, on average, to complete the various stages.
 
-{% include chart.html type='bar' data_file='assets/data/107-is-it-benefical-for-you-to-upgrade-your-azure-computer-sku-to-the-next-version/test-timings-per-vm-sku-ms.json' %}
+{% include chart.html scale='auto' type='bar' data_file='assets/data/107-is-it-benefical-for-you-to-upgrade-your-azure-computer-sku-to-the-next-version/test-timings-per-vm-sku-ms.json' %}
+
+{% include chart.html scale='auto' type='bar' data_file='assets/data/107-is-it-benefical-for-you-to-upgrade-your-azure-computer-sku-to-the-next-version/test-timings-per-vm-sku-ms-compression.json' %}
+
+{% include chart.html scale='auto' type='bar' data_file='assets/data/107-is-it-benefical-for-you-to-upgrade-your-azure-computer-sku-to-the-next-version/test-timings-per-vm-sku-ms-decompression.json' %}
 
 The data shows that the Standard_D2ds_v5 SKU has a speed advantage even though the overall specification is the same with 2vCPU and 8GB of memory. All test methods leverage the advantage of the CPU being a faster CPU for the Standard_D2ds_v5. When reviewing the other virtual machine SKU test results, there are some unexpected outcomes, namely the Standard_DS2_v2, which can be linked to the SKU version as this is the oldest and, therefore, the slowest.
 

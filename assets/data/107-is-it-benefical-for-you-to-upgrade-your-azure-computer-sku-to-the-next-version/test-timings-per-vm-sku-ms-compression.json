@@ -1,21 +1,21 @@
 {
-    "title":  "Timings per VM SKU in MS",
+    "title":  "Timings compression per VM SKU in MS",
     "subTitle":  "Lower is Better",
     "series":  [
                    {
                        "serie":  "Standard_D2ds_v4",
                        "data":  [
                                     {
-                                        "x":  "Copy",
-                                        "y":  "5712"
+                                        "x":  "Normal",
+                                        "y":  "11915"
                                     },
                                     {
-                                        "x":  "Read",
-                                        "y":  "16149"
+                                        "x":  "Max",
+                                        "y":  "16446"
                                     },
                                     {
-                                        "x":  "Cleanup",
-                                        "y":  "2592"
+                                        "x":  "Ultra",
+                                        "y":  "15934"
                                     }
                                 ]
                    },
@@ -23,16 +23,16 @@
                        "serie":  "Standard_D2ds_v5",
                        "data":  [
                                     {
-                                        "x":  "Copy",
-                                        "y":  "4625"
+                                        "x":  "Normal",
+                                        "y":  "10491"
                                     },
                                     {
-                                        "x":  "Read",
-                                        "y":  "11254"
+                                        "x":  "Max",
+                                        "y":  "12754"
                                     },
                                     {
-                                        "x":  "Cleanup",
-                                        "y":  "1986"
+                                        "x":  "Ultra",
+                                        "y":  "13277"
                                     }
                                 ]
                    },
@@ -40,16 +40,16 @@
                        "serie":  "Standard_D2s_v3",
                        "data":  [
                                     {
-                                        "x":  "Copy",
-                                        "y":  "5064"
+                                        "x":  "Normal",
+                                        "y":  "15573"
                                     },
                                     {
-                                        "x":  "Read",
-                                        "y":  "17615"
+                                        "x":  "Max",
+                                        "y":  "18276"
                                     },
                                     {
-                                        "x":  "Cleanup",
-                                        "y":  "1490"
+                                        "x":  "Ultra",
+                                        "y":  "18259"
                                     }
                                 ]
                    },
@@ -57,16 +57,16 @@
                        "serie":  "Standard_DS2_v2",
                        "data":  [
                                     {
-                                        "x":  "Copy",
-                                        "y":  "5110"
+                                        "x":  "Normal",
+                                        "y":  "14129"
                                     },
                                     {
-                                        "x":  "Read",
-                                        "y":  "16221"
+                                        "x":  "Max",
+                                        "y":  "17014"
                                     },
                                     {
-                                        "x":  "Cleanup",
-                                        "y":  "1380"
+                                        "x":  "Ultra",
+                                        "y":  "16362"
                                     }
                                 ]
                    }
