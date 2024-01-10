@@ -58,14 +58,14 @@ The benchmark used in this research is written in PowerShell, utilizing fsutil a
   * 100MB – 25
   * 512MB – 15
 * For each of the above file sizes
-  * Read the contents of all these files (Read)
-  * Compress all these files using normal compression (Normal)
-  * Decompress the archive created using normal compression (-Normal)
-  * Compress all these files using maximum compression (Max)
-  * Decompress the archive created using maximum compression (-Max)
-  * Compress all these files using ultra-compression (Ultra)
-  * Decompress the archive created using ultra-compression (-Ultra)
-  * Remove all files used (Cleanup)
+  * Read the contents of all these files
+  * Compress all these files using normal compression
+  * Decompress the archive created using normal compression
+  * Compress all these files using maximum compression
+  * Decompress the archive created using maximum compression
+  * Compress all these files using ultra-compression
+  * Decompress the archive created using ultra-compression
+  * Remove all files used
 
 Compression and Decompression is being used because these tasks are CPU intensive tasks. As the variation between the virtual machine SKUs is the CPU model and speed, we derive a tangible difference in processing time between virtual machine SKUs.
 
