@@ -48,8 +48,8 @@ The browser used for the tests was Microsoft Edge version: Version 114.0.1823.51
 The latest version Microsoft Remote Desktop Client available at time of writing was version 10.2.3012.0.
 For the Remote Desktop Client, all settings were left as default.
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/remotedesktopclientversion.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/remotedesktopclientversion.png)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/remote-desktop-client-version.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/remote-desktop-client-version.png)
 </a>
 
 The Cloud PC used was a Cloud PC Enterprise with 2vCPU, 8GB of memory and 128GB of storage. The Cloud PC ran Windows 10 21H2 with OS Build 19044.3086.
@@ -60,31 +60,31 @@ All tests were run a total of 5 times and the best result for each test was used
 
 As mentioned previously, the predetermined hypothesis is that the using full Remote Desktop client will exhibit a higher quality image as when using the webclient. For this reason the Remote Desktop client was chosen as the baseline.
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwindowsclient_cropped.png)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-cloudpc-windowsclient-cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-cloudpc-windowsclient-cropped.png)
 </a>
 
 <p align="center" style="margin-top: -30px;" >
   <i>Word Baseline (Full client)</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_Cloudpcwebclient_cropped.png)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-cloudpc-webclient-cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-cloudpc-webclient-cropped.png)
 </a>
 
 <p align="center" style="margin-top: -30px;" >
   <i>Word webclient</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwindowsclient_cropped.png)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/excel1-cloudpc-windowsclient-cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/excel1-cloudpc-windowsclient-cropped.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Excel baseline (Full client)</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Excel1_Cloudpcwebclient_cropped.png)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/excel1-cloudpc-webclient-cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/excel1-cloudpc-webclient-cropped.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Excel webclient</i>
@@ -113,15 +113,15 @@ For the perceived image quality metrics used, SSIM (Structural Similarity Index 
 
 In the case of the PSNR or peak signal-to-noise ratio metric, typical values for lossy image compression are between 30 and 50dB and here also higher is better. Values over 40dB are considered very good and below are generally accepted as unacceptable low quality.
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwindowsclient_cropped.png)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-fullscreen-cloudpc-windowsclient-cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-fullscreen-cloudpc-windowsclient-cropped.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Word Full screen baseline (Full client)</i>
 </p>
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/Word1_fullscreen_Cloudpcwebclient_cropped.png)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-fullscreen-cloudpc-webclient-cropped.png" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/word1-fullscreen-cloudpc-webclient-cropped.png)
 </a>
 <p align="center" style="margin-top: -30px;" >
   <i>Word Full screen webclient</i>
@@ -154,8 +154,8 @@ Both these factors could have an impact on the measured quality. In any case, un
 
 In order to rule out these two variables, additional tests were performed. We used a Apple MacBook Pro with the Mac version of the remote desktop client. The internet connection used was deliberately congested to simulate high latecy and low available bandwidth. The Mac version of the remote desktop client, at the time of writing, does not have RDP shortpath capabilities and/or the used network did not facilitate UDP connections and therefore was forced to use TCP. The available bandwidth during testing was around 2.5Mbps. The Mac full client showed the same quality as the Windows full client and thereby effectively ruling out these two variables (UDP shortpath and/or available bandwidth) as influencing variables on the results.
 
-<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbookproreference.jpg" data-lightbox="clientversion">
-![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbookproreference.jpg)
+<a href="{{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbook-pro-reference.jpg" data-lightbox="clientversion">
+![clientversion]({{site.baseurl}}/assets/images/posts/101-analyzing-image-quality-in-windows-365-cloud-pc/macbook-pro-reference.jpg)
 </a>
 
 ## Conclusion
