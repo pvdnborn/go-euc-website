@@ -3,12 +3,31 @@ BeforeDiscovery {
     $exclude = @(
         "README.md",
         "Gemfile",
-        "CNAME"
+        "Gemfile.lock",
+        "CNAME",
+        "KnowledgeWorker__Edge.txt",
+        "KnowledgeWorker__Chrome.txt",
+        "KnowledgeWorker__FireFox.txt",
+        "KnowledgeWorker__IE.txt",
+        "KnowledgeWorker_RDA_filecopy.txt"
     )
 
-    $files = Get-ChildItem -Recurse -Exclude $exclude
-}
+    $folders = @(
+        "_includes",
+        "_layouts",
+        "_pages",
+        "_sass",
+        "assets",
+        "events",
+        "members",
+        "posts",
+        "sponsors"
+    )
 
+    $files = Get-ChildItem -Path $folders -Recurse -Exclude $exclude
+    $files += Get-ChildItem -Exclude $exclude
+
+}
 
 Describe "Naming convention"  {
     It "Should be lower case: <_.Name>" -ForEach $files {
