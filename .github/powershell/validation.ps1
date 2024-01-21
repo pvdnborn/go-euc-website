@@ -34,3 +34,9 @@ Describe "Naming convention"  {
         $_.Name -cmatch '[A-Z]' | Should -Be $false
     }
 }
+
+Describe "File types"  {
+    It "Images should be in the asset directory: <_.Name>" -ForEach ($files | Where-Object {$_.Name -like "*.png" -or $_.Name -like "*.jpg"}) {
+        $_.FullName.Contains("assets") | Should -Be $true
+    }
+}
