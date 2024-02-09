@@ -65,7 +65,7 @@ The goal of the Terraform code's architecture is to give flexibility and provide
 Throughout the code,  a `.tfvar` file will be used. A baseline `.tfvar` file will be [supplied in this article](#tfvar).  It's adviced to use this approach as it makes it easy to create multiple deployments. If you are not familiair with `.tfvar` files, please review the [official terraform documentation.](https://developer.hashicorp.com/terraform/language/values/variables){:target="_blank"}
 
 
-We want to maintain a proper code base where reproducability is at the core. It needs to be easy to use and edit for the sake of research. 
+We want to maintain a proper code base where reproducability is at the core. It needs to be easy to use and edit for the sake of research.
 
 
 
@@ -74,6 +74,7 @@ We want to maintain a proper code base where reproducability is at the core. It 
 The code deploys best practices out of the box. Please find the tables / documentation below.
 
 #### NetScaler Modes (Enabled / Disabled)
+
 | Mode | Default | Actual|
 | -------- | ------- | ------- |
 | Fast Ramp    | ✅ | ✅
@@ -97,6 +98,7 @@ The code deploys best practices out of the box. Please find the tables / documen
 
 ### Provided Templates
 
+
 |.TFVAR Templates|
 |-----------------------|
 |VSphere (ESXI) Deployment |
@@ -104,7 +106,7 @@ The code deploys best practices out of the box. Please find the tables / documen
 |License Deployment |
 |NSIP / SNIP Setup |
 |Service Creation |
-|Service Group Creation | 
+|Service Group Creation |
 |Virtual Server Creation|
 |Gateway Creation |
 |Advanced Authentication Policies|
@@ -140,7 +142,7 @@ logon_information = ({
 })
 
 #####################################################
-Optional: Vsphere deployment 
+Optional: Vsphere deployment
 #####################################################
 # Variables for the NetScaler VM deployment in vSphere
 vsphere = ({
@@ -168,7 +170,7 @@ vm = ({
 })
 
 
-##################################################### 
+#####################################################
 NetScaler configuration only
 ###############################################
 
@@ -224,7 +226,7 @@ servers = {
   }
 }
 
-# all the service groups to be created 
+# all the service groups to be created
 service_groups = {
   svcg_storefront = {
     name = "svcg_storefront"
@@ -248,7 +250,7 @@ service_groups = {
 }
 
 
-# All the virtual servers to be created 
+# All the virtual servers to be created
 virtual_servers = {
   #Example server, would still require a certificate / backend
   lb_ldaps = {
@@ -305,4 +307,3 @@ gateway = {
 ```
 
 Photo by <a href="https://unsplash.com/@clemhlrdt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Clément Hélardot</a> on <a href="https://unsplash.com/photos/black-and-silver-laptop-computer-on-table-95YRwf6CNw8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
