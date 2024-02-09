@@ -48,6 +48,7 @@ base_configuration = ({
   advanced = true
 })
 ```
+
 | Deployment Type | Supported | Advanced Boolean Value|
 | -------- | ------- | ------- |
 | Freemium    | ✅ | False
