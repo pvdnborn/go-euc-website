@@ -20,9 +20,7 @@ Currently NVIDIA is dominating the market share when it comes to GPU’s in VDI 
 
 Application landscape is changing nowadays. Previously, GPUs reigned supreme in VDI’s environments where there was a very clear need of 3D acceleration, like AutoCAD. Nowadays more applications can leverage the usage of a GPU. Applications like Microsoft Office can take full advantage of the GPU and even Windows 10 itself can hugely benefit from a GPU.
 
-In a recent poll on Twitter we asked people the most important factor to consider dealing with DaaS and VDI.
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Quick question to everyone in the <a href="https://twitter.com/hashtag/EUC?src=hash&amp;ref_src=twsrc%5Etfw">#EUC</a> community:<br><br>For a new <a href="https://twitter.com/g0_euc?ref_src=twsrc%5Etfw">@g0_euc</a> research we would like to know what *you* think is the most important factor when choosing a new <a href="https://twitter.com/hashtag/DaaS?src=hash&amp;ref_src=twsrc%5Etfw">#DaaS</a> or (Cloud) <a href="https://twitter.com/hashtag/VDI?src=hash&amp;ref_src=twsrc%5Etfw">#VDI</a> solution:</p>&mdash; Eltjo van Gulik [CTP, LVTA] (@eltjovg) <a href="https://twitter.com/eltjovg/status/1214246128499281920?ref_src=twsrc%5Etfw">January 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+In a recent poll on [Twitter](https://x.com/eltjovg/status/1214246128499281920?s=20){:target="_blank"} we asked people the most important factor to consider dealing with DaaS and VDI.
 
 The result showed that performance was considered the most important with almost half of the votes.
 
