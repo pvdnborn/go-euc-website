@@ -4,7 +4,7 @@ toc: true
 title:  "Is performance guaranteed on an Azure VM at all times?"
 hidden: false
 authors: [leee]
-reviewers: [esther, ryan, eltjo]
+reviewers: [ryan, eltjo]
 categories: [ 'Azure' ]
 tags: [ 'Azure', 'Compute', 'SKU', 'Cost', 'Cloud']
 image: assets/images/posts/110-is-performance-guaranteed-on-an-azure-vm-at-all-times/110-is-performance-guaranteed-on-an-azure-vm-at-all-times.png
@@ -18,7 +18,7 @@ This article aims to delve into this scenario.
 ## Considerations
 If you are running an end user computing environment virtually on-premises then you may have considered resource utilization and contention during the design phase. This would have gone as far down as the physical hardware running hypervisors, depending on different hypervisors there may be different considerations. Things that are usually commonly considered:
 
-- Shared Infrastructure 
+- Shared Infrastructure
   - Storage IOPs
   - CPU Usage
   - Memory Consumption
@@ -82,9 +82,9 @@ For each step, the timings are measured, which are:
 * Decompression_Ultra
 * Cleanup Files
 
-The main reason timings of completion for specific tasks were selected as the overall measure of performance is because we cannot gauge any resource contention on a physical level. Simply measuring time to completion gives us an indication if performance is consistent. 
+The main reason timings of completion for specific tasks were selected as the overall measure of performance is because we cannot gauge any resource contention on a physical level. Simply measuring time to completion gives us an indication if performance is consistent.
 
-These tests will be run continuously for a 24 hour period, the timings for each task will be logged at the end of each run. The tests are then repeated, times between these tests will then be compared during the various time windows to see if at any point in that period there is a pattern. The Azure compute SKU used in this test is the Standard_D2ds_v5 SKU. The Standard D2ds_v5 SKU was selected because the D series SKU is one of the most popular and the processor applied to the v5 SKU is always the same. All testing is performed in the Azure UK South region and the virtual machine in question is using premium SSD storage. 
+These tests will be run continuously for a 24 hour period, the timings for each task will be logged at the end of each run. The tests are then repeated, times between these tests will then be compared during the various time windows to see if at any point in that period there is a pattern. The Azure compute SKU used in this test is the Standard_D2ds_v5 SKU. The Standard D2ds_v5 SKU was selected because the D series SKU is one of the most popular and the processor applied to the v5 SKU is always the same. All testing is performed in the Azure UK South region and the virtual machine in question is using premium SSD storage.
 
 Performance details for the Azure SKU in question can be found here:
 <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/ddv5-ddsv5-series#ddsv5-series" target="_blank">Ddv5 and Ddsv5-series - Azure Virtual Machines | Microsoft Learn</a>
@@ -134,17 +134,17 @@ These graphs generally show a consistent execution time with a very small varian
 
 The expectation when sharing physical hardware across any enterprise is always, at some point you will impact performance due to resource contention. In public cloud environments you could almost say that it would be more than probable. Based on the collected results the initial hypnosis is busted as it shows a consistent and reliable performance.
 
-{% include chart.html scale='auto' type='line' data_file='assets/data/110-is-performance-guaranteed-on-an-azure-vm-at-all-times/summary.json' %}
+{% include chart.html scale='auto' type='bar' data_file='assets/data/110-is-performance-guaranteed-on-an-azure-vm-at-all-times/summary.json' %}
 
 The above graph depicts the total average execution time of all tests for the entire period of 24 hours. There is a small increase in execution speed over the weekend period with a slow ramp up to the middle of the week. That being said, the variance in these numbers of fractions of a second.
 
 ## Conclusion
-Public Cloud is being adopted in may areas to support business growth and flexibility, as a consumer you have no influence on how your workloads or provisioning may influence performance. Based on historical reference and recommended best practices from on-premises deployments it would seem logical that Public Cloud may not do a great job managing all these mixed workloads, that was the original hypothesis.
+Public Cloud is being adopted in many areas to support business growth and flexibility, as a consumer you have no influence on how your workloads or provisioning may influence performance. Based on historical reference and recommended best practices from on-premises deployments it would seem logical that Public Cloud may not do a great job managing all these mixed workloads, that was the original hypothesis.
 
-It’s highly impressive that public cloud providers are able to guarantee such a consistent performance profile for a virtual machine during any period of the day and week. As a business it gives a level of comfort to understand that using the latest virtual SKU can provide consistent performance.
+As a general conclusion to this research, it is highly impressive that in this frame of reference, Azure is able to guarantee such a consistent performance profile for a virtual machine during any period of the day and week. As a business it gives a level of comfort to understand that using the latest virtual SKU can provide consistent performance.
 
-There is  a difference in execution response times during the weekends and the weekdays but the performance impact to a user is negligible. It’s more than likely that a user would not notice a perceivable difference.
+There is  a difference in execution response times during the weekends and the weekdays but the performance impact to a user is negligible. It’s more than likely that a user would not notice a perceivable difference. As these results were collected in a, relatively controlled environment, always make sure you perform your own testing and judge situations based on your own scenarios also.
 
-The results gathered are from a single VM at a single point in time, it is possible that it was a period in time where there was no contention and everything was great. The results may change for multiple VMs in different regions or with different applications in play. Make sure you perform your own testing and judge situations based on your own scenarios also.
+The results gathered are from a single VM at a single point in time, it is possible that it was a period in time where there was no congestion and everything was great. The results may change for multiple VMs in different regions or with different applications in play. Make sure you perform your own testing and judge situations based on your own scenarios also.
 
 Photo generated by AI.
