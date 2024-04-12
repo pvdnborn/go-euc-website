@@ -70,7 +70,7 @@ authors:
     page: eltjo-van-gulik
     description: "Eltjo van Gulik is the Principal Product Manager for HDX Graphics & Seamless at Citrix and one of the co-founders of G0-EUC. Social, a tad pedantic and suitably lazy."
   omar:
-    active: true
+    active: false
     name: Omar
     display_name: Omar Bouhaj
     company: 'SLTN Inter Access'
