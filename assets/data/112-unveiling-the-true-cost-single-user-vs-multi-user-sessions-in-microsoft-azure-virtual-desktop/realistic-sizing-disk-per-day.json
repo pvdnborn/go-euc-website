@@ -1,0 +1,109 @@
+{
+  "title": "Storage cost per day for 1000 users based on realistic sizing",
+  "subTitle": "Lower is better",
+  "series": [
+    {
+      "serie": "D2s_v5 - Single",
+      "data": [
+        {
+          "x": "Light",
+          "y": "712"
+        },
+        {
+          "x": "Medium",
+          "y": "0"
+        },
+        {
+          "x": "Heavy",
+          "y": "0"
+        }
+      ]
+    },
+    {
+      "serie": "D4s_v5 - Single",
+      "data": [
+        {
+          "x": "Light",
+          "y": "0"
+        },
+        {
+          "x": "Medium",
+          "y": "712"
+        },
+        {
+          "x": "Heavy",
+          "y": "712"
+        }
+      ]
+    },
+    {
+      "serie": "D4s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "119"
+        },
+        {
+          "x": "Medium",
+          "y": "178"
+        },
+        {
+          "x": "Heavy",
+          "y": "356"
+        }
+      ]
+    },
+    {
+      "serie": "D8s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "53"
+        },
+        {
+          "x": "Medium",
+          "y": "81"
+        },
+        {
+          "x": "Heavy",
+          "y": "178"
+        }
+      ]
+    },
+    {
+      "serie": "D16s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "25"
+        },
+        {
+          "x": "Medium",
+          "y": "36"
+        },
+        {
+          "x": "Heavy",
+          "y": "71"
+        }
+      ]
+    },
+    {
+      "serie": "D32s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "11"
+        },
+        {
+          "x": "Medium",
+          "y": "18"
+        },
+        {
+          "x": "Heavy",
+          "y": "36"
+        }
+      ]
+    }
+  ],
+  "unit": "$"
+}

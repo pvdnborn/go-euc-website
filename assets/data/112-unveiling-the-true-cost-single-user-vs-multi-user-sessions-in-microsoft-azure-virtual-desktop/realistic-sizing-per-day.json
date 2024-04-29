@@ -1,0 +1,109 @@
+{
+  "title": "Total cost per day for 1000 users based on realistic sizing",
+  "subTitle": "Lower is better",
+  "series": [
+    {
+      "serie": "D2s_v5 - Single",
+      "data": [
+        {
+          "x": "Light",
+          "y": "2388"
+        },
+        {
+          "x": "Medium",
+          "y": "0"
+        },
+        {
+          "x": "Heavy",
+          "y": "0"
+        }
+      ]
+    },
+    {
+      "serie": "D4s_v5 - Single",
+      "data": [
+        {
+          "x": "Light",
+          "y": "0"
+        },
+        {
+          "x": "Medium",
+          "y": "4042"
+        },
+        {
+          "x": "Heavy",
+          "y": "4042"
+        }
+      ]
+    },
+    {
+      "serie": "D4s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "972"
+        },
+        {
+          "x": "Medium",
+          "y": "838"
+        },
+        {
+          "x": "Heavy",
+          "y": "1560"
+        }
+      ]
+    },
+    {
+      "serie": "D8s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "848"
+        },
+        {
+          "x": "Medium",
+          "y": "788"
+        },
+        {
+          "x": "Heavy",
+          "y": "1371"
+        }
+      ]
+    },
+    {
+      "serie": "D16s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "831"
+        },
+        {
+          "x": "Medium",
+          "y": "792"
+        },
+        {
+          "x": "Heavy",
+          "y": "1214"
+        }
+      ]
+    },
+    {
+      "serie": "D32s_v5 - Multi",
+      "data": [
+        {
+          "x": "Light",
+          "y": "785"
+        },
+        {
+          "x": "Medium",
+          "y": "781"
+        },
+        {
+          "x": "Heavy",
+          "y": "1193"
+        }
+      ]
+    }
+  ],
+  "unit": "$"
+}
