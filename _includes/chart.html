@@ -1,5 +1,6 @@
-<canvas id="temp" width="800" height="650" style="padding-top: 10px; padding-bottom: 10px;"></canvas>
-
+<div markdown="0" style="position: relative; height:60vh; width:80vw">
+    <canvas id="temp"></canvas>
+</div>
 <script>
     function fetchJSONFile(path, id, type, callback) {
         var httpRequest = new XMLHttpRequest();
@@ -127,6 +128,7 @@
             },
             plugins: [ChartDataLabels, custom_canvas_background_color],
             options: {
+                maintainAspectRatio: false,
                 indexAxis: axis,
                 plugins: {
                     tooltip: {
@@ -173,7 +175,7 @@
                     },
                     title: {
                         display: true,
-                        text: title,
+                        text: title.split(';'),
                         color: '#FFFFFF',
                         font: {
                             size: 26
@@ -183,6 +185,7 @@
                 scales: {
                     y: {
                         beginAtZero: scale,
+                        offset: true,
                         grid: {
                             color: '#575757',
                             display: true
@@ -253,21 +256,21 @@
         if (scale) {
             if (type == 'bar' || type == 'hbar') {
 
-                var maxValue = Math.max(...dataArray);
+                // var maxValue = Math.max(...dataArray);
 
-                if (chart.config.options.indexAxis == 'x') {
-                    if (maxValue <= 1) {
-                        chart.config.options.scales.y.max = maxValue * 1.2;
-                    } else {
-                        chart.config.options.scales.y.max = Math.ceil(maxValue * 1.2);
-                    }
-                } else {
-                    if (maxValue <= 1) {
-                        chart.config.options.scales.x.max = maxValue * 1.2;
-                    } else {
-                        chart.config.options.scales.x.max = Math.ceil(maxValue * 1.2);
-                    }
-                }
+                // if (chart.config.options.indexAxis == 'x') {
+                //     if (maxValue <= 1) {
+                //         chart.config.options.scales.y.max = maxValue * 1.2;
+                //     } else {
+                //         chart.config.options.scales.y.max = Math.ceil(maxValue * 1.2);
+                //     }
+                // } else {
+                //     if (maxValue <= 1) {
+                //         chart.config.options.scales.x.max = maxValue * 1.2;
+                //     } else {
+                //         chart.config.options.scales.x.max = Math.ceil(maxValue * 1.2);
+                //     }
+                // }
             }
         }
 
@@ -277,13 +280,14 @@
 
     var id = guidGenerator();
     var e = document.getElementById("temp");
+
     e.id = id;
 
     var chartType = "{{ include.type }}";
 
-    if (chartType == "hbar") {
-        e.setAttribute("height", '640');
-    }
+    // if (chartType == "hbar") {
+    //     e.setAttribute("height", '640');
+    // }
 
     fetchJSONFile("/{{ include.data_file }}", id, "{{ include.type }}", createChart);
 </script>
