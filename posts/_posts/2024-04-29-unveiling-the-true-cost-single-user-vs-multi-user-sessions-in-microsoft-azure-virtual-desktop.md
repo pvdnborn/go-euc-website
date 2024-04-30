@@ -174,28 +174,28 @@ Considering the evolving nature of application resource usage, the impact of sec
 ## Results
 The following chart is created based on the Microsoft recommended sizing ratio for light, medium and heavy workload types. All prices are USD per day for facilitating 1000 users. As described, there is a capacity for 5 users, and 24 hours are available to ensure the user can work.
 
-{% include chart.html scale='auto' type='bar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/microsoft-sizing-per-day.json' currency='true' %}
+{% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/microsoft-sizing-per-day.json' currency='true' %}
 
 As expected, a multi-session scenario is significantly more cost-effective compared to a single-session.
 
 For the realistic sizing, the size is based on the memory consumption as specified in the previous chapter.
 
-{% include chart.html scale='auto' type='bar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/realistic-sizing-per-day.json' currency='true' %}
+{% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/realistic-sizing-per-day.json' currency='true' %}
 
 Overall, again, the multi-session is the most cost-effective, however, compared to the Microsoft recommended sizing, there is a massive difference – nearly $500 per day! Reflecting this to an entire year, which for 2024 has 251 working days, this is around $100,000 difference between both, which is on average a difference of 200%.
 
 The following chart is a breakdown of the storage cost per day.
 
-{% include chart.html scale='auto' type='bar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/microsoft-sizing-disk-per-day.json' currency='true'%}
+{% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/microsoft-sizing-disk-per-day.json' currency='true'%}
 
-{% include chart.html scale='auto' type='bar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/realistic-sizing-disk-per-day.json' currency='true'%}
+{% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/realistic-sizing-disk-per-day.json' currency='true'%}
 
 The prices are based on the number of VMs required to facilitate 1000 users. The differences are minimal as the overall cost per day is relatively low. There are ways to optimize the cost, such as changing the SKU to a standard HDD while the VM is in a stopped state. However, the disks are persistent for this research.
 
 As described in the introduction, the challenge of having multiple users on a single host means the overall runtime of a host is going to be longer. The following chart shows the estimated runtime of each instance.
 
 
-{% include chart.html scale='auto' type='bar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/vm-runtime.json' %}
+{% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/vm-runtime.json' %}
 
 The overall conclusion is that more users on a single host means the running time is expected to be longer.
 
