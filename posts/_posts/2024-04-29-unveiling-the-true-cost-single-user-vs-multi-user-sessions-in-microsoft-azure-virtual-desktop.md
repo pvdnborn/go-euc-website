@@ -106,14 +106,16 @@ For each instance, this comes to the following sizes for facilitating 1000 users
 | Heavy  | Multi   | D32s_v5  | 32    | 128    | 16    | 163           | 2 GB            |
 
 
-> Formula: vGPUs * ratio = users per host
+> Formula: vCPUs * ratio = users per host
 
-Memory per user is calculated based on the total amount of memory minus 4 GB reserved for the operating system divided by the number of users per host. The reserved operating system memory is a practice from the field, which was also applied to the [What is the best Azure Virtual Machine size for WVD using Citrix Cloud?](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/#expectations){:target="_blank"} esearch. As operating systems are consuming more, this might need to be increased nowadays, but for now, the 4GB is applied to this research.
+Memory per user is calculated based on the total amount of memory minus 4 GB reserved for the operating system divided by the number of users per host. The reserved operating system memory is a practice from the field, which was also applied to the [What is the best Azure Virtual Machine size for WVD using Citrix Cloud?](https://www.go-euc.com/what-is-the-best-azure-virtual-machine-size-for-wvd-using-citrix-cloud/#expectations){:target="_blank"} research. As operating systems are consuming more, this might need to be increased nowadays, but for now, the 4GB is applied to this research.
 
 In reality, the memory footprint is continuously growing. Microsoft Teams and modern web browsers can quickly claim a lot of memory. Therefore, a more realistic scaling recommendation would be sizing on memory where you at least have 2 GB per user available.
 
 **Light  = 2GB**
+
 **Medium = 3GB**
+
 **Heavy = 6GB**
 
 Based on the same instance the recommended sizing would be as follows.
