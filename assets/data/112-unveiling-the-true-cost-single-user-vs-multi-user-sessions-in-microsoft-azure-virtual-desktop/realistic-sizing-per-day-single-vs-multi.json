@@ -1,0 +1,41 @@
+{
+  "title": "Total cost per day for 1000 users;based on realistic sizing",
+  "subTitle": "Lower is better",
+  "series": [
+    {
+      "serie": "Single user",
+      "data": [
+        {
+          "x": "Light",
+          "y": "2388"
+        },
+        {
+          "x": "Medium",
+          "y": "4042"
+        },
+        {
+          "x": "Heavy",
+          "y": "4042"
+        }
+      ]
+    },
+    {
+      "serie": "Multi user",
+      "data": [
+        {
+          "x": "Light",
+          "y": "859"
+        },
+        {
+          "x": "Medium",
+          "y": "800"
+        },
+        {
+          "x": "Heavy",
+          "y": "1334"
+        }
+      ]
+    }
+  ],
+  "unit": "$"
+}

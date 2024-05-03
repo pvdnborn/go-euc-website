@@ -174,11 +174,15 @@ Considering the evolving nature of application resource usage, the impact of sec
 ## Results
 The following chart is created based on the Microsoft recommended sizing ratio for light, medium and heavy workload types. All prices are USD per day for facilitating 1000 users. As described, there is a capacity for 5 users, and 24 hours are available to ensure the user can work.
 
+{% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/microsoft-sizing-per-day-single-vs-multi.json' currency='true' %}
+
 {% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/microsoft-sizing-per-day.json' currency='true' %}
 
 As expected, a multi-session scenario is significantly more cost-effective compared to a single-session.
 
 For the realistic sizing, the size is based on the memory consumption as specified in the previous chapter.
+
+{% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/realistic-sizing-per-day-single-vs-multi.json' currency='true' %}
 
 {% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/realistic-sizing-per-day.json' currency='true' %}
 
@@ -192,8 +196,7 @@ The following chart is a breakdown of the storage cost per day.
 
 The prices are based on the number of VMs required to facilitate 1000 users. The differences are minimal as the overall cost per day is relatively low. There are ways to optimize the cost, such as changing the SKU to a standard HDD while the VM is in a stopped state. However, the disks are persistent for this research.
 
-As described in the introduction, the challenge of having multiple users on a single host means the overall runtime of a host is going to be longer. The following chart shows the estimated runtime of each instance.
-
+As described in the introduction, the challenge of having multiple users on a single host means the overall runtime of a host is going to be longer. In case of multi user scenario, when a user is still active the virtual machine cannot be turned off, which will result in a longer running time. As users are logging off randomly, it can occur a multi session host is still running for a single user. The following chart shows the estimated runtime of each instance.
 
 {% include chart.html scale='auto' type='hbar' data_file='assets/data/112-unveiling-the-true-cost-single-user-vs-multi-user-sessions-in-microsoft-azure-virtual-desktop/vm-runtime.json' %}
 
@@ -206,7 +209,7 @@ While Microsoft's recommended sizing numbers aren’t usable for many or at leas
 
 When relying on the Microsoft sizing guidelines for your business case it will negatively impact the total cost of ownership. Based on this context, the total cost on a realistic sizing will be 2 times higher.
 
-For light users with minimal application needs, multi-user configurations with published applications are preferred and very cost-efficient. However, for medium and heavy users often running with a published desktop and running more diverse application requirements and increasing resource utilization, the difference between single-user and multi-user setups is there but not as big as many people believe it is.
+Multi-user configurations offer cost efficiency for light and medium users. Although still more cost-effective for heavy users compared to single-user setups, the cost advantage narrows. For single-user VDI/DaaS, factors such as use case suitability, workspace and OS strategy, application compatibility, session modality (desktop versus published apps), image management, and power and capacity management play crucial roles in decision-making.
 
 Opting for larger instance sizes in multi-user environments can complicate shutdown procedures when sessions are inactive. Despite minimal cost differences between instance sizes like D4, D8, D16, and D32, it's advisable to use D8 or D16 machines for multi-user setups due to their larger memory capacity.
 
