@@ -244,12 +244,24 @@
         });
 
         if (scaleManual) {
+            var min = "{{ include.scale_min }}";
+            var max = "{{ include.scale_max }}";
             if (chart.config.options.indexAxis == 'x') {
-                chart.config.options.scales.y.min = "{{ include.scale_min }}";
-                chart.config.options.scales.y.max = "{{ include.scale_max }}";
+                if (min.indexOf(".") == -1) {
+                    config.options.scales.y.min = parseInt(min, 0);
+                    config.options.scales.y.max = parseInt(max, 0);
+                } else {
+                    config.options.scales.y.min =  parseFloat(min).toFixed(min.length - min.indexOf("."));
+                    config.options.scales.y.max =  parseFloat(max).toFixed(max.length - max.indexOf("."));
+                }
             } else {
-                chart.config.options.scales.x.min = "{{ include.scale_min }}";
-                chart.config.options.scales.x.max = "{{ include.scale_max }}";
+                if (min.indexOf(".") == -1) {
+                    config.options.scales.x.min = parseInt(min, 0);
+                    config.options.scales.x.max = parseInt(max, 0);
+                } else {
+                    config.options.scales.x.min =  parseFloat(min).toFixed(min.length - min.indexOf("."));
+                    config.options.scales.x.max =  parseFloat(max).toFixed(max.length - max.indexOf("."));
+                }
             }
         }
 
