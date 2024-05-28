@@ -124,6 +124,10 @@ layout: default
       </div>
     </div>
 
+    {% if site.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+
+  </br>
+
     <div class="post__navigation">
       {% if page.previous.url %}
       {% unless page.previous.url contains 'event-'%}
@@ -154,5 +158,3 @@ layout: default
 <!-- end post -->
 
 {% include related-posts.html %}
-
-{% if site.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
