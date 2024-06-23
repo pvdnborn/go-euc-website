@@ -1,0 +1,46 @@
+{
+  "title": "Codec SSIM Comparison on Visual Quality High",
+  "subTitle": "Higher is better",
+  "series": [
+    {
+      "serie": "H.264",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.971"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.990"
+        }
+      ]
+    },
+    {
+      "serie": "H.265",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.971"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.989"
+        }
+      ]
+    },
+    {
+      "serie": "AV1",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.968"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.986"
+        }
+      ]
+    }
+  ],
+  "unit": ""
+}

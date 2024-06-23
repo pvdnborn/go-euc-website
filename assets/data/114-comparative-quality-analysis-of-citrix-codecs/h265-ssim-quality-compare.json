@@ -1,0 +1,72 @@
+{
+  "title": "H.265 - SSIM Visual Quality Comparison",
+  "subTitle": "Higher is better",
+  "series": [
+    {
+      "serie": "Low",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9714"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9894"
+        }
+      ]
+    },
+    {
+      "serie": "Medium",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9712"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9894"
+        }
+      ]
+    },
+    {
+      "serie": "High",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9712"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9893"
+        }
+      ]
+    },
+    {
+      "serie": "Build to Lossless",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9726"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9911"
+        }
+      ]
+    },
+    {
+      "serie": "Always Lossless",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9880"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9961"
+        }
+      ]
+    }
+  ],
+  "unit": ""
+}

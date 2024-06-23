@@ -1,0 +1,52 @@
+{
+  "title": "H.265 - PSNR Visual Quality Comparison",
+  "subTitle": "Higher is better",
+  "series": [
+    {
+      "serie": "Low",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.7"
+        }
+      ]
+    },
+    {
+      "serie": "Medium",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.7"
+        }
+      ]
+    },
+    {
+      "serie": "High",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.7"
+        }
+      ]
+    },
+    {
+      "serie": "Build to Lossless",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.7"
+        }
+      ]
+    },
+    {
+      "serie": "Always Lossless",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.8"
+        }
+      ]
+    }
+  ],
+  "unit": ""
+}

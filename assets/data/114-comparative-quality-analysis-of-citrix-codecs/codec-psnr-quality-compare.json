@@ -1,0 +1,34 @@
+{
+  "title": "Codec PSNR Comparison on Visual Quality High",
+  "subTitle": "Higher is better",
+  "series": [
+    {
+      "serie": "H.264",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.7"
+        }
+      ]
+    },
+    {
+      "serie": "H.265",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.7"
+        }
+      ]
+    },
+    {
+      "serie": "AV1",
+      "data": [
+        {
+          "x": "PSNR",
+          "y": "22.6"
+        }
+      ]
+    }
+  ],
+  "unit": ""
+}

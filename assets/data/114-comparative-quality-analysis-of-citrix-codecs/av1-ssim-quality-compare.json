@@ -1,0 +1,73 @@
+{
+  "title": "AV1 - SSIM Visual Quality Comparison",
+  "subTitle": "Higher is better",
+  "series": [
+
+    {
+      "serie": "Low",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9683"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9864"
+        }
+      ]
+    },
+    {
+      "serie": "Medium",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9683"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9864"
+        }
+      ]
+    },
+    {
+      "serie": "High",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9683"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9863"
+        }
+      ]
+    },
+    {
+      "serie": "Build to Lossless",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9697"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9878"
+        }
+      ]
+    },
+    {
+      "serie": "Always Lossless",
+      "data": [
+        {
+          "x": "SSIM",
+          "y": "0.9881"
+        },
+        {
+          "x": "MS-SSIM",
+          "y": "0.9961"
+        }
+      ]
+    }
+  ],
+  "unit": ""
+}
