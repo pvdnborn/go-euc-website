@@ -20,8 +20,8 @@ In Citrix, the video codec is applied to deliver the desktop or application to t
 
 Citrix has three codecs available: H.264, H.265, and AV1. For both H.265 and AV1, there are some requirements for both virtualized environments and the endpoint, as both require a GPU with a specific encoding or decoding chip. Citrix applies various methods to influence the encoder to ensure you can find the optimal configuration for your workload. You can set the Visual Quality, which will apply the amount of compression applied to the stream. Citrix has various methods to encode, such as using video codecs for compression, where multiple options exist for how the screen is encoded. For example, there is an option called “active changing regions,” which applies different encoding methods only to the region that has been updated. The rest of the screen, which is static, will be delivered using another algorithm to reduce, for example, bandwidth.
 
-<a href="{{site.baseurl}}//assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/citrix-hdx-adaptive-display.png" data-lightbox="citrix-hdx-adaptive-display">
-![citrix-hdx-adaptive-display]({{site.baseurl}}//assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/citrix-hdx-adaptive-display.png)
+<a href="{{site.baseurl}}/assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/citrix-hdx-adaptive-display.png" data-lightbox="citrix-hdx-adaptive-display">
+![citrix-hdx-adaptive-display]({{site.baseurl}}/assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/citrix-hdx-adaptive-display.png)
 </a>
 
 Source: [Experience the Elegance of Adaptive Technologies with XenApp & XenDesktop 7.13 - Citrix Blogs](https://www.citrix.com/blogs/2017/03/02/experience-the-future-of-work-now-with-xenapp-xendesktop-7-13/){:target="_blank"}
@@ -50,8 +50,8 @@ Sources: [SSIM](https://en.wikipedia.org/wiki/Structural_similarity_index_measur
 
 A 2k 24 FPS video, [Cosmos Laundromat](https://opencontent.netflix.com/#h.uyzoa2bivz2j){:target="_blank"}  from Netflix in partnership with Blender, is used for this specific research to assess the quality of a source video. This video is selected as an open-source project from Netflix license under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode){:target="_blank"} .  The video has a nice balance between low and high-movement scenes. The more movement in the video, the more complex the encoder encodes the images. The analysis is done by analyzing individual frames from a video, which are images. Comparing these images from a video source can be difficult as the video presents 24 frames each second. Therefore, a reference QR code representing the exact frame number is added to the video, allowing us to know which frame is presented. Based on the keyframes from the baseline, the same frame can be searched in the comparison recording. A section of 770 by 600 is compared, focused on the middle of the screen containing only the video.
 
-<a href="{{site.baseurl}}//assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/baseline-outline.png" data-lightbox="baseline-outline-crop">
-![baseline-outline-crop]({{site.baseurl}}//assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/baseline-outline.png)
+<a href="{{site.baseurl}}/assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/baseline-outline.png" data-lightbox="baseline-outline-crop">
+![baseline-outline-crop]({{site.baseurl}}/assets/images/posts/114-comparative-quality-analysis-of-citrix-codecs/baseline-outline.png)
 </a>
 
 All recordings are done on the endpoint using OBS studio. The baseline is recorded using the same method to ensure additional compression from the recording is included in the comparison, guaranteeing a direct comparison from a local machine with the Citrix HDX sessions. Each video is recorded in lossless quality in mp4 format with H.265 for a total of 60 seconds at 120fps. The baseline video has 17 keyframes, meaning a maximum of 17 frames can be compared.
