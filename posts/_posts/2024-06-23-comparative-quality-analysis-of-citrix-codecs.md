@@ -93,13 +93,13 @@ It is important to understand that “build to lossless” behaves differently c
 ## Hypothesis & results
 Based on the nature of these encoders and requirements, the hypothesis is that both H.265 and AV1 provide higher quality regardless of the configuration of visual quality. Due to the compression applied to the delivered image, the quality is expected to increase from lower to always lossless.
 
-Before comparing the various codecs, let's assess each visual quality. All data is in the 95th percentile of the matched frames. The scaling for the SSIM data is set from 0.95, marked as bad quality, to 1.0. This means the higher, the better. Please note that MS-SSIM returns higher results than SSIM due to the multi-scale algorithm used.
+Before comparing the various codecs, let's assess each visual quality. All data is in the 95th percentile of the matched frames. The scaling for the SSIM data is set from 0.8, marked as bad quality, to 1.0. This means the higher, the better. Please note that MS-SSIM returns higher results than SSIM due to the multi-scale algorithm used.
 
-{% include chart.html scale='manual' scale_min='0.950' scale_max='1.0' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/h264-ssim-quality-compare.json' %}
+{% include chart.html scale='manual' scale_min='0.8' scale_max='1.05' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/h264-ssim-quality-compare.json' %}
 
-{% include chart.html scale='manual' scale_min='0.950' scale_max='1.0' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/h265-ssim-quality-compare.json' %}
+{% include chart.html scale='manual' scale_min='0.8' scale_max='1.05' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/h265-ssim-quality-compare.json' %}
 
-{% include chart.html scale='manual' scale_min='0.950' scale_max='1.0' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/av1-ssim-quality-compare.json' %}
+{% include chart.html scale='manual' scale_min='0.8' scale_max='1.05' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/av1-ssim-quality-compare.json' %}
 
 For both H.264 and H.265 all SSIM data is above 0.97, which means the HDX protocol delivers a good quality compared to the baseline. It is interesting to note, that AV1 on the visual quality Low, Medium and High is below the 0.97 mark, meaning these are marked as average results. Based on this data, the visual quality is always lossless and delivers the best quality, which is as expected.
 
@@ -113,7 +113,7 @@ Overall the PSNR results very similar between all codecs. All results are below 
 
 Let's compare the different video codecs directly. In this case, the visual quality high is selected, as this is usually the recommended visual quality setting.
 
-{% include chart.html scale='manual' scale_min='0.950' scale_max='1.0' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/codec-ssim-quality-compare.json' %}
+{% include chart.html scale='manual' scale_min='0.8' scale_max='1.05' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/codec-ssim-quality-compare.json' %}
 
 {% include chart.html scale='manual' scale_min='0' scale_max='40' type='hbar' data_file='assets/data/114-comparative-quality-analysis-of-citrix-codecs/codec-psnr-quality-compare.json' %}
 
