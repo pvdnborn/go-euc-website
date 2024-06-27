@@ -2,7 +2,7 @@
 layout: post
 toc: true
 title:  "Comparative Quality Analysis of Citrix Codecs: H.264, H.265, and AV1"
-hidden: true
+hidden: false
 authors: [ryan]
 reviewers: [mick, leee, patrick, eltjo, anton, esther, ruben]
 categories: [ 'Citrix' ]
