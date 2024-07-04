@@ -241,7 +241,7 @@ authors:
     page: fredrik-brattstig
     description: "Fredrik Brattstig is a Technology Evangelist at IGEL Technology with over 20 years of experience of the VDI/Remote Apps and Desktops niche, and lives by the mantra of providing High-End User Experience."
   sven-j:
-    active: true
+    active: false
     name: Sven
     display_name: Sven Jansen
     company: deviceTRUST
