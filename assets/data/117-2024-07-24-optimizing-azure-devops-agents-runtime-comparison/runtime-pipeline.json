@@ -1,0 +1,73 @@
+{
+  "title": "PIpeine total runtime in seconds",
+  "subTitle": "Lower is better",
+  "series": [
+    {
+      "serie": "Min",
+      "data" : [
+        {
+          "x": "MS-hosted Windows",
+          "y": "66"
+        },
+        {
+          "x": "MS-hosted Ubuntu",
+          "y": "40"
+        },
+        {
+          "x": "MS-hosted MacOS",
+          "y": "50"
+        }
+        ,
+        {
+          "x": "Self-hosted Docker",
+          "y": "41"
+        }
+      ]
+    },
+    {
+      "serie": "Average",
+      "data" : [
+        {
+          "x": "MS-hosted Windows",
+          "y": "81"
+        },
+        {
+          "x": "MS-hosted Ubuntu",
+          "y": "48"
+        },
+        {
+          "x": "MS-hosted MacOS",
+          "y": "55"
+        }
+        ,
+        {
+          "x": "Self-hosted Docker",
+          "y": "43"
+        }
+      ]
+    },
+    {
+      "serie": "Max",
+      "data" : [
+        {
+          "x": "MS-hosted Windows",
+          "y": "98"
+        },
+        {
+          "x": "MS-hosted Ubuntu",
+          "y": "63"
+        },
+        {
+          "x": "MS-hosted MacOS",
+          "y": "73"
+        }
+        ,
+        {
+          "x": "Self-hosted Docker",
+          "y": "47"
+        }
+      ]
+    }
+  ],
+  "unit": ""
+}

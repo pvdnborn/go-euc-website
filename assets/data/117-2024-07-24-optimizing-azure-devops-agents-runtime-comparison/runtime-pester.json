@@ -1,0 +1,43 @@
+{
+  "title": "Pester total runtime in seconds",
+  "subTitle": "Lower is better",
+"series": [
+    {
+      "serie": "MS-hosted Windows",
+      "data": [
+        {
+          "x": "",
+          "y": "6.004"
+        }
+      ]
+    },
+    {
+      "serie": "MS-hosted Ubuntu",
+      "data": [
+        {
+          "x": "",
+          "y": "5.713"
+        }
+      ]
+    },
+    {
+      "serie": "MS-hosted MacOS",
+      "data": [
+        {
+          "x": "",
+          "y": "6.903"
+        }
+      ]
+    },
+    {
+      "serie": "Self-hosted Docker",
+      "data": [
+        {
+          "x": "",
+          "y": "8.680"
+        }
+      ]
+    }
+  ],
+  "unit": ""
+}
