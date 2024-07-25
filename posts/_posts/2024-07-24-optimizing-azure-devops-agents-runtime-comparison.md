@@ -42,7 +42,7 @@ Agents that run macOS images are provisioned on Mac Pros with a 3-core CPU, 14 G
 
 Source: [Microsoft-hosted agents for Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#recent-updates){:target="_blank"}
 
-The agents are hosted on Azure general-purpose virtual machines in the selected region of your services, with a 2-core CPU, 7GB memory, and 14GB of SSD disk space. There are based on the Standard_DS2_v2 SKU, which run on the 3rd Generation Intel® Xeon® Platinum 8370C (Ice Lake), Intel® Xeon® Platinum 8272CL (Cascade Lake), Intel® Xeon® 8171M 2.1GHz (Skylake) or the the Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors.
+The Microsoft-hosted Windows and Linux agents are hosted on Azure general-purpose virtual machines in the selected region of your services, with a 2-core CPU, 7GB memory, and 14GB of SSD disk space. There are based on the Standard_DS2_v2 SKU, which run on the 3rd Generation Intel® Xeon® Platinum 8370C (Ice Lake), Intel® Xeon® Platinum 8272CL (Cascade Lake), Intel® Xeon® 8171M 2.1GHz (Skylake) or the the Intel® Xeon® E5-2673 v4 2.3 GHz (Broadwell), or the Intel® Xeon® E5-2673 v3 2.4 GHz (Haswell) processors.
 
 Source: [Microsoft-hosted agents for Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#capabilities-and-limitations){:target="_blank"}
 
