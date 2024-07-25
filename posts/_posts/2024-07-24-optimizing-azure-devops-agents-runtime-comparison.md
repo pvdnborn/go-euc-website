@@ -11,7 +11,7 @@ image: assets/images/posts/117-2024-07-24-optimizing-azure-devops-agents-runtime
 ---
 Many organizations are adopting the DevOps way of working and using Azure DevOps services as their primary DevOps solution. With Azure DevOps pipelines, you have the option to use Microsoft-hosted agents, which run on Windows, Linux, or Mac. But what are the differences in runtime performance between these operating systems? This research delves into the runtime of pipelines on these Microsoft-hosted agents.
 
-Background on Azure DevOps
+## Background on Azure DevOps
 Azure DevOps supports a collaborative culture and set of processes that bring together developers, project managers, and contributors to develop software. It allows organizations to create and improve products at a faster pace than traditional software development approaches.
 While Azure DevOps is generally described in the context of traditional software development, there is a trend to adopt Azure DevOps for main IT departments, including the end-user computing (EUC) segment.
 The suite consists of Azure Boards, Repos, Pipelines, Test Plans, and Artifacts. For more detailed information about these services, please visit the documentation on Microsoft's website.
@@ -96,7 +96,7 @@ Based on the results, it can be concluded that using self-hosted agents is overa
 
 It's always important to reduce the execution time of the pipeline, and using the Linux-based agents can save a significant amount of time depending on the scenario. However, this might be different in your context, so it is recommended to validate this.
 
-If you are constrained to a Windows-based agent due to task requirements, it is recommended to host these specific tasks in a separate pipeline stage, as stages can be targeted to a specific agent pool.
+If you are constrained to a Windows-based agent due to task requirements, it is recommended to host these specific tasks in a separate pipeline jobs, as jobs can be targeted to a specific agent pool.
 If you encounter long queuing times, you have the option to use self-hosted agents. These are dedicated to your environment only, which is the easiest way to reduce queuing time. The downside is that you have to maintain and manage these agents. Additionally, you could choose to host these agents in a Docker container. More information can be found here: [Run a self-hosted agent in Docker - Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/docker?view=azure-devops){:target="_blank"}
 
 Photo by [Wolfgang Weiser](https://unsplash.com/@hamburgmeinefreundin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/a-train-traveling-through-a-forest-filled-with-lots-of-trees-el8EOJhVjEU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}
