@@ -72,7 +72,7 @@ The initial results show the total time, including the queued time. When global 
 
 The data shows there is a bigger variance with the Microsoft-hosted agents, which is due to the queue time. For the self-hosted, where is no demand the total runtime is lower as this can be executed directly. Overall is the Microsoft Windows based agent the slowest based on this scenario.
 
-When a DevOps agent is available the repository is pipeline is loaded witht he job definition and then the individual task are executed. The following chart shows total Pester test run time from the fastest run of each operating system.
+When a DevOps agent is available the repository is pipeline is loaded with the job definition and then the individual task are executed. The following chart shows total Pester test run time from the fastest run of each operating system.
 
 {% include chart.html scale='auto' type='hbar' data_file='assets/data/117-2024-07-24-optimizing-azure-devops-agents-runtime-comparison/runtime-pester.json' %}
 
