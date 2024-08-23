@@ -9,7 +9,7 @@ comments: false
 
 Patrick is an expert in the following topics: Citrix End User Computing, Microsoft Azure, NVIDIA-Technologies, Hashicorp Terraform, and Hashicorp Packer. He also has a broad knowledge of on-premises VMware and Microsoft Technologies.
 
-Patrick is active in the community presenting at various events. Patrick is also a member of GO-EUC. Microsoft has rewarded Patrick with the Microsoft Most Valuable Professional (MVP) status and Citrix has rewarded Patrick with the Citrix Technology Professional status.
+Patrick is active in the community presenting at various events. Patrick is also a member of GO-EUC. Microsoft has recognized Patrick as a Microsoft Most Valuable Professional (MVP) and Citrix as a Citrix Technology Professional (CTP).
 
 You can follow Patrick on Twitter and LinkedIn or read his blog.
 
